@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tastings — Sophie's Cuppa Tea</title>
+    <meta name="description" content="Join Sophie's weekly virtual tea tastings and become part of the tea practice." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo">sophie's cuppa tea</a>
+      <div class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="tastings.html" class="is-current">Tastings</a>
+        <a href="about.html">About</a>
+      </div>
+      <a href="shop.html" class="nav-btn">Explore Teas</a>
+      <button class="nav-burger" aria-label="Menu"><span></span><span></span></button>
+    </nav>
+
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="breadcrumb-current">Tastings</span>
+    </div>
+
+    <section class="page-hero page-hero--compact">
+      <span class="label">Saturday Ritual</span>
+      <h1>One tea at a time, together.</h1>
+      <p class="hero-sub">Every Saturday, Sophie guides a live virtual tasting — one tea, explored in depth. It's the single best way to accelerate your understanding and build the habit of tea as ritual.</p>
+    </section>
+
+    <!-- ══ TASTINGS DETAIL ══ -->
+    <section class="tastings">
+      <div class="tastings-grid">
+        <div class="tastings-left reveal">
+          <span class="label label--light">What to Expect</span>
+          <h2>A guided tasting, not a lecture.</h2>
+          <p>Each session focuses on a single tea. Sophie walks you through the dry leaf, the aroma, the first steep, the second steep — teaching you to identify what you're tasting and why it matters. You'll leave with a vocabulary and a palate you didn't have before.</p>
+          <p>Sessions happen on Zoom every Saturday. All you need is the tea (available for purchase beforehand), hot water, and a vessel. We handle the rest.</p>
+          <a href="#" class="btn btn-light">Reserve Your Seat</a>
+        </div>
+        <div class="tastings-right reveal">
+          <div class="capture-box">
+            <h3>Join the Tea Practice</h3>
+            <p>Not a newsletter — a rhythm. Tasting notes, new arrivals, and invitations to go deeper. One email per week, written with the same care we put into the tea.</p>
+            <form class="capture" onsubmit="return false">
+              <input type="email" placeholder="your@email.com" required />
+              <button type="submit" class="btn btn-dark">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ PAST TASTINGS / YOUTUBE ══ -->
+    <section class="yt-section">
+      <div class="yt-inner reveal">
+        <span class="label">Watch Past Tastings</span>
+        <h2>50+ sessions on YouTube</h2>
+        <p>Can't make a Saturday? Our full tasting archive lives on YouTube. Each session is a standalone masterclass on a single tea — watch at your own pace, brew along at home.</p>
+        <a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener" class="btn btn-dark">Watch on YouTube &rarr;</a>
+      </div>
+    </section>
+
+    <!-- ══ HOW IT WORKS ══ -->
+    <section class="brewing">
+      <div class="brewing-grid">
+        <div class="brewing-text reveal">
+          <span class="label">How It Works</span>
+          <h2>Three simple steps</h2>
+          <p>No experience required. No equipment beyond what you already have. Just show up curious.</p>
+        </div>
+        <div class="brewing-steps reveal">
+          <div class="brew-step">
+            <div class="step-num">01</div>
+            <div>
+              <h3>Get the tea</h3>
+              <p>We announce each week's tea in advance. Order it from our shop or use what you have — we'll tell you what you need.</p>
+            </div>
+          </div>
+          <div class="brew-step">
+            <div class="step-num">02</div>
+            <div>
+              <h3>Join on Saturday</h3>
+              <p>Hop on Zoom with your tea, hot water, and a cup. Sophie guides the session — you taste along in real time.</p>
+            </div>
+          </div>
+          <div class="brew-step">
+            <div class="step-num">03</div>
+            <div>
+              <h3>Keep the practice going</h3>
+              <p>After the tasting, you'll have notes, vocabulary, and a new tea in your rotation. Come back next Saturday or explore on your own.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand"><span class="footer-logo">sophie's cuppa tea</span><p class="footer-motto">Tea for a Long Life.</p><p class="footer-loc">Oakland, California</p></div>
+        <div class="footer-cols">
+          <div class="footer-col"><h4>Shop</h4><a href="shop.html">All Teas</a><a href="shop.html">Green</a><a href="shop.html">Wulong</a><a href="shop.html">Red</a><a href="shop.html">White</a></div>
+          <div class="footer-col"><h4>Learn</h4><a href="learn.html">Tea Types</a><a href="learn.html">How to Brew</a><a href="learn.html">Tasting Guide</a><a href="learn.html">FAQ</a></div>
+          <div class="footer-col"><h4>Community</h4><a href="tastings.html">Tastings</a><a href="tastings.html">Events</a><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener">YouTube</a><a href="about.html">Contact</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Sophie's Cuppa Tea. All rights reserved.</p></div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

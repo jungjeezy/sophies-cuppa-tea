@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop — Sophie's Cuppa Tea</title>
+    <meta name="description" content="Browse our Hero 12 teas — the best place to start your tea journey." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo">sophie's cuppa tea</a>
+      <div class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="shop.html" class="is-current">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="tastings.html">Tastings</a>
+        <a href="about.html">About</a>
+      </div>
+      <a href="shop.html" class="nav-btn">Explore Teas</a>
+      <button class="nav-burger" aria-label="Menu"><span></span><span></span></button>
+    </nav>
+
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <span class="breadcrumb-current">Shop</span>
+    </div>
+
+    <section class="page-hero page-hero--compact">
+      <span class="label">The Hero 12</span>
+      <h1>Where to begin.</h1>
+      <p class="hero-sub">Twelve single-source teas, each from a specific farmer or processor Sophie has worked with for years. No blending, no brokers — just the tea and the person who made it.</p>
+    </section>
+
+    <!-- ══ HERO 12 COLLECTION ══ -->
+    <section class="collection" id="collection">
+      <div class="filter-row reveal">
+        <button class="filter is-on" data-f="all">All</button>
+        <button class="filter" data-f="wulong">Wulong</button>
+        <button class="filter" data-f="green">Green</button>
+        <button class="filter" data-f="white">White</button>
+        <button class="filter" data-f="red">Red</button>
+      </div>
+
+      <div class="grid">
+        <article class="card reveal" data-cat="wulong">
+          <div class="card-img"><img src="./img/golden-osmanthus.jpg" alt="Golden Osmanthus" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
+          <h3>Golden Osmanthus</h3>
+          <p class="origin">Anxi, Fujian</p>
+          <p class="desc">Honey, sweet potato, and popcorn warmth with floral brightness. A lightly oxidized southern Fujian wulong — just 10-12% — preserving extraordinary freshness.</p>
+          <div class="flavors"><span>Honey</span><span>Sweet Potato</span><span>Floral</span></div>
+          <div class="card-foot"><span class="level">Intermediate</span><a href="https://youtu.be/B2vBEp8vV30" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="wulong">
+          <div class="card-img"><img src="./img/harmony.png" alt="Harmony" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
+          <h3>Harmony</h3>
+          <p class="origin">Anxi, Fujian</p>
+          <p class="desc">Roasty entrance, then florality and caramel unfold. An Iron Goddess varietal with medium roast — vanilla, orange blossom, and a long-lasting finish.</p>
+          <div class="flavors"><span>Caramel</span><span>Floral</span><span>Vanilla</span></div>
+          <div class="card-foot"><span class="level">Intermediate</span><a href="https://youtu.be/nFRinOngUh0" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="wulong">
+          <div class="card-img"><img src="./img/iron-goddess-special.jpg" alt="Iron Goddess Special" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
+          <h3>Iron Goddess Special</h3>
+          <p class="origin">Anxi, Fujian</p>
+          <p class="desc">Deep raisin, chocolate, and coffee-like roastiness. Custom-roasted for Sophie's to bridge tea lovers and coffee drinkers — smooth, spicy, and utterly compelling.</p>
+          <div class="flavors"><span>Chocolate</span><span>Raisin</span><span>Coffee</span></div>
+          <div class="card-foot"><span class="level">Adventurous</span><a href="https://youtu.be/aU_iEf2T4vI" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="wulong">
+          <div class="card-img"><img src="./img/white-orchid.png" alt="White Orchid" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
+          <h3>White Orchid</h3>
+          <p class="origin">Southern Fujian</p>
+          <p class="desc">Natural milk aroma, ripe fruit, caramel, and a buttery viscosity that coats the palate. A small varietal in the Iron Goddess family with an intoxicating presence.</p>
+          <div class="flavors"><span>Milk</span><span>Caramel</span><span>Buttery</span></div>
+          <div class="card-foot"><span class="level">Intermediate</span><a href="https://youtu.be/nXkf2gUZFZ0" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="red">
+          <div class="card-img"><img src="./img/red-tea.png" alt="Red Border" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--red">Red Tea</span><span class="temp">175°F</span></div>
+          <h3>Red Border</h3>
+          <p class="origin">China</p>
+          <p class="desc">A warming, complex red tea with the depth and character that defines what the West calls "black tea" — but with an ocean of nuance beyond the supermarket bag.</p>
+          <div class="flavors"><span>Warming</span><span>Complex</span><span>Rich</span></div>
+          <div class="card-foot"><span class="level">Intermediate</span><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener" class="yt-link">More Tastings &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="wulong">
+          <div class="card-img"><img src="./img/black-peony.png" alt="Black Peony" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
+          <h3>Black Peony</h3>
+          <p class="origin">China</p>
+          <p class="desc">A wulong with the depth and darkness its name suggests — roasted complexity, layered character, and the kind of presence that fills a room.</p>
+          <div class="flavors"><span>Roasted</span><span>Deep</span><span>Layered</span></div>
+          <div class="card-foot"><span class="level">Adventurous</span><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener" class="yt-link">More Tastings &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="wulong">
+          <div class="card-img"><img src="./img/golden-goddess.jpg" alt="Golden Goddess" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--wulong">Cliff Tea</span><span class="temp">200°F</span></div>
+          <h3>Golden Goddess</h3>
+          <p class="origin">Wuyi Mountains, Fujian</p>
+          <p class="desc">Apricot, passion fruit, and dried plum lead — then roastiness and minerality arrive beneath. From above 2,400 ft in the Wuyi Mountains. A cliff tea that surprises with smoothness.</p>
+          <div class="flavors"><span>Apricot</span><span>Passion Fruit</span><span>Mineral</span></div>
+          <div class="card-foot"><span class="level">Intermediate</span><a href="https://youtu.be/eZnDC39BeAM" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="wulong">
+          <div class="card-img"><img src="./img/golden-resurrection.jpg" alt="Golden Resurrection" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--wulong">Cliff Tea</span><span class="temp">200°F</span></div>
+          <h3>Golden Resurrection</h3>
+          <p class="origin">Wuyi Mountains, Fujian</p>
+          <p class="desc">Thick, coating, floral up front with minerality that creates juiciness. Buttery with caramel and chocolate hints. The perfect entry cliff tea — mellow, dense, and approachable.</p>
+          <div class="flavors"><span>Floral</span><span>Butter</span><span>Caramel</span></div>
+          <div class="card-foot"><span class="level level--begin">Great First Cliff Tea</span><a href="https://youtu.be/VX0CmPTRsEM" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="green">
+          <div class="card-img"><img src="./img/hale-and-hearty.png" alt="Hale and Hearty" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--green">Green Tea</span><span class="temp">175°F</span></div>
+          <h3>Hale and Hearty</h3>
+          <p class="origin">Fujian</p>
+          <p class="desc">A USDA certified organic green tea with bright, refreshing character. Clean and enlivening — the kind of cup that resets your afternoon.</p>
+          <div class="flavors"><span>Bright</span><span>Clean</span><span>Refreshing</span></div>
+          <div class="card-foot"><span class="level level--begin">Beginner-Friendly</span><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener" class="yt-link">More Tastings &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="green">
+          <div class="card-img"><img src="./img/plush-peak.png" alt="Plush Peak" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--green">Green Tea</span><span class="temp">175°F</span></div>
+          <h3>Plush Peak</h3>
+          <p class="origin">Central Fujian &middot; 4,500 ft</p>
+          <p class="desc">Grassy, juicy, with gentle toastiness that reveals itself slowly. USDA organic, hand-picked at altitude. So good that Japanese matcha producers sourced it for blending.</p>
+          <div class="flavors"><span>Grassy</span><span>Juicy</span><span>Toasted</span></div>
+          <div class="card-foot"><span class="level level--begin">Beginner-Friendly</span><a href="https://youtu.be/t2Ai7Hs4vHI" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="green">
+          <div class="card-img"><img src="./img/silver-tip.png" alt="Silver Tip" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--green">Green Tea</span><span class="temp">175°F</span></div>
+          <h3>Silver Tip</h3>
+          <p class="origin">China</p>
+          <p class="desc">A premium green tea with silvery buds that signal exceptional quality. Delicate, bright, and refined — the kind of tea that teaches you what green tea can be.</p>
+          <div class="flavors"><span>Delicate</span><span>Bright</span><span>Refined</span></div>
+          <div class="card-foot"><span class="level">Intermediate</span><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener" class="yt-link">More Tastings &rarr;</a></div>
+        </article>
+
+        <article class="card reveal" data-cat="white">
+          <div class="card-img"><img src="./img/white-peony.jpg" alt="White Peony" loading="lazy" /></div>
+          <div class="card-head"><span class="tag tag--white">White Tea</span><span class="temp">175°F</span></div>
+          <h3>White Peony</h3>
+          <p class="origin">Fuding, Fujian &middot; Aged 7+ years</p>
+          <p class="desc">Full-bodied, piquant, with hints of chocolate and cider. Aged to "treasure" status in Chinese classification — nourishing, restorative, and deeply comforting.</p>
+          <div class="flavors"><span>Chocolate</span><span>Cider</span><span>Restorative</span></div>
+          <div class="card-foot"><span class="level">Adventurous</span><a href="https://youtu.be/gTuFmf9q2C4" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ══ FULL COLLECTION ══ -->
+    <section class="browse">
+      <div class="browse-head reveal">
+        <span class="label">The Full Collection</span>
+        <h2>Beyond the Hero 12.</h2>
+        <p>400+ single-source teas, organized by type. Each one sourced directly from the farmer who made it.</p>
+        <a href="find.html" class="btn btn-dark" style="margin-top:24px">Find Your Tea by Taste &rarr;</a>
+      </div>
+      <div class="browse-grid">
+        <a href="https://www.sophiescuppatea.com/collections/green-tea" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#4a7c4e">
+          <span class="browse-dot"></span>
+          <h3>Green Tea</h3>
+          <p>Bright, vegetal, alive. Pan-fired to preserve the leaf's most direct expression.</p>
+          <span class="browse-count">18+ teas</span>
+        </a>
+        <a href="https://www.sophiescuppatea.com/collections/red-tea" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#b84033">
+          <span class="browse-dot"></span>
+          <h3>Red Tea</h3>
+          <p>Warming, complex, full. What the West calls "black tea" — with real depth.</p>
+          <span class="browse-count">45+ teas</span>
+        </a>
+        <a href="https://www.sophiescuppatea.com/collections/wulong-tea" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#7a6a55">
+          <span class="browse-dot"></span>
+          <h3>Wulong</h3>
+          <p>Partially oxidized, roasted. 25+ processing steps. Mineral, caramel, evolving.</p>
+          <span class="browse-count">30+ teas</span>
+        </a>
+        <a href="https://www.sophiescuppatea.com/collections/white-tea" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#b8a07a">
+          <span class="browse-dot"></span>
+          <h3>White Tea</h3>
+          <p>Sun-dried, minimal processing. Quiet, luminous, layered across multiple steeps.</p>
+          <span class="browse-count">15+ teas</span>
+        </a>
+        <a href="https://www.sophiescuppatea.com/collections/yellow-tea" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#c9a020">
+          <span class="browse-dot"></span>
+          <h3>Yellow Tea</h3>
+          <p>Rare. A secret yellowing step transforms the leaf — cocoa butter, cream, malt.</p>
+          <span class="browse-count">Rare selection</span>
+        </a>
+        <a href="https://www.sophiescuppatea.com/collections/black-tea" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#3d3530">
+          <span class="browse-dot"></span>
+          <h3>Fermented</h3>
+          <p>Microbially transformed, aged. Earth, caramel, clean depth that changes over decades.</p>
+          <span class="browse-count">20+ teas</span>
+        </a>
+        <a href="https://www.sophiescuppatea.com/collections/raw-black-sheng-puer-tea" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#5a4e3e">
+          <span class="browse-dot"></span>
+          <h3>Raw Black</h3>
+          <p>Sheng pu-erh. Partially preserved enzymes allow the tea to evolve over years.</p>
+          <span class="browse-count">15+ teas</span>
+        </a>
+        <a href="https://www.sophiescuppatea.com/collections/jasmine-green-teas" target="_blank" rel="noopener" class="browse-card reveal" style="--bc:#6a8a5a">
+          <span class="browse-dot"></span>
+          <h3>Jasmine</h3>
+          <p>Green tea scented with fresh jasmine blossoms. Fragrant, smooth, and calming.</p>
+          <span class="browse-count">Select offerings</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══ SPOTLIGHT ══ -->
+    <section class="spotlight">
+      <div class="spotlight-card reveal">
+        <div class="spotlight-img"><img src="./img/golden-resurrection.jpg" alt="Golden Resurrection" /></div>
+        <div class="spotlight-left">
+          <span class="label">Perfect Entry Cliff Tea</span>
+          <h2>Golden Resurrection</h2>
+          <p class="spotlight-type">Cliff Tea (Yan Cha) &middot; Wuyi Mountains, Fujian</p>
+          <p>Thick, coating, and floral up front. Minerality combines with florality to create an unexpected juiciness. Buttery caramel and chocolate hints emerge on warm leaves. Mellow and approachable — rated in the top 2-3 of Sophie's 9-week cliff tea series.</p>
+          <blockquote>"A great entry cliff tea — it catches many cliff tea characteristics without being obscure or extreme."</blockquote>
+        </div>
+        <div class="spotlight-right">
+          <div class="detail"><span>Temperature</span><strong>200°F</strong></div>
+          <div class="detail"><span>Leaf Amount</span><strong>6 grams</strong></div>
+          <div class="detail"><span>First Steep</span><strong>3 minutes</strong></div>
+          <div class="detail"><span>Vessel</span><strong>Yixing clay pot</strong></div>
+          <div class="detail"><span>Character</span><strong>Dense, floral, juicy</strong></div>
+          <div class="detail"><span>Best For</span><strong>Cliff tea beginners</strong></div>
+          <a href="#" class="btn btn-dark" style="margin-top:24px;width:100%">Shop Golden Resurrection</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand"><span class="footer-logo">sophie's cuppa tea</span><p class="footer-motto">Tea for a Long Life.</p><p class="footer-loc">Oakland, California</p></div>
+        <div class="footer-cols">
+          <div class="footer-col"><h4>Shop</h4><a href="shop.html">All Teas</a><a href="shop.html">Green</a><a href="shop.html">Wulong</a><a href="shop.html">Red</a><a href="shop.html">White</a></div>
+          <div class="footer-col"><h4>Learn</h4><a href="learn.html">Tea Types</a><a href="learn.html">How to Brew</a><a href="learn.html">Tasting Guide</a><a href="learn.html">FAQ</a></div>
+          <div class="footer-col"><h4>Community</h4><a href="tastings.html">Tastings</a><a href="tastings.html">Events</a><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener">YouTube</a><a href="about.html">Contact</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Sophie's Cuppa Tea. All rights reserved.</p></div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

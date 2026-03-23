@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tea Detail — Sophie's Cuppa Tea</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo">sophie's cuppa tea</a>
+      <div class="nav-center">
+        <a href="index.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="learn.html">Learn</a>
+        <a href="tastings.html">Tastings</a>
+        <a href="about.html">About</a>
+      </div>
+      <a href="shop.html" class="nav-btn">Explore Teas</a>
+      <button class="nav-burger" aria-label="Menu"><span></span><span></span></button>
+    </nav>
+
+    <div class="breadcrumbs">
+      <a href="index.html">Home</a>
+      <span>/</span>
+      <a href="shop.html">Shop</a>
+      <span>/</span>
+      <a href="find.html">Find Your Tea</a>
+      <span>/</span>
+      <span class="breadcrumb-current" id="breadcrumbName">Tea</span>
+    </div>
+
+    <!-- ══ PRODUCT DETAIL ══ -->
+    <section class="pdp">
+      <div class="pdp-grid">
+
+        <!-- LEFT: Image / visual -->
+        <div class="pdp-media">
+          <div class="pdp-image" id="pdpImage">
+            <div class="pdp-image-placeholder">
+              <span id="pdpTypeIcon"></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: Info + buy -->
+        <div class="pdp-info">
+          <div class="pdp-info-scroll">
+            <span class="pdp-type-badge" id="pdpTypeBadge"></span>
+            <h1 class="pdp-title" id="pdpTitle"></h1>
+            <p class="pdp-region" id="pdpRegion"></p>
+            <p class="pdp-taste-family" id="pdpTaste"></p>
+
+            <!-- Price -->
+            <div class="pdp-price">
+              <span class="pdp-price-amount">From $12</span>
+              <span class="pdp-price-note">per ounce &middot; Single-source</span>
+            </div>
+
+            <!-- Quick details -->
+            <div class="pdp-details">
+              <div class="pdp-detail">
+                <span class="pdp-detail-label">Brew Temp</span>
+                <span class="pdp-detail-value" id="pdpTemp"></span>
+              </div>
+              <div class="pdp-detail">
+                <span class="pdp-detail-label">First Steep</span>
+                <span class="pdp-detail-value" id="pdpSteep"></span>
+              </div>
+              <div class="pdp-detail">
+                <span class="pdp-detail-label">Taste</span>
+                <span class="pdp-detail-value" id="pdpTasteDetail"></span>
+              </div>
+            </div>
+
+            <!-- Flavors -->
+            <div class="pdp-section">
+              <h3>Flavor Notes</h3>
+              <div class="pdp-flavors" id="pdpFlavors"></div>
+            </div>
+
+            <!-- Mood / Benefits -->
+            <div class="pdp-section">
+              <h3>Good For</h3>
+              <div class="pdp-moods" id="pdpMoods"></div>
+            </div>
+
+            <!-- Size selector -->
+            <div class="pdp-section">
+              <h3>Size</h3>
+              <div class="pdp-sizes">
+                <button class="pdp-size" data-size="1">1 oz <span>Sample</span></button>
+                <button class="pdp-size is-selected" data-size="2">2 oz <span>Standard</span></button>
+                <button class="pdp-size" data-size="4">4 oz <span>Stock Up</span></button>
+              </div>
+            </div>
+
+            <!-- Quantity -->
+            <div class="pdp-section">
+              <h3>Quantity</h3>
+              <div class="pdp-qty">
+                <button class="pdp-qty-btn" id="qtyMinus">−</button>
+                <span class="pdp-qty-num" id="qtyNum">1</span>
+                <button class="pdp-qty-btn" id="qtyPlus">+</button>
+              </div>
+            </div>
+
+            <!-- Add to cart -->
+            <button class="pdp-add" id="pdpAdd">Add to Cart</button>
+
+            <!-- Sourcing note -->
+            <div class="pdp-trust">
+              <div class="pdp-trust-item">
+                <strong>Single-Source</strong>
+                <p>From one specific farmer — not blended from multiple suppliers.</p>
+              </div>
+              <div class="pdp-trust-item">
+                <strong>Direct Relationship</strong>
+                <p>Sophie sources this tea directly. No brokers, no middlemen.</p>
+              </div>
+              <div class="pdp-trust-item">
+                <strong>Brewing Guide Included</strong>
+                <p>Every order includes detailed brewing instructions for this tea.</p>
+              </div>
+            </div>
+
+            <!-- YouTube -->
+            <div class="pdp-section" id="pdpVideoSection" style="display:none">
+              <h3>Watch the Tasting</h3>
+              <a href="#" id="pdpVideoLink" target="_blank" rel="noopener" class="pdp-video-link">
+                Watch Sophie taste this tea on YouTube &rarr;
+              </a>
+            </div>
+
+            <!-- Similar teas -->
+            <div class="pdp-section">
+              <h3>Similar Teas</h3>
+              <div class="pdp-similar" id="pdpSimilar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ STICKY BUY BAR (mobile + scroll) ══ -->
+    <div class="sticky-buy" id="stickyBuy">
+      <div class="sticky-buy-inner">
+        <div class="sticky-buy-info">
+          <strong id="stickyName"></strong>
+          <span id="stickyPrice">From $12/oz</span>
+        </div>
+        <button class="btn btn-dark sticky-buy-btn" id="stickyAdd">Add to Cart</button>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="footer-brand"><span class="footer-logo">sophie's cuppa tea</span><p class="footer-motto">Tea for a Long Life.</p><p class="footer-loc">Oakland, California</p></div>
+        <div class="footer-cols">
+          <div class="footer-col"><h4>Shop</h4><a href="shop.html">All Teas</a><a href="find.html">Find Your Tea</a><a href="shop.html">Hero 12</a></div>
+          <div class="footer-col"><h4>Learn</h4><a href="learn.html">Tea Types</a><a href="learn.html">How to Brew</a><a href="learn.html">Tasting Guide</a></div>
+          <div class="footer-col"><h4>Community</h4><a href="tastings.html">Tastings</a><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener">YouTube</a><a href="about.html">Contact</a></div>
+        </div>
+      </div>
+      <div class="footer-bottom"><p>&copy; 2025 Sophie's Cuppa Tea. All rights reserved.</p></div>
+    </footer>
+
+    <script src="./script.js"></script>
+    <script src="./tea-detail.js"></script>
+  </body>
+</html>
