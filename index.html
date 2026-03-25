@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sophie's Cuppa Tea — Extraordinary Tea, Clear Guidance</title>
-    <meta name="description" content="Sophie's Cuppa Tea brings the depth and beauty of traditional Chinese tea culture into modern American life." />
+    <meta name="description" content="400+ single-source Chinese teas, sourced directly from the farmers who make them." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
 
-    <nav class="nav" id="nav">
-      <a href="index.html" class="nav-logo">sophie's cuppa tea</a>
+    <nav class="nav nav--transparent" id="nav">
+      <a href="index.html" class="nav-logo">Sophie's Cuppa Tea</a>
       <div class="nav-center">
         <a href="index.html" class="is-current">Home</a>
         <a href="shop.html">Shop</a>
+        <a href="find.html">Find Your Tea</a>
         <a href="learn.html">Learn</a>
         <a href="tastings.html">Tastings</a>
         <a href="about.html">About</a>
@@ -27,51 +28,110 @@
 
     <!-- ══ HERO ══ -->
     <section class="hero">
+      <div class="hero-bg">
+        <img src="./img/hero-fun.jpg" alt="" class="hero-bg-img" />
+      </div>
       <div class="hero-content">
-        <div class="hero-pill">Oakland, CA &middot; Since 1994</div>
-        <h1>Tea with depth, beauty, and a point&nbsp;of&nbsp;view.</h1>
-        <p class="hero-sub">Every tea sourced directly from the farmer who made it. No brokers, no blending, no middlemen — just thirty years of relationships and 400+ extraordinary Chinese teas.</p>
+        <h1>Tea with depth,<br/>beauty, and a<br/>point of view.</h1>
+        <div class="hero-line"></div>
+        <p class="hero-sub">400+ single-source Chinese teas. Every one sourced directly from the farmer who made it. No brokers. No blending. Thirty years of trust.</p>
         <div class="hero-btns">
-          <a href="shop.html" class="btn btn-dark">Shop the Collection</a>
-          <a href="find.html" class="btn btn-ghost">Find Your Tea &darr;</a>
+          <a href="shop.html" class="btn btn-light">Shop Teas</a>
+          <a href="find.html" class="btn btn-ghost-light">Find Your Tea</a>
         </div>
       </div>
-      <div class="hero-img">
-        <img src="./img/hero-tea.jpg" alt="Beautiful loose leaf tea" />
-      </div>
-      <div class="hero-metrics">
-        <div class="metric"><span class="metric-num">400+</span><span class="metric-label">Single-Source Teas</span></div>
-        <div class="metric"><span class="metric-num">30 yrs</span><span class="metric-label">Direct Relationships</span></div>
-        <div class="metric"><span class="metric-num">Zero</span><span class="metric-label">Middlemen</span></div>
+    </section>
+
+    <!-- ══ ESSENCE — minimal trust strip ══ -->
+    <section class="essence">
+      <div class="essence-inner">
+        <div class="essence-item"><span class="essence-num">400+</span><span class="essence-label">Single-source teas</span></div>
+        <div class="essence-divider"></div>
+        <div class="essence-item"><span class="essence-num">30</span><span class="essence-label">Years direct sourcing</span></div>
+        <div class="essence-divider"></div>
+        <div class="essence-item"><span class="essence-num">0</span><span class="essence-label">Middlemen</span></div>
+        <div class="essence-divider"></div>
+        <div class="essence-item"><span class="essence-num">6</span><span class="essence-label">Tea traditions</span></div>
       </div>
     </section>
 
-    <!-- ══ TEA TYPES PREVIEW ══ -->
-    <section class="types" id="types">
-      <div class="types-head reveal">
-        <span class="label">Start Here</span>
-        <h2>Six traditions,<br/>one plant.</h2>
+    <!-- ══ ABOUT — editorial ══ -->
+    <section class="editorial">
+      <div class="editorial-inner">
+        <div class="editorial-text reveal">
+          <p class="editorial-lead">Every tea we sell comes from one specific farmer — someone Sophie has visited, worked with, and trusted for years.</p>
+          <p>This isn't how most tea companies work. Most source through brokers or buy at auction. We go to the gardens ourselves. When you drink our tea, you know who made it.</p>
+          <a href="about.html" class="text-link">Our story &rarr;</a>
+        </div>
+        <div class="editorial-img reveal">
+          <img src="./img/pouring-tea.jpg" alt="Pouring freshly steeped tea through a strainer" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TEA TYPES — refined grid ══ -->
+    <section class="categories" id="types">
+      <div class="categories-head reveal">
+        <h2>Six traditions, one plant.</h2>
         <p>Every tea comes from <em>Camellia sinensis</em>. Processing makes them different.</p>
       </div>
-      <div class="types-row">
-        <div class="type-pill reveal" style="--c:#4a7c4e"><span class="type-dot"></span>Green<em>3 hero teas</em></div>
-        <div class="type-pill reveal" style="--c:#b8a07a"><span class="type-dot"></span>White<em>1 hero tea</em></div>
-        <div class="type-pill reveal" style="--c:#c9a020"><span class="type-dot"></span>Yellow<em>coming soon</em></div>
-        <div class="type-pill reveal" style="--c:#b84033"><span class="type-dot"></span>Red<em>1 hero tea</em></div>
-        <div class="type-pill reveal" style="--c:#7a6a55"><span class="type-dot"></span>Wulong<em>7 hero teas</em></div>
-        <div class="type-pill reveal" style="--c:#3d3530"><span class="type-dot"></span>Fermented<em>coming soon</em></div>
-      </div>
-      <div class="types-cta reveal">
-        <a href="shop.html" class="btn btn-dark">Browse the Hero 12</a>
+      <div class="categories-grid">
+        <a href="find.html" class="cat-card reveal">
+          <div class="cat-swatch" style="background:#3c6b3f"></div>
+          <div class="cat-info">
+            <h3>Green Tea</h3>
+            <p>Unoxidized, pan-fired. Bright, vegetal, alive.</p>
+          </div>
+          <span class="cat-count">18+</span>
+        </a>
+        <a href="find.html" class="cat-card reveal">
+          <div class="cat-swatch" style="background:#a83a2a"></div>
+          <div class="cat-info">
+            <h3>Red Tea</h3>
+            <p>Fully oxidized. Cherry, chocolate, warming depth.</p>
+          </div>
+          <span class="cat-count">45+</span>
+        </a>
+        <a href="find.html" class="cat-card reveal">
+          <div class="cat-swatch" style="background:#9a8e7a"></div>
+          <div class="cat-info">
+            <h3>White Tea</h3>
+            <p>Sun-dried, minimal. Quiet, luminous, layered.</p>
+          </div>
+          <span class="cat-count">15+</span>
+        </a>
+        <a href="find.html" class="cat-card reveal">
+          <div class="cat-swatch" style="background:#c49a2a"></div>
+          <div class="cat-info">
+            <h3>Yellow Tea</h3>
+            <p>Rare yellowing step. Cocoa butter, cream, malt.</p>
+          </div>
+          <span class="cat-count">Rare</span>
+        </a>
+        <a href="find.html" class="cat-card reveal">
+          <div class="cat-swatch" style="background:#7a6a55"></div>
+          <div class="cat-info">
+            <h3>Wulong</h3>
+            <p>25+ steps. Mineral, caramel, endlessly evolving.</p>
+          </div>
+          <span class="cat-count">30+</span>
+        </a>
+        <a href="find.html" class="cat-card reveal">
+          <div class="cat-swatch" style="background:#3d3530"></div>
+          <div class="cat-info">
+            <h3>Fermented</h3>
+            <p>Microbially transformed. Earth, depth, decades.</p>
+          </div>
+          <span class="cat-count">20+</span>
+        </a>
       </div>
     </section>
 
-    <!-- ══ FEATURED TEAS PREVIEW (3 cards) ══ -->
+    <!-- ══ HERO 12 PREVIEW ══ -->
     <section class="collection collection--home">
       <div class="collection-head reveal">
-        <span class="label">The Hero 12</span>
         <h2>Where to begin.</h2>
-        <p>Twelve teas that represent everything we do. Here are three to get you started.</p>
+        <p>The Hero 12 — twelve teas that represent everything we do.</p>
       </div>
       <div class="grid grid--3">
         <article class="card reveal">
@@ -79,11 +139,11 @@
           <div class="card-head"><span class="tag tag--wulong">Cliff Tea</span><span class="temp">200°F</span></div>
           <h3>Golden Resurrection</h3>
           <p class="origin">Wuyi Mountains, Fujian</p>
-          <p class="desc">The perfect entry cliff tea — floral, buttery, mellow, and approachable.</p>
+          <p class="desc">The perfect entry cliff tea — floral, buttery, mellow.</p>
           <div class="flavors"><span>Floral</span><span>Butter</span><span>Caramel</span></div>
           <div class="card-foot">
             <span class="level level--begin">Great First Cliff Tea</span>
-            <a href="https://youtu.be/VX0CmPTRsEM" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a>
+            <a href="https://youtu.be/VX0CmPTRsEM" target="_blank" rel="noopener" class="yt-link">Watch &rarr;</a>
           </div>
         </article>
         <article class="card reveal">
@@ -91,11 +151,11 @@
           <div class="card-head"><span class="tag tag--green">Green Tea</span><span class="temp">175°F</span></div>
           <h3>Plush Peak</h3>
           <p class="origin">Central Fujian &middot; 4,500 ft</p>
-          <p class="desc">Grassy, juicy, gently toasted. USDA organic, hand-picked at altitude.</p>
+          <p class="desc">Grassy, juicy, gently toasted. USDA organic.</p>
           <div class="flavors"><span>Grassy</span><span>Juicy</span><span>Toasted</span></div>
           <div class="card-foot">
             <span class="level level--begin">Beginner-Friendly</span>
-            <a href="https://youtu.be/t2Ai7Hs4vHI" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a>
+            <a href="https://youtu.be/t2Ai7Hs4vHI" target="_blank" rel="noopener" class="yt-link">Watch &rarr;</a>
           </div>
         </article>
         <article class="card reveal">
@@ -103,54 +163,34 @@
           <div class="card-head"><span class="tag tag--white">White Tea</span><span class="temp">175°F</span></div>
           <h3>White Peony</h3>
           <p class="origin">Fuding, Fujian &middot; Aged 7+ years</p>
-          <p class="desc">Aged to "treasure" status — chocolate, cider, deeply comforting.</p>
+          <p class="desc">Chocolate, cider, deeply comforting. Treasure status.</p>
           <div class="flavors"><span>Chocolate</span><span>Cider</span><span>Restorative</span></div>
           <div class="card-foot">
             <span class="level">Adventurous</span>
-            <a href="https://youtu.be/gTuFmf9q2C4" target="_blank" rel="noopener" class="yt-link">Watch Tasting &rarr;</a>
+            <a href="https://youtu.be/gTuFmf9q2C4" target="_blank" rel="noopener" class="yt-link">Watch &rarr;</a>
           </div>
         </article>
       </div>
-      <div class="types-cta reveal">
-        <a href="shop.html" class="btn btn-ghost">See All 12 Teas &rarr;</a>
+      <div class="section-cta reveal">
+        <a href="shop.html" class="btn btn-dark">See All 12 &rarr;</a>
       </div>
     </section>
 
-    <!-- ══ ABOUT TEASER ══ -->
-    <section class="about">
-      <div class="about-img reveal">
-        <img src="./img/hero-founders.jpg" alt="Sophie sourcing tea in China" />
-      </div>
-      <div class="about-grid">
-        <div class="about-left reveal">
-          <span class="label">Our Story</span>
-          <h2>Not just premium tea. A bridge into connoisseurship.</h2>
-        </div>
-        <div class="about-right reveal">
-          <p>Every tea in our collection comes from a single farmer or processor — someone Sophie knows personally, has visited, and has worked with for years. No brokers. No blended supply chains. When you buy from us, you know exactly where your tea was made and who made it.</p>
-          <a href="about.html" class="btn btn-ghost" style="margin-top:24px">Read Our Story &rarr;</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ══ TASTINGS TEASER ══ -->
-    <section class="tastings">
-      <div class="tastings-grid">
-        <div class="tastings-left reveal">
-          <span class="label label--light">Saturday Ritual</span>
+    <!-- ══ TASTINGS ══ -->
+    <section class="ritual">
+      <div class="ritual-inner">
+        <div class="ritual-text reveal">
           <h2>One tea at a time, together.</h2>
           <p>Every Saturday, Sophie guides a live virtual tasting — one tea, explored in depth. The single best way to build the habit of tea as ritual.</p>
-          <a href="tastings.html" class="btn btn-light">Learn More</a>
+          <a href="tastings.html" class="btn btn-light">Join a Tasting</a>
         </div>
-        <div class="tastings-right reveal">
-          <div class="capture-box">
-            <h3>Join the Tea Practice</h3>
-            <p>Not a newsletter — a rhythm. Tasting notes, new arrivals, and invitations to go deeper.</p>
-            <form class="capture" onsubmit="return false">
-              <input type="email" placeholder="your@email.com" required />
-              <button type="submit" class="btn btn-dark">Subscribe</button>
-            </form>
-          </div>
+        <div class="ritual-capture reveal">
+          <h3>Join the Tea Practice</h3>
+          <p>Tasting notes, new arrivals, invitations to go deeper. One email per week.</p>
+          <form class="capture" onsubmit="return false">
+            <input type="email" placeholder="your@email.com" required />
+            <button type="submit" class="btn btn-dark">Subscribe</button>
+          </form>
         </div>
       </div>
     </section>
@@ -158,14 +198,14 @@
     <footer class="footer">
       <div class="footer-top">
         <div class="footer-brand">
-          <span class="footer-logo">sophie's cuppa tea</span>
+          <span class="footer-logo">Sophie's Cuppa Tea</span>
           <p class="footer-motto">Tea for a Long Life.</p>
           <p class="footer-loc">Oakland, California</p>
         </div>
         <div class="footer-cols">
-          <div class="footer-col"><h4>Shop</h4><a href="shop.html">All Teas</a><a href="shop.html">Green</a><a href="shop.html">Wulong</a><a href="shop.html">Red</a><a href="shop.html">White</a></div>
-          <div class="footer-col"><h4>Learn</h4><a href="learn.html">Tea Types</a><a href="learn.html">How to Brew</a><a href="learn.html">Tasting Guide</a><a href="learn.html">FAQ</a></div>
-          <div class="footer-col"><h4>Community</h4><a href="tastings.html">Tastings</a><a href="tastings.html">Events</a><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener">YouTube</a><a href="about.html">Contact</a></div>
+          <div class="footer-col"><h4>Shop</h4><a href="shop.html">All Teas</a><a href="find.html">Find Your Tea</a><a href="shop.html">Hero 12</a></div>
+          <div class="footer-col"><h4>Learn</h4><a href="learn.html">Tea Types</a><a href="learn.html">How to Brew</a><a href="learn.html">Tasting Guide</a></div>
+          <div class="footer-col"><h4>Community</h4><a href="tastings.html">Tastings</a><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener">YouTube</a><a href="about.html">About</a></div>
         </div>
       </div>
       <div class="footer-bottom"><p>&copy; 2025 Sophie's Cuppa Tea. All rights reserved.</p></div>
