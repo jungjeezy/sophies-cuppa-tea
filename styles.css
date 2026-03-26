@@ -5,11 +5,11 @@
    ═══════════════════════════════════════════ */
 
 :root {
-  /* Core palette — desaturated forest, warm gold */
-  --forest: #1c2e24;
-  --emerald: #263e30;
-  --sage: #3d5e48;
-  --leaf: #5a7e62;
+  /* Core palette — muted forest, warm gold */
+  --forest: #1e2a24;
+  --emerald: #283832;
+  --sage: #3e5448;
+  --leaf: #5a7262;
   --mist: #c8d8c4;
   --cream: #f0f4ee;
   --white: #ffffff;
@@ -22,9 +22,9 @@
   --mid: rgba(255,255,255,0.5);
   --faint: rgba(255,255,255,0.22);
   --line: rgba(255,255,255,0.06);
-  --glass: rgba(255,255,255,0.04);
-  --glass-hover: rgba(255,255,255,0.07);
-  --glass-border: rgba(255,255,255,0.06);
+  --glass: rgba(255,255,255,0.06);
+  --glass-hover: rgba(255,255,255,0.1);
+  --glass-border: rgba(255,255,255,0.09);
 
   /* Tea type accents */
   --t-green: #7aaa7e;
@@ -113,7 +113,7 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
   min-height: 100vh; position: relative; overflow: hidden;
   display: flex; flex-direction: column; align-items: center; justify-content: center;
   text-align: center; color: var(--white); padding: 120px 40px 60px;
-  background: linear-gradient(170deg, var(--ink) 0%, var(--forest) 35%, var(--emerald) 65%, var(--forest) 100%);
+  background: linear-gradient(170deg, var(--ink) 0%, var(--forest) 40%, var(--emerald) 60%, var(--forest) 100%);
 }
 .hero::before {
   content: ''; position: absolute; inset: 0;
@@ -179,7 +179,7 @@ a.cat-card:hover { padding-left: 8px; }
   border-radius: var(--r-lg); overflow: hidden; cursor: pointer;
   display: flex; flex-direction: column; transition: all 0.4s var(--ease);
 }
-.card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.25); border-color: rgba(255,255,255,0.1); }
+.card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.3); border-color: rgba(255,255,255,0.14); background: var(--glass-hover); }
 .card.is-hidden { display: none; }
 .card-img { width: 100%; height: 200px; overflow: hidden; background: rgba(0,0,0,0.06); }
 .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
@@ -265,7 +265,7 @@ a.cat-card:hover { padding-left: 8px; }
 .browse-head p { margin-top: 8px; color: var(--mid); font-size: 0.9rem; }
 .browse-grid { display: grid !important; grid-template-columns: repeat(4, 1fr) !important; gap: 12px; max-width: 1000px; margin: 0 auto; }
 a.browse-card { display: flex !important; flex-direction: column; gap: 8px; background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--r-md); padding: 20px; text-decoration: none; color: var(--white); transition: all 0.3s var(--ease); }
-a.browse-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); border-color: rgba(255,255,255,0.1); }
+a.browse-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); border-color: rgba(255,255,255,0.14); background: var(--glass-hover); }
 .browse-dot { display: block; width: 8px; height: 8px; border-radius: 50%; background: var(--bc); }
 a.browse-card h3 { font-family: var(--serif); font-size: 1rem; font-weight: 400; padding: 0; margin: 0; }
 a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--faint); padding: 0; margin: 0; }
@@ -299,7 +299,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--faint); pa
 .learn-head p { margin-top: 8px; color: var(--mid); font-size: 0.9rem; }
 .learn-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; max-width: 1000px; margin: 0 auto; }
 .learn-card { background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--r-lg); padding: 32px; display: flex; flex-direction: column; text-decoration: none; color: inherit; transition: all 0.4s var(--ease); }
-.learn-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); border-color: rgba(255,255,255,0.1); }
+.learn-card:hover { transform: translateY(-3px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); border-color: rgba(255,255,255,0.14); background: var(--glass-hover); }
 .learn-num { font-family: var(--serif); font-size: 2rem; color: rgba(255,255,255,0.1); margin-bottom: 12px; }
 .learn-card h3 { font-size: 1.1rem; margin-bottom: 6px; }
 .learn-card p { font-size: 0.82rem; line-height: 1.65; color: var(--mid); flex: 1; }
@@ -418,7 +418,7 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
 .finder-group-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--white); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line); }
 .finder-grid { display: grid !important; grid-template-columns: repeat(3, 1fr) !important; gap: 10px; }
 .finder-results a.finder-card { display: flex !important; flex-direction: column !important; background: var(--glass); border: 1px solid var(--glass-border); border-radius: var(--r-md); padding: 16px; text-decoration: none; color: var(--white); transition: all 0.3s var(--ease); }
-.finder-results a.finder-card:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.1); }
+.finder-results a.finder-card:hover { transform: translateY(-2px); border-color: rgba(255,255,255,0.14); background: var(--glass-hover); }
 .finder-results .finder-card-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; padding: 0; }
 .finder-results .finder-type { font-size: 0.6rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
 .finder-results .finder-region { font-size: 0.6rem; font-weight: 600; color: var(--faint); }
