@@ -19,9 +19,9 @@
   --gold-text: #c8aa5a;
 
   --ink: #111e16;
-  --mid: rgba(255,255,255,0.5);
-  --faint: rgba(255,255,255,0.22);
-  --line: rgba(255,255,255,0.06);
+  --mid: rgba(255,255,255,0.72);
+  --faint: rgba(255,255,255,0.45);
+  --line: rgba(255,255,255,0.1);
   --glass: rgba(255,255,255,0.08);
   --glass-hover: rgba(255,255,255,0.12);
   --glass-border: rgba(255,255,255,0.04);
@@ -47,7 +47,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
 body {
-  font-family: var(--font); color: rgba(255,255,255,0.85);
+  font-family: var(--font); color: rgba(255,255,255,0.9);
   background: var(--forest); line-height: 1.65; font-size: 15px; overflow-x: hidden;
 }
 img { max-width: 100%; display: block; }
@@ -70,7 +70,7 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 .nav-logo { font-family: var(--serif); font-size: 1.15rem; color: var(--white); }
 .nav-center { display: flex; gap: 28px; }
 .nav-center a {
-  font-size: 0.8rem; font-weight: 500; color: var(--mid);
+  font-size: 0.8rem; font-weight: 500; color: rgba(255,255,255,0.6);
   letter-spacing: 0.03em; transition: color 0.3s; position: relative;
 }
 .nav-center a::after { content: ''; position: absolute; bottom: -4px; left: 0; height: 1px; width: 0; background: var(--gold-text); transition: width 0.3s var(--ease); }
@@ -125,11 +125,11 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
   z-index: 0;
 }
 .hero-bg { position: absolute; inset: 0; z-index: 0; }
-.hero-bg-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.15; filter: saturate(0.5); mix-blend-mode: luminosity; }
+.hero-bg-img { width: 100%; height: 100%; object-fit: cover; opacity: 0.2; filter: saturate(0.4) brightness(1.2); mix-blend-mode: luminosity; }
 .hero-content { position: relative; z-index: 1; max-width: 720px; }
 .hero h1 { font-size: clamp(2.8rem, 5.5vw, 4.8rem); text-shadow: 0 2px 40px rgba(0,0,0,0.2); }
 .hero-line { width: 48px; height: 1px; background: var(--gold); margin: 28px auto; opacity: 0.6; }
-.hero-sub { font-size: 0.95rem; line-height: 1.8; color: var(--mid); max-width: 520px; margin: 0 auto; }
+.hero-sub { font-size: 0.95rem; line-height: 1.8; color: rgba(255,255,255,0.75); max-width: 520px; margin: 0 auto; }
 .hero-btns { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px; justify-content: center; }
 
 /* ═══ ESSENCE ═══ */
@@ -153,7 +153,7 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 .categories { padding: 100px 48px; background: rgba(0,0,0,0.08); }
 .categories-head { max-width: 520px; margin: 0 auto 48px; text-align: center; }
 .categories-head h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); }
-.categories-head p { margin-top: 10px; font-size: 0.9rem; color: var(--mid); }
+.categories-head p { margin-top: 10px; font-size: 0.9rem; color: rgba(255,255,255,0.65); }
 .categories-grid { max-width: 800px; margin: 0 auto; }
 a.cat-card {
   display: flex; align-items: center; gap: 20px; padding: 20px 0;
@@ -165,8 +165,8 @@ a.cat-card:hover { padding-left: 8px; }
 .cat-swatch { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
 .cat-info { flex: 1; }
 .cat-info h3 { font-size: 1.1rem; }
-.cat-info p { font-size: 0.82rem; color: var(--mid); margin-top: 2px; }
-.cat-count { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); }
+.cat-info p { font-size: 0.82rem; color: rgba(255,255,255,0.6); margin-top: 2px; }
+.cat-count { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
 
 /* ═══ COLLECTION ═══ */
 .collection { padding: 100px 48px; }
@@ -249,7 +249,7 @@ a.cat-card:hover { padding-left: 8px; }
 .page-hero--compact { padding-top: 80px; }
 .page-hero h1 { font-size: clamp(2.2rem, 4vw, 3.6rem); max-width: 16ch; margin: 0 auto; }
 .page-hero .label { color: var(--gold-text); }
-.page-hero .hero-sub { max-width: 520px; margin: 16px auto 0; color: var(--mid); font-size: 0.92rem; }
+.page-hero .hero-sub { max-width: 520px; margin: 16px auto 0; color: rgba(255,255,255,0.65); font-size: 0.92rem; }
 
 /* ═══ ABOUT ═══ */
 .about { padding: 80px 48px; }
