@@ -308,6 +308,17 @@ a.cat-card:hover { padding-left: 8px; }
 .page-hero .hero-sub { max-width: 520px; margin: 16px auto 0; color: var(--mid); font-size: 0.92rem; }
 .nav-center a.is-current { color: var(--dark); }
 
+/* ═══ ABOUT (page sections) ═══ */
+.about { padding: 80px 48px; }
+.about-img { max-width: 1000px; margin: 0 auto 40px; border-radius: var(--r-lg); overflow: hidden; max-height: 400px; }
+.about-img img { width: 100%; height: 100%; object-fit: cover; }
+.about-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: start; }
+.about-left h2 { font-size: clamp(1.6rem, 2.5vw, 2.2rem); }
+.about-right p { font-size: 0.9rem; line-height: 1.8; color: var(--mid); margin-bottom: 14px; }
+.about-stats { display: flex; gap: 32px; margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.06); }
+.about-stats div { font-size: 0.78rem; color: var(--mid); }
+.about-stats strong { display: block; font-family: var(--serif); font-size: 1.6rem; font-weight: 400; color: var(--dark); }
+
 /* ═══ BROWSE ═══ */
 .browse { padding: 80px 48px; background: var(--warm); }
 .browse-head { text-align: center; max-width: 520px; margin: 0 auto 36px; }
@@ -519,6 +530,7 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
 /* ═══ RESPONSIVE — TABLET ═══ */
 @media (max-width: 1024px) {
   .nav { padding: 16px 28px; }
+  .about-grid { grid-template-columns: 1fr; gap: 32px; }
   .editorial-inner { grid-template-columns: 1fr; gap: 48px; }
   .editorial-img { max-height: 400px; }
   .grid, .grid--3 { grid-template-columns: repeat(2, 1fr); }
@@ -558,6 +570,9 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .essence-divider { display: none; }
   .essence { padding: 32px 20px; }
 
+  .about { padding: 48px 20px; }
+  .about-grid { grid-template-columns: 1fr; gap: 24px; }
+  .about-stats { flex-direction: column; gap: 14px; }
   .editorial { padding: 60px 20px; }
   .editorial-inner { grid-template-columns: 1fr; gap: 32px; }
   .editorial-img img { aspect-ratio: 3/2; }
