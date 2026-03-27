@@ -245,7 +245,7 @@ a.cat-card:hover { padding-left: 8px; }
 .breadcrumbs--light { padding: 80px 48px 0; }
 
 /* ═══ PAGE HERO ═══ */
-.page-hero { padding: 160px 48px 80px; text-align: center; border-bottom: 1px solid var(--line); }
+.page-hero { padding: 160px 48px 80px; text-align: center; }
 .page-hero--compact { padding-top: 80px; }
 .page-hero h1 { font-size: clamp(2.2rem, 4vw, 3.6rem); max-width: 16ch; margin: 0 auto; }
 .page-hero .label { color: var(--gold-text); }
