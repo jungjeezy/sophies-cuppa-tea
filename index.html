@@ -7,10 +7,25 @@
     <meta name="description" content="Sophie's Cuppa Tea brings the depth and beauty of traditional Chinese tea culture into modern American life." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Architects+Daughter&family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <!-- Illustration symbols loaded inline for <use> references -->
+    <div style="display:none" aria-hidden="true">
+      <!-- TEA LEAF -->
+      <svg xmlns="http://www.w3.org/2000/svg"><symbol id="tea-leaf" viewBox="0 0 100 60"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12,45 C18,42 28,14 52,8 C68,4 88,10 92,18 C96,26 89,38 74,44 C58,50 32,52 18,48 C12,46 10,46 12,45Z" stroke-width="2"/><path d="M16,44 C28,38 48,22 88,16" stroke-width="1.8"/><path d="M38,36 C42,30 50,24 58,19" stroke-width="1.3"/><path d="M52,40 C56,34 62,28 70,23" stroke-width="1.3"/><path d="M28,40 C32,34 38,28 44,22" stroke-width="1.2"/></g></symbol>
+      <!-- TEA LEAVES CLUSTER -->
+      <symbol id="tea-leaves-cluster" viewBox="0 0 120 80"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M20,60 C26,56 34,32 54,26 C66,22 80,26 84,32 C88,38 82,48 70,52 C56,56 36,58 24,54Z" stroke-width="1.8" transform="rotate(-15 50 40)"/><path d="M40,65 C44,62 50,42 66,38 C76,35 86,38 88,42 C90,46 86,52 76,55 C66,58 48,60 42,58Z" stroke-width="1.8" transform="rotate(10 65 50)"/><path d="M10,50 C14,48 20,34 34,30 C42,28 50,30 52,34 C54,38 50,42 42,44 C34,46 18,48 12,46Z" stroke-width="1.5" transform="rotate(-5 30 38)"/></g></symbol>
+      <!-- TEAPOT -->
+      <symbol id="teapot" viewBox="0 0 100 80"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M30,30 C30,18 42,10 55,10 C68,10 78,18 78,30 C78,46 72,58 55,62 C38,58 30,46 30,30Z" stroke-width="2"/><path d="M78,28 C82,26 90,28 92,34 C94,40 88,44 82,42" stroke-width="1.8"/><path d="M30,32 C26,30 18,32 16,36 C14,42 22,48 28,44" stroke-width="1.8"/><path d="M42,10 C42,4 48,2 55,2 C62,2 68,4 68,10" stroke-width="1.5"/><path d="M38,62 L38,68 L72,68 L72,62" stroke-width="1.5"/></g></symbol>
+      <!-- STEAM -->
+      <symbol id="steam" viewBox="0 0 40 80"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" opacity="0.6"><path d="M20,75 C22,65 14,58 18,48 C22,38 12,30 16,20 C20,10 14,4 18,0"/><path d="M28,72 C30,64 24,58 26,50 C28,42 22,36 24,28" opacity="0.4"/></g></symbol>
+      <!-- BRANCH -->
+      <symbol id="branch" viewBox="0 0 200 100"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10,80 C40,70 80,50 140,35 C160,30 180,28 195,30" stroke-width="2"/><path d="M60,60 C65,50 75,42 82,38" stroke-width="1.5"/><path d="M62,58 C58,48 56,38 60,30" stroke-width="1.3"/><path d="M100,44 C108,36 118,30 124,28" stroke-width="1.5"/><path d="M102,46 C96,38 94,28 98,20" stroke-width="1.3"/><path d="M140,36 C146,28 154,24 160,22" stroke-width="1.3"/><g transform="translate(56,26) rotate(-20)" stroke-width="1.2"><path d="M0,14 C4,10 10,2 18,0 C24,2 22,8 16,12 C10,14 4,14 0,14Z"/></g><g transform="translate(94,16) rotate(-10)" stroke-width="1.2"><path d="M0,14 C4,10 10,2 18,0 C24,2 22,8 16,12 C10,14 4,14 0,14Z"/></g><g transform="translate(76,38) rotate(20)" stroke-width="1.2"><path d="M0,10 C3,7 8,2 14,0 C18,2 16,6 12,9 C8,10 3,10 0,10Z"/></g></g></symbol>
+      <!-- WAVE DIVIDER -->
+      <symbol id="wave-divider" viewBox="0 0 400 20"><path d="M0,10 Q25,2 50,10 T100,10 T150,10 T200,10 T250,10 T300,10 T350,10 T400,10" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.3"/></symbol></svg>
+    </div>
 
     <nav class="nav" id="nav">
       <a href="index.html" class="nav-logo">sophie's cuppa tea</a>
@@ -27,6 +42,9 @@
 
     <!-- ══ HERO ══ -->
     <section class="hero">
+      <!-- Floating illustrations -->
+      <svg class="illus illus--hero-leaf" width="120" height="72" viewBox="0 0 100 60"><use href="#tea-leaf"/></svg>
+      <svg class="illus illus--hero-steam" width="32" height="64" viewBox="0 0 40 80"><use href="#steam"/></svg>
       <div class="hero-content">
         <div class="hero-pill">Oakland, CA &middot; Since 1994</div>
         <h1>Tea with depth, beauty, and a point&nbsp;of&nbsp;view.</h1>
@@ -46,8 +64,12 @@
       </div>
     </section>
 
+    <!-- Wave divider -->
+    <div style="text-align:center;padding:0 48px;"><svg width="100%" height="20" viewBox="0 0 400 20" preserveAspectRatio="none" style="max-width:600px;color:var(--line)"><use href="#wave-divider"/></svg></div>
+
     <!-- ══ TEA TYPES PREVIEW ══ -->
     <section class="types" id="types">
+      <svg class="illus illus--types-branch" width="180" height="90" viewBox="0 0 200 100"><use href="#branch"/></svg>
       <div class="types-head reveal">
         <span class="label">Start Here</span>
         <h2>Six traditions,<br/>one plant.</h2>
@@ -118,6 +140,7 @@
 
     <!-- ══ ABOUT TEASER ══ -->
     <section class="about">
+      <svg class="illus illus--about-leaves" width="100" height="67" viewBox="0 0 120 80"><use href="#tea-leaves-cluster"/></svg>
       <div class="about-img reveal">
         <img src="./img/hero-founders.jpg" alt="Sophie sourcing tea in China" />
       </div>
