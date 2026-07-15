@@ -33,34 +33,137 @@
         <a href="index.html" class="is-current">Home</a>
         <a href="shop.html">Shop</a>
         <a href="learn.html">Learn</a>
+        <a href="brewing.html">Brewing</a>
+        <a href="membership.html">Membership</a>
         <a href="tastings.html">Tastings</a>
         <a href="about.html">About</a>
       </div>
-      <a href="shop.html" class="nav-btn">Explore Teas</a>
+      <a href="membership.html" class="nav-btn">Join Tea Club</a>
       <button class="nav-burger" aria-label="Menu"><span></span><span></span></button>
     </nav>
 
     <!-- ══ HERO ══ -->
-    <section class="hero">
+    <section class="hero hero--label-system">
       <!-- Floating illustrations -->
       <svg class="illus illus--hero-leaf" width="120" height="72" viewBox="0 0 100 60"><use href="#tea-leaf"/></svg>
       <svg class="illus illus--hero-steam" width="32" height="64" viewBox="0 0 40 80"><use href="#steam"/></svg>
       <div class="hero-content">
         <div class="hero-pill">Oakland, CA &middot; Since 1994</div>
-        <h1>Tea with depth, beauty, and a point&nbsp;of&nbsp;view.</h1>
-        <p class="hero-sub">Every tea sourced directly from the farmer who made it. No brokers, no blending, no middlemen — just thirty years of relationships and 400+ extraordinary Chinese teas.</p>
+        <h1>Tea worth slowing down for.</h1>
+        <p class="hero-sub">Clean-sourced Chinese teas with the depth of an old practice and the clarity of a modern tasting room. Start with twelve guided selections, then go deeper with membership.</p>
         <div class="hero-btns">
-          <a href="shop.html" class="btn btn-dark">Shop the Collection</a>
-          <a href="find.html" class="btn btn-ghost">Find Your Tea &darr;</a>
+          <a href="shop.html" class="btn btn-dark">Shop Featured Teas</a>
+          <a href="membership.html" class="btn btn-ghost">Join Tea Club</a>
         </div>
       </div>
-      <div class="hero-img">
-        <img src="./img/hero-tea.jpg" alt="Beautiful loose leaf tea" />
+      <div class="family-board" aria-label="Sophie’s tea families and entry points">
+        <div class="family-feature">
+          <span class="family-band family-band--hero">featured teas</span>
+          <div class="family-art"></div>
+          <div class="family-copy">
+            <h2>Start here: twelve teas we would pour first.</h2>
+            <p>Twelve teas chosen to make a deep catalog approachable without flattening what makes each tea specific.</p>
+            <a href="shop.html">Browse the entry collection &rarr;</a>
+          </div>
+        </div>
+        <div class="family-card family-card--green">
+          <span class="family-band">green</span>
+          <strong>Bright, alive, seasonal</strong>
+          <p>Fresh teas with clarity, lift, and garden-like aromatics.</p>
+        </div>
+        <div class="family-card family-card--red">
+          <span class="family-band">red</span>
+          <strong>Sweet, warming, layered</strong>
+          <p>Comforting depth with fruit, cocoa, malt, and long finish.</p>
+        </div>
+        <div class="family-card family-card--wulong">
+          <span class="family-band">wulong</span>
+          <strong>Floral, mineral, unfolding</strong>
+          <p>The family where aroma and texture can keep changing cup by cup.</p>
+        </div>
       </div>
       <div class="hero-metrics">
-        <div class="metric"><span class="metric-num">400+</span><span class="metric-label">Single-Source Teas</span></div>
+        <div class="metric"><span class="metric-num">400+</span><span class="metric-label">Catalog Teas</span></div>
         <div class="metric"><span class="metric-num">30 yrs</span><span class="metric-label">Direct Relationships</span></div>
-        <div class="metric"><span class="metric-num">Zero</span><span class="metric-label">Middlemen</span></div>
+        <div class="metric"><span class="metric-num">12</span><span class="metric-label">Featured Teas</span></div>
+      </div>
+    </section>
+
+    <!-- ══ WHY SOPHIE'S ══ -->
+    <section class="brand-thesis">
+      <div class="brand-thesis-grid">
+        <div class="brand-thesis-copy reveal">
+          <span class="label">Why Sophie's</span>
+          <h2>The value is not just rarity. It is knowing what you are drinking.</h2>
+        </div>
+        <div class="brand-thesis-notes reveal">
+          <p>Sophie's is built around teas with traceable relationships, careful selection, and practical education. The point is not to make tea feel precious for its own sake. The point is to help customers taste the difference between anonymous commodity tea and a leaf chosen by people who have spent years learning the farmers, regions, processing styles, and brewing decisions behind it.</p>
+          <div class="thesis-points">
+            <div><span>01</span><strong>Clean sourcing</strong><p>Tea selected with close attention to farming practices, purity, and the people responsible for the finished leaf.</p></div>
+            <div><span>02</span><strong>Human guidance</strong><p>Turn a 400+ tea catalog into clear entry points: featured teas, brewing help, and membership for deeper learning.</p></div>
+            <div><span>03</span><strong>Cultural specificity</strong><p>Teach Chinese tea through real context, regions, processing, and relationships instead of flattening it into generic wellness.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ MEMBERSHIP CTA ══ -->
+    <section class="membership-band">
+      <div class="membership-band-inner reveal">
+        <span class="label label--light">Tea Club</span>
+        <h2>For people who want the human path through the catalog.</h2>
+        <p>Membership is not a subscription box. It is guided access to clean-sourced teas, seasonal judgment, brewing help, and the kind of context that makes rare tea easier to understand.</p>
+        <div class="hero-btns">
+          <a href="membership.html" class="btn btn-light">Explore Membership</a>
+          <a href="shop.html" class="btn btn-ghost btn-ghost--light">Explore Featured Teas</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ TEA IN PRACTICE ══ -->
+    <section class="practice-photos" aria-label="Tea at Sophie's">
+      <div class="practice-photos-head reveal">
+        <span class="label">Tea In Practice</span>
+        <p>Good leaves become meaningful through attention: watching them open, tasting what changes, and pouring another cup.</p>
+      </div>
+      <div class="practice-photos-grid">
+        <figure class="practice-photo practice-photo--large reveal">
+          <img src="./img/pouring-tea.jpg" alt="Freshly brewed loose-leaf tea being poured through a strainer" loading="lazy" />
+          <figcaption>Simple tools. Close attention.</figcaption>
+        </figure>
+        <figure class="practice-photo reveal">
+          <img src="./img/hero-tea.jpg" alt="A clear glass cup of brewed tea at Sophie's" loading="lazy" />
+          <figcaption>The leaf is the flavor.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ══ PURCHASE PATHS ══ -->
+    <section class="purchase-paths">
+      <div class="purchase-head reveal">
+        <span class="label">Start Where You Are</span>
+        <h2>Three clear paths into better tea.</h2>
+        <p>Each path answers a different customer hesitation: what to buy first, how to brew it well, and how to keep learning without guessing.</p>
+      </div>
+      <div class="path-grid">
+        <a href="shop.html" class="path-card path-card--featured reveal">
+          <span class="path-kicker">First Purchase</span>
+          <h3>Shop Featured Teas</h3>
+          <p>Twelve teas selected to show the range of Sophie’s without making a new customer decode the full catalog.</p>
+          <span class="path-action">Browse starter teas &rarr;</span>
+        </a>
+        <a href="brewing.html" class="path-card reveal">
+          <span class="path-kicker">Beginner Confidence</span>
+          <h3>Brew Better Tea</h3>
+          <p>A simple cup-and-strainer method that removes the pressure from brewing rare tea at home.</p>
+          <span class="path-action">See the method &rarr;</span>
+        </a>
+        <a href="membership.html" class="path-card reveal">
+          <span class="path-kicker">Highest Revenue Path</span>
+          <h3>Join Tea Club</h3>
+          <p>Guided annual access for customers who want John and Sophie to help them buy, brew, and understand tea more deeply.</p>
+          <span class="path-action">View membership &rarr;</span>
+        </a>
       </div>
     </section>
 
@@ -76,23 +179,23 @@
         <p>Every tea comes from <em>Camellia sinensis</em>. Processing makes them different.</p>
       </div>
       <div class="types-row">
-        <div class="type-pill reveal" style="--c:#4a7c4e"><span class="type-dot"></span>Green<em>3 hero teas</em></div>
-        <div class="type-pill reveal" style="--c:#b8a07a"><span class="type-dot"></span>White<em>1 hero tea</em></div>
+        <div class="type-pill reveal" style="--c:#4a7c4e"><span class="type-dot"></span>Green<em>3 featured teas</em></div>
+        <div class="type-pill reveal" style="--c:#b8a07a"><span class="type-dot"></span>White<em>1 featured tea</em></div>
         <div class="type-pill reveal" style="--c:#c9a020"><span class="type-dot"></span>Yellow<em>coming soon</em></div>
-        <div class="type-pill reveal" style="--c:#b84033"><span class="type-dot"></span>Red<em>1 hero tea</em></div>
-        <div class="type-pill reveal" style="--c:#7a6a55"><span class="type-dot"></span>Wulong<em>7 hero teas</em></div>
+        <div class="type-pill reveal" style="--c:#b84033"><span class="type-dot"></span>Red<em>1 featured tea</em></div>
+        <div class="type-pill reveal" style="--c:#7a6a55"><span class="type-dot"></span>Wulong<em>7 featured teas</em></div>
         <div class="type-pill reveal" style="--c:#3d3530"><span class="type-dot"></span>Fermented<em>coming soon</em></div>
       </div>
       <div class="types-cta reveal">
-        <a href="shop.html" class="btn btn-dark">Browse the Hero 12</a>
+        <a href="shop.html" class="btn btn-dark">Browse Featured Teas</a>
       </div>
     </section>
 
     <!-- ══ FEATURED TEAS PREVIEW (3 cards) ══ -->
     <section class="collection collection--home">
       <div class="collection-head reveal">
-        <span class="label">The Hero 12</span>
-        <h2>Where to begin.</h2>
+        <span class="label">Featured Teas</span>
+        <h2>Start here: twelve teas we would pour first.</h2>
         <p>Twelve teas that represent everything we do. Here are three to get you started.</p>
       </div>
       <div class="grid grid--3">
