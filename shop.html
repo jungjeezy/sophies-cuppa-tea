@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop — Sophie's Cuppa Tea</title>
-    <meta name="description" content="Browse our Hero 12 teas — the best place to start your tea journey." />
+    <meta name="description" content="Explore twelve featured teas Sophie’s would pour first." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
@@ -18,10 +18,12 @@
         <a href="index.html">Home</a>
         <a href="shop.html" class="is-current">Shop</a>
         <a href="learn.html">Learn</a>
+        <a href="brewing.html">Brewing</a>
+        <a href="membership.html">Membership</a>
         <a href="tastings.html">Tastings</a>
         <a href="about.html">About</a>
       </div>
-      <a href="shop.html" class="nav-btn">Explore Teas</a>
+      <a href="membership.html" class="nav-btn">Join Tea Club</a>
       <button class="nav-burger" aria-label="Menu"><span></span><span></span></button>
     </nav>
 
@@ -32,12 +34,62 @@
     </div>
 
     <section class="page-hero page-hero--compact">
-      <span class="label">The Hero 12</span>
-      <h1>Where to begin.</h1>
-      <p class="hero-sub">Twelve single-source teas, each from a specific farmer or processor Sophie has worked with for years. No blending, no brokers — just the tea and the person who made it.</p>
+      <span class="label">Featured Teas</span>
+      <h1>Start here: twelve teas we would pour first.</h1>
+      <p class="hero-sub">Twelve single-source teas chosen to show why Sophie's costs more: pesticide-free farming, direct sourcing, no flavorings, and leaves good enough to stand on their own.</p>
+      <div class="hero-btns hero-btns--center">
+        <a href="#collection" class="btn btn-dark">Shop Featured Teas</a>
+        <a href="brewing.html" class="btn btn-ghost">Learn Big Cup Brewing</a>
+      </div>
     </section>
 
-    <!-- ══ HERO 12 COLLECTION ══ -->
+    <section class="shop-intent">
+      <div class="shop-intent-grid">
+        <a href="#collection" class="shop-intent-card reveal">
+          <span>01</span>
+          <h3>I want an easy first order.</h3>
+          <p>Start with our featured teas and choose by tea type, flavor, or comfort level.</p>
+        </a>
+        <a href="membership.html" class="shop-intent-card reveal">
+          <span>02</span>
+          <h3>I want guided support.</h3>
+          <p>Tea Club turns the catalog into a curated path with human judgment.</p>
+        </a>
+        <a href="find.html" class="shop-intent-card reveal">
+          <span>03</span>
+          <h3>I know what I like.</h3>
+          <p>Use taste and mood filters to narrow the broader catalog.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══ CLEAN TEA TRUST STRIP ══ -->
+    <section class="browse" style="padding-top:24px;padding-bottom:48px">
+      <div class="browse-grid">
+        <a href="#collection" class="browse-card reveal" style="--bc:#4a7c4e">
+          <span class="browse-dot"></span>
+          <h3>Pesticide-free leaves</h3>
+          <p>Clean farming is the baseline for every featured tea.</p>
+        </a>
+        <a href="#collection" class="browse-card reveal" style="--bc:#7a6a55">
+          <span class="browse-dot"></span>
+          <h3>Single-source teas</h3>
+          <p>Each tea points back to a known maker or place.</p>
+        </a>
+        <a href="#collection" class="browse-card reveal" style="--bc:#b84033">
+          <span class="browse-dot"></span>
+          <h3>No flavorings</h3>
+          <p>The flavor comes from the leaf, roast, age, and brew.</p>
+        </a>
+        <a href="learn.html" class="browse-card reveal" style="--bc:#3d3530">
+          <span class="browse-dot"></span>
+          <h3>Big cup brewing</h3>
+          <p>Simple gear, repeatable method, better daily tea.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ══ FEATURED TEAS COLLECTION ══ -->
     <section class="collection" id="collection">
       <div class="filter-row reveal">
         <button class="filter is-on" data-f="all">All</button>
@@ -174,7 +226,7 @@
     <section class="browse">
       <div class="browse-head reveal">
         <span class="label">The Full Collection</span>
-        <h2>Beyond the Hero 12.</h2>
+        <h2>Beyond the featured teas.</h2>
         <p>400+ single-source teas, organized by type. Each one sourced directly from the farmer who made it.</p>
         <a href="find.html" class="btn btn-dark" style="margin-top:24px">Find Your Tea by Taste &rarr;</a>
       </div>
@@ -248,7 +300,7 @@
           <div class="detail"><span>Vessel</span><strong>Yixing clay pot</strong></div>
           <div class="detail"><span>Character</span><strong>Dense, floral, juicy</strong></div>
           <div class="detail"><span>Best For</span><strong>Cliff tea beginners</strong></div>
-          <a href="#" class="btn btn-dark" style="margin-top:24px;width:100%">Shop Golden Resurrection</a>
+          <a href="tea.html?name=Golden%20Resurrection" class="btn btn-dark" style="margin-top:24px;width:100%">Shop Golden Resurrection</a>
         </div>
       </div>
     </section>
