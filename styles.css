@@ -1217,12 +1217,25 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .gear-head, .brew-steps-head { max-width: 520px; margin: 0 auto 34px; text-align: center; }
 .gear-head h2, .brew-steps-head h2 { font-size: clamp(2rem, 3.2vw, 2.7rem); margin-top: 6px; }
 .gear-head p { margin-top: 8px; color: var(--mid); }
-.gear-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-.gear-card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 28px; display: flex; flex-direction: column; min-height: 410px; }
+.gear-grid { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.gear-card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 22px; display: flex; flex-direction: column; min-height: 430px; }
 .gear-card--tea { background: var(--ink); color: var(--paper); justify-content: flex-end; }
 .gear-card--tea h3 { color: var(--paper); }
 .gear-card--tea p { color: rgba(247,242,234,0.58); }
-.gear-visual { height: 130px; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; color: var(--ink); }
+.gear-visual { height: 150px; display: flex; align-items: center; justify-content: center; margin-bottom: 22px; color: var(--ink); }
+.gear-visual--photo {
+  overflow: hidden;
+  border-radius: 10px;
+  background: var(--paper-warm);
+  border: 1px solid rgba(47,75,82,0.08);
+}
+.gear-visual--photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 12px;
+  mix-blend-mode: multiply;
+}
 .gear-cup { width: 82px; height: 110px; display: block; border: 2px solid currentColor; border-top: none; border-radius: 0 0 22px 22px; position: relative; opacity: 0.7; }
 .gear-cup::before { content: ''; position: absolute; top: -10px; left: -12px; width: 106px; height: 20px; border: 2px solid currentColor; border-radius: 50%; background: var(--white); }
 .gear-strainer { width: 130px; height: 58px; border: 2px solid currentColor; border-radius: 50%; display: block; position: relative; opacity: 0.7; }
@@ -1636,7 +1649,7 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .ritual-inner, .tastings-grid { grid-template-columns: 1fr; gap: 32px; }
   .brewing-grid { grid-template-columns: 1fr; gap: 36px; }
   .brew-intro-grid, .membership-buy-grid { grid-template-columns: 1fr; }
-  .gear-grid { grid-template-columns: 1fr; }
+  .gear-grid { grid-template-columns: repeat(2, 1fr); }
   .brew-steps-grid { grid-template-columns: repeat(2, 1fr); }
   .membership-card { position: static; }
   .spotlight-card { grid-template-columns: 1fr; gap: 28px; padding: 36px; }
