@@ -1651,6 +1651,171 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   font-weight: 700;
 }
 
+/* ═══ TRAVEL PAGE ═══ */
+.travel-hero {
+  min-height: 620px;
+  padding: 160px 48px 72px;
+  display: flex;
+  align-items: flex-end;
+  background:
+    linear-gradient(90deg, rgba(17,25,23,0.76), rgba(17,25,23,0.18) 58%, rgba(244,246,243,0.86)),
+    url("./img/hero-founders.jpg") center / cover;
+  color: var(--paper);
+}
+.travel-hero-copy {
+  max-width: 680px;
+}
+.travel-hero .label {
+  color: var(--gold);
+}
+.travel-hero h1 {
+  max-width: 10ch;
+  margin-top: 8px;
+  color: var(--paper);
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+.travel-hero p {
+  max-width: 560px;
+  margin-top: 18px;
+  color: rgba(247,242,234,0.76);
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  line-height: 1.48;
+}
+.travel-proof {
+  padding: 92px 48px;
+  background: var(--paper);
+}
+.travel-proof-grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+.travel-proof-photo {
+  min-height: 520px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.travel-proof-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.86) contrast(0.96);
+}
+.travel-proof-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 44px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.72);
+}
+.travel-proof-copy h2,
+.travel-map-copy h2,
+.travel-gallery-head h2 {
+  margin-top: 8px;
+  font-size: clamp(2.2rem, 4vw, 3.7rem);
+}
+.travel-proof-copy p,
+.travel-map-copy p,
+.travel-gallery-head p {
+  margin-top: 16px;
+  color: var(--mid);
+  font-size: 0.94rem;
+  line-height: 1.82;
+}
+.travel-map {
+  padding: 96px 48px;
+  background:
+    linear-gradient(180deg, rgba(244,246,243,0.86), rgba(244,246,243,0.96)),
+    url("./img/plush-peak-session-bg.png") center / min(1180px, 112vw) auto no-repeat;
+}
+.travel-map-copy {
+  max-width: 620px;
+  margin: 0 auto 38px;
+  text-align: center;
+}
+.travel-note-grid {
+  max-width: 1050px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.travel-note {
+  min-height: 250px;
+  padding: 28px;
+  border: 1px solid rgba(47,75,82,0.12);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.72);
+  backdrop-filter: blur(12px);
+}
+.travel-note span {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.55rem;
+  color: var(--line);
+  margin-bottom: 16px;
+}
+.travel-note h3 {
+  font-size: 1.22rem;
+}
+.travel-note p {
+  margin-top: 10px;
+  color: var(--mid);
+  font-size: 0.82rem;
+  line-height: 1.7;
+}
+.travel-gallery {
+  padding: 96px 48px;
+  background: var(--paper);
+}
+.travel-gallery-head {
+  max-width: 620px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+.travel-gallery-grid {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr 0.9fr;
+  gap: 16px;
+}
+.travel-gallery-card {
+  position: relative;
+  min-height: 330px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--paper-warm);
+}
+.travel-gallery-card:first-child {
+  min-height: 430px;
+}
+.travel-gallery-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(0.96);
+}
+.travel-gallery-card figcaption {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  padding: 9px 12px;
+  border-radius: 6px;
+  background: rgba(17,25,23,0.72);
+  color: rgba(247,242,234,0.78);
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 /* ═══ FINDER ═══ */
 .finder { display: grid; grid-template-columns: 220px 1fr; gap: 36px; padding: 0 48px 80px; max-width: 1280px; margin: 0 auto; }
 .finder-sidebar { position: sticky; top: 80px; align-self: start; background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
@@ -1735,6 +1900,10 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .is-plush-peak-session .pdp-media { min-height: 360px; }
   .tea-session-grid { grid-template-columns: repeat(2, 1fr); }
   .session-card--large, .session-card--wide { grid-column: span 2; }
+  .travel-proof-grid { grid-template-columns: 1fr; }
+  .travel-note-grid { grid-template-columns: 1fr; }
+  .travel-gallery-grid { grid-template-columns: 1fr 1fr; }
+  .travel-gallery-card:first-child { grid-column: span 2; }
   .finder { grid-template-columns: 180px 1fr; gap: 20px; }
   .finder-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .learn-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1779,7 +1948,7 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .selection-seal strong { font-size: 0.9rem; }
   .selection-seal span, .selection-seal em { font-size: 0.48rem; }
   .hero-metrics { flex-direction: column; gap: 12px; }
-  .about, .types, .collection, .spotlight, .learn, .tastings, .values, .browse, .brewing, .yt-section, .ritual, .purchase-paths, .membership-band, .shop-intent, .brew-intro, .gear, .brew-steps-page, .brewing-shop-cta, .membership-buy, .membership-world, .brand-thesis, .practice-photos { padding-left: 16px; padding-right: 16px; }
+  .about, .types, .collection, .spotlight, .learn, .tastings, .values, .browse, .brewing, .yt-section, .ritual, .purchase-paths, .membership-band, .shop-intent, .brew-intro, .gear, .brew-steps-page, .brewing-shop-cta, .membership-buy, .membership-world, .travel-proof, .travel-map, .travel-gallery, .brand-thesis, .practice-photos { padding-left: 16px; padding-right: 16px; }
   .about-grid, .about-stats { grid-template-columns: 1fr; flex-direction: column; gap: 16px; }
   .types-row { flex-direction: column; align-items: stretch; }
   .grid, .grid--3, .path-grid, .shop-intent-grid, .gear-grid, .brew-intro-grid, .membership-buy-grid { grid-template-columns: 1fr; }
@@ -1814,6 +1983,15 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .session-card, .session-card--large, .session-card--wide { grid-column: auto; min-height: auto; padding: 22px; }
   .session-actions { flex-direction: column; }
   .session-actions a { justify-content: center; }
+  .travel-hero { min-height: 560px; padding: 116px 16px 44px; }
+  .travel-hero h1 { font-size: clamp(2.8rem, 14vw, 4.4rem); }
+  .travel-hero p { font-size: 1.05rem; }
+  .travel-proof, .travel-map, .travel-gallery { padding-top: 58px; padding-bottom: 58px; }
+  .travel-proof-copy { padding: 26px; }
+  .travel-proof-photo, .travel-gallery-card, .travel-gallery-card:first-child { min-height: 300px; }
+  .travel-map-copy, .travel-gallery-head { text-align: left; }
+  .travel-gallery-grid { grid-template-columns: 1fr; }
+  .travel-gallery-card:first-child { grid-column: auto; }
   .sticky-buy-inner { padding: 0 16px; }
   .finder { grid-template-columns: 1fr; padding: 0 16px 40px; }
   .finder-sidebar { position: static; padding: 16px; }
