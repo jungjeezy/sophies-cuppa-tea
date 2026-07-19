@@ -1347,8 +1347,8 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   font-size: 0.92rem;
   line-height: 1.82;
 }
-.membership-buy { padding: 40px 48px 90px; }
-.membership-buy-grid { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 28px; align-items: start; }
+.membership-buy { padding: 18px 48px 72px; }
+.membership-buy-grid { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 0.75fr 1.25fr; gap: 28px; align-items: start; }
 .membership-story { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 38px; }
 .membership-story h2 { font-size: clamp(1.9rem, 3vw, 2.6rem); margin-top: 8px; }
 .membership-story p { color: var(--mid); margin-top: 14px; }
