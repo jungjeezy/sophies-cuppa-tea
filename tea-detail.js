@@ -176,8 +176,8 @@
   });
 
   // Add to cart (placeholder)
-  function addToCart() {
-    const btn = document.getElementById('pdpAdd');
+  function addToCart(event) {
+    const btn = event && event.currentTarget ? event.currentTarget : document.getElementById('pdpAdd');
     const originalText = btn.textContent;
     btn.textContent = 'Added!';
     btn.style.background = '#4a7c4e';
@@ -185,4 +185,13 @@
   }
   document.getElementById('pdpAdd').addEventListener('click', addToCart);
   document.getElementById('stickyAdd').addEventListener('click', addToCart);
+  document.querySelectorAll('.plush-add').forEach(btn => {
+    btn.addEventListener('click', addToCart);
+  });
+  document.querySelectorAll('.plush-size-row button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.plush-size-row button').forEach(b => b.classList.remove('is-selected'));
+      btn.classList.add('is-selected');
+    });
+  });
 })();
