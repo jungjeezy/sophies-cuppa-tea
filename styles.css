@@ -1528,15 +1528,16 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   margin-top: 22px;
 }
 .plush-size-row button {
-  border: 1px solid var(--line);
+  border: 1px solid rgba(47,75,82,0.18);
   border-radius: 8px;
-  background: var(--paper);
+  background: var(--white);
   padding: 12px;
   color: var(--ink);
   font-family: var(--font);
   font-size: 0.82rem;
   font-weight: 700;
   text-align: left;
+  box-shadow: 0 8px 18px rgba(31,41,39,0.04);
 }
 .plush-size-row button small {
   display: block;
@@ -1616,13 +1617,15 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .plush-blog-actions a {
   display: inline-flex;
   justify-content: center;
-  border: 1px solid var(--line);
+  border: 1px solid rgba(47,75,82,0.18);
   border-radius: 999px;
   padding: 12px 18px;
   color: var(--ink);
+  background: var(--white);
   font-size: 0.78rem;
   font-weight: 700;
   text-decoration: none;
+  box-shadow: 0 8px 18px rgba(31,41,39,0.04);
 }
 .plush-blog-actions a:first-child {
   border-color: var(--ink);
@@ -1708,8 +1711,13 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   border-top: 2px solid rgba(47,75,82,0.18);
   border-bottom: 1px solid rgba(47,75,82,0.16);
   border-radius: 0;
-  background: rgba(247,242,234,0.34);
+  background: rgba(247,242,234,0.8);
   box-shadow: none;
+}
+.plush-dossier-buy .plush-add {
+  background: var(--ink);
+  color: var(--paper);
+  box-shadow: 0 12px 26px rgba(31,41,39,0.14);
 }
 .plush-field-guide {
   position: relative;
