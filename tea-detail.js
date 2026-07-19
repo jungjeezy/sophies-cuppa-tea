@@ -83,6 +83,10 @@
       imgEl.style.setProperty('--pdp-mark-line', mark.line);
       document.getElementById('pdpTypeIcon').textContent = visualNameMap[tea.name] || tea.name;
       document.getElementById('pdpTypeIcon').style.color = color;
+      if (tea.name === 'Plush Peak') {
+        imgEl.classList.add('pdp-story-art', 'pdp-story-art--plush-peak');
+        document.getElementById('pdpTypeIcon').textContent = 'Plush Peak';
+      }
 
       // Info
       const badge = document.getElementById('pdpTypeBadge');
