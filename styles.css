@@ -1260,6 +1260,78 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 
 /* ═══ MEMBERSHIP PAGE ═══ */
 .membership-hero { padding-bottom: 54px; }
+.membership-world {
+  padding: 18px 48px 72px;
+  background: var(--paper);
+}
+.membership-world-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.92fr 1.12fr 0.74fr;
+  gap: 18px;
+  align-items: stretch;
+}
+.membership-world-photo {
+  position: relative;
+  min-height: 430px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--paper-warm);
+}
+.membership-world-photo--tea {
+  min-height: 360px;
+  align-self: end;
+}
+.membership-world-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.82) contrast(0.96);
+}
+.membership-world-photo--field img {
+  object-position: center;
+}
+.membership-world-photo--tea img {
+  object-position: center 42%;
+}
+.membership-world-photo figcaption {
+  position: absolute;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background: rgba(17,25,23,0.72);
+  color: rgba(247,242,234,0.78);
+  font-size: 0.66rem;
+  font-weight: 600;
+  line-height: 1.45;
+  backdrop-filter: blur(10px);
+}
+.membership-world-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.72), rgba(255,255,255,0.94)),
+    url("./img/pouring-tea.jpg") right bottom / 62% auto no-repeat;
+}
+.membership-world-copy h2 {
+  max-width: 11ch;
+  margin-top: 8px;
+  font-size: clamp(2.2rem, 4vw, 3.6rem);
+}
+.membership-world-copy p {
+  max-width: 500px;
+  margin-top: 16px;
+  color: var(--mid);
+  font-size: 0.92rem;
+  line-height: 1.82;
+}
 .membership-buy { padding: 40px 48px 90px; }
 .membership-buy-grid { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 1.25fr 0.75fr; gap: 28px; align-items: start; }
 .membership-story { background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 38px; }
@@ -1651,6 +1723,9 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .brew-intro-grid, .membership-buy-grid { grid-template-columns: 1fr; }
   .gear-grid { grid-template-columns: repeat(2, 1fr); }
   .brew-steps-grid { grid-template-columns: repeat(2, 1fr); }
+  .membership-world-grid { grid-template-columns: 1fr 1fr; }
+  .membership-world-copy { grid-column: span 2; order: -1; }
+  .membership-world-photo { min-height: 360px; }
   .membership-card { position: static; }
   .spotlight-card { grid-template-columns: 1fr; gap: 28px; padding: 36px; }
   .values-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1704,10 +1779,15 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .selection-seal strong { font-size: 0.9rem; }
   .selection-seal span, .selection-seal em { font-size: 0.48rem; }
   .hero-metrics { flex-direction: column; gap: 12px; }
-  .about, .types, .collection, .spotlight, .learn, .tastings, .values, .browse, .brewing, .yt-section, .ritual, .purchase-paths, .membership-band, .shop-intent, .brew-intro, .gear, .brew-steps-page, .brewing-shop-cta, .membership-buy, .brand-thesis, .practice-photos { padding-left: 16px; padding-right: 16px; }
+  .about, .types, .collection, .spotlight, .learn, .tastings, .values, .browse, .brewing, .yt-section, .ritual, .purchase-paths, .membership-band, .shop-intent, .brew-intro, .gear, .brew-steps-page, .brewing-shop-cta, .membership-buy, .membership-world, .brand-thesis, .practice-photos { padding-left: 16px; padding-right: 16px; }
   .about-grid, .about-stats { grid-template-columns: 1fr; flex-direction: column; gap: 16px; }
   .types-row { flex-direction: column; align-items: stretch; }
   .grid, .grid--3, .path-grid, .shop-intent-grid, .gear-grid, .brew-intro-grid, .membership-buy-grid { grid-template-columns: 1fr; }
+  .membership-world { padding-top: 8px; padding-bottom: 42px; }
+  .membership-world-grid { grid-template-columns: 1fr; }
+  .membership-world-copy { grid-column: auto; padding: 26px; }
+  .membership-world-copy h2 { max-width: 12ch; }
+  .membership-world-photo, .membership-world-photo--tea { min-height: 300px; }
   .path-card { min-height: 210px; padding: 24px; }
   .practice-photos-head { align-items: start; flex-direction: column; gap: 10px; }
   .practice-photos-grid { grid-template-columns: 1fr; }
