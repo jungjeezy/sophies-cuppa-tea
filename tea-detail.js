@@ -92,7 +92,7 @@
         document.querySelector('.pdp-price-note').textContent = 'per ounce · USDA certified organic';
         document.querySelector('.pdp-trust').innerHTML =
           '<div class="pdp-trust-item"><strong>USDA Certified Organic</strong><p>Grown in central Fujian, with other plants intentionally left between rows to support flavor.</p></div>' +
-          '<div class="pdp-trust-item"><strong>Farm Relationship</strong><p>John describes visiting the area, seeing the certified farms, and getting to know the farmers behind this tea.</p></div>' +
+          '<div class="pdp-trust-item"><strong>Farm Relationship</strong><p>Selected through direct familiarity with the area, certified farms, and farming practices behind this tea.</p></div>' +
           '<div class="pdp-trust-item"><strong>Not Lesser, Just Accessible</strong><p>The favorable price comes from Sophie’s sourcing arrangement, not from lower quality.</p></div>';
       }
       if (tea.name === 'Golden Osmanthus') {
