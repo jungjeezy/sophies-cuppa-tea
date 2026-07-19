@@ -754,6 +754,12 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
   gap: 16px;
   align-items: stretch;
 }
+.practice-photos--single .practice-photos-grid {
+  grid-template-columns: minmax(0, 860px);
+}
+.practice-photos--single .practice-photo {
+  min-height: 430px;
+}
 .practice-photo {
   position: relative;
   min-height: 520px;
@@ -854,6 +860,55 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 .card-img { width: 100%; height: 200px; overflow: hidden; }
 .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
 .card:hover .card-img img { transform: scale(1.04); }
+.card-mark {
+  position: relative;
+  min-height: 178px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.34), transparent 42%),
+    repeating-linear-gradient(90deg, rgba(31,41,39,0.03) 0 1px, transparent 1px 18px),
+    var(--mark-bg, #e5ebe7);
+  border-bottom: 1px solid rgba(47,75,82,0.12);
+}
+.card-mark::before {
+  content: '';
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(31,41,39,0.14);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+.card-mark::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 46%;
+  border: 2px solid var(--mark-line, rgba(74,122,80,0.34));
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  transform: rotate(18deg);
+  transition: transform 0.5s var(--ease);
+}
+.card-mark span {
+  position: relative;
+  z-index: 1;
+  font-family: var(--serif);
+  font-size: clamp(1.35rem, 2.4vw, 2rem);
+  color: var(--mark-ink, var(--blue-ink));
+  line-height: 1;
+  text-transform: lowercase;
+}
+.card-mark--green { --mark-bg: #dfe9de; --mark-line: rgba(74,122,80,0.38); --mark-ink: #3f6d45; }
+.card-mark--wulong { --mark-bg: #e8e3d5; --mark-line: rgba(138,106,56,0.4); --mark-ink: #735b31; }
+.card-mark--red { --mark-bg: #efe1db; --mark-line: rgba(176,72,56,0.36); --mark-ink: #944131; }
+.card-mark--white { --mark-bg: #e7ebe8; --mark-line: rgba(138,128,104,0.36); --mark-ink: #68624f; }
+.card:hover .card-mark::after {
+  transform: rotate(26deg) scale(1.04);
+}
 .grid > .card > .card-head, .grid > .card > h3, .grid > .card > .origin, .grid > .card > .desc, .grid > .card > .flavors, .grid > .card > .card-foot { padding-left: 20px; padding-right: 20px; }
 .card-head { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; margin-bottom: 8px; }
 .tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; }
@@ -964,6 +1019,11 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .spotlight-card { max-width: 1000px; margin: 0 auto; background: var(--ink); color: var(--paper); border-radius: 16px; padding: 56px; display: grid; grid-template-columns: 0.4fr 1fr 0.8fr; gap: 40px; }
 .spotlight-img { border-radius: 10px; overflow: hidden; }
 .spotlight-img img { width: 100%; height: 100%; object-fit: cover; }
+.spotlight-mark {
+  min-height: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
 .spotlight-left .label { color: var(--gold); }
 .spotlight-left h2 { font-size: clamp(1.8rem, 3vw, 2.6rem); color: var(--paper); margin-top: 6px; }
 .spotlight-type { font-size: 0.78rem; color: rgba(247,242,234,0.4); margin-top: 4px; }
@@ -1087,6 +1147,47 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .pdp-image { border-radius: 14px; overflow: hidden; }
 .pdp-image-placeholder { width: 100%; aspect-ratio: 1; display: flex; align-items: center; justify-content: center; border-radius: 14px; background: var(--paper-warm); }
 .pdp-image-placeholder span { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.4; }
+.pdp-image-placeholder.pdp-symbol {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.4), transparent 46%),
+    repeating-linear-gradient(90deg, rgba(31,41,39,0.03) 0 1px, transparent 1px 20px),
+    var(--pdp-mark-bg, #e5ebe7) !important;
+  border: 1px solid rgba(47,75,82,0.14);
+}
+.pdp-image-placeholder.pdp-symbol::before {
+  content: '';
+  position: absolute;
+  inset: 46px;
+  border: 1px solid rgba(31,41,39,0.16);
+  border-radius: 50%;
+  transform: rotate(-11deg);
+}
+.pdp-image-placeholder.pdp-symbol::after {
+  content: '';
+  position: absolute;
+  width: 64%;
+  height: 42%;
+  border: 2px solid var(--pdp-mark-line, rgba(74,122,80,0.34));
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  transform: rotate(18deg);
+}
+.pdp-image-placeholder.pdp-symbol span {
+  position: relative;
+  z-index: 1;
+  max-width: 10ch;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 5vw, 4rem);
+  font-weight: 400;
+  line-height: 0.96;
+  letter-spacing: 0;
+  text-transform: lowercase;
+  text-align: center;
+  opacity: 1;
+}
 .pdp-type-badge { display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; margin-bottom: 10px; }
 .pdp-title { font-family: var(--serif) !important; font-size: clamp(2rem, 3.5vw, 2.8rem) !important; font-weight: 400 !important; margin: 0 !important; padding: 0 !important; }
 .pdp-region { font-size: 0.82rem; color: var(--mid); margin-top: 4px; }
@@ -1165,8 +1266,8 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
 .finder-empty p { margin-top: 6px; font-size: 0.85rem; color: var(--mid); }
 
 /* ═══ ANIMATIONS ═══ */
-.reveal { opacity: 0; transform: translateY(20px); transition: opacity 0.7s var(--ease), transform 0.7s var(--ease); }
-.reveal.is-vis { opacity: 1; transform: translateY(0); }
+.reveal { opacity: 1; transform: none; transition: opacity 0.4s var(--ease), transform 0.4s var(--ease); }
+.reveal.is-vis { opacity: 1; transform: none; }
 .hero .hero-pill { animation: fadeUp 0.7s var(--ease) 0.2s both; }
 .hero h1 { animation: fadeUp 0.7s var(--ease) 0.35s both; }
 .hero-sub { animation: fadeUp 0.7s var(--ease) 0.5s both; }

@@ -34,6 +34,33 @@
     'Fermented': 'linear-gradient(135deg, #e8e5e2 0%, #dbd6d0 50%, #cec7be 100%)'
   };
 
+  const typeMarks = {
+    'Green': { bg: '#dfe9de', line: 'rgba(74,122,80,0.38)' },
+    'Red': { bg: '#efe1db', line: 'rgba(176,72,56,0.36)' },
+    'Wulong': { bg: '#e8e3d5', line: 'rgba(138,106,56,0.4)' },
+    'Cliff Tea': { bg: '#e8e3d5', line: 'rgba(138,106,56,0.4)' },
+    'White': { bg: '#e7ebe8', line: 'rgba(138,128,104,0.36)' },
+    'Yellow': { bg: '#f0e5c8', line: 'rgba(192,144,48,0.36)' },
+    'Raw Black': { bg: '#e5dfd4', line: 'rgba(90,78,62,0.34)' },
+    'Fermented': { bg: '#e2ddd8', line: 'rgba(61,53,48,0.34)' }
+  };
+
+  const visualNameMap = {
+    'Golden Osmanthus': 'osmanthus',
+    'Harmony': 'balance',
+    'Iron Goddess Roasted': 'goddess',
+    'Iron Goddess Special': 'goddess',
+    'White Orchid': 'orchid',
+    'Golden Goddess': 'goddess',
+    'Golden Resurrection': 'resurrection',
+    'White Peony': 'peony',
+    'Plush Peak': 'peak',
+    'Hale and Hearty': 'hale',
+    'Silver Tip': 'silver tip',
+    'Red Border': 'border',
+    'Black Peony': 'peony'
+  };
+
   fetch('./teas.json')
     .then(r => r.json())
     .then(teas => {
@@ -48,10 +75,13 @@
       // Breadcrumb
       document.getElementById('breadcrumbName').textContent = tea.name;
 
-      // Image placeholder with type gradient
+      // Symbolic product visual. Story images can be generated later per tea.
       const imgEl = document.querySelector('.pdp-image-placeholder');
-      imgEl.style.background = typeGradients[tea.type] || typeGradients['Wulong'];
-      document.getElementById('pdpTypeIcon').textContent = tea.type;
+      const mark = typeMarks[tea.type] || typeMarks['Wulong'];
+      imgEl.classList.add('pdp-symbol');
+      imgEl.style.setProperty('--pdp-mark-bg', mark.bg);
+      imgEl.style.setProperty('--pdp-mark-line', mark.line);
+      document.getElementById('pdpTypeIcon').textContent = visualNameMap[tea.name] || tea.name;
       document.getElementById('pdpTypeIcon').style.color = color;
 
       // Info
