@@ -1721,6 +1721,77 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   color: var(--paper);
   box-shadow: 0 12px 26px rgba(31,41,39,0.14);
 }
+.plush-photo-drawer {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.72fr) minmax(0, 1fr);
+  gap: 34px;
+  align-items: end;
+  margin: 0 0 32px;
+  padding: 24px 0 28px;
+  border-top: 1px solid rgba(47,75,82,0.12);
+  border-bottom: 1px solid rgba(47,75,82,0.12);
+}
+.plush-photo-drawer h2 {
+  max-width: 16ch;
+  margin-top: 8px;
+  font-size: clamp(1.55rem, 2.35vw, 2.35rem);
+  line-height: 1.08;
+  text-wrap: balance;
+}
+.plush-photo-drawer p {
+  max-width: 520px;
+  margin-top: 10px;
+  color: var(--mid);
+  font-size: 0.84rem;
+  line-height: 1.72;
+  text-wrap: pretty;
+}
+.plush-photo-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+}
+.plush-photo-thumb {
+  position: relative;
+  min-height: 118px;
+  overflow: hidden;
+  border: 1px solid rgba(47,75,82,0.14);
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--paper);
+}
+.plush-photo-thumb img {
+  width: 100%;
+  height: 100%;
+  min-height: 118px;
+  object-fit: cover;
+  filter: saturate(0.76) contrast(0.92);
+  transition: transform 0.35s var(--ease), filter 0.35s var(--ease);
+}
+.plush-photo-thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 36%, rgba(17,25,23,0.72));
+  pointer-events: none;
+}
+.plush-photo-thumb span {
+  position: absolute;
+  z-index: 1;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.plush-photo-thumb:hover img {
+  transform: scale(1.04);
+  filter: saturate(0.94) contrast(0.98);
+}
 .plush-field-guide {
   position: relative;
   z-index: 1;
@@ -2645,6 +2716,7 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .plush-dossier { grid-template-columns: 1fr; gap: 22px; }
   .plush-dossier-main { min-height: 460px; }
   .plush-dossier-buy { position: static; }
+  .plush-photo-drawer { grid-template-columns: 1fr; gap: 18px; }
   .plush-field-guide-head { grid-template-columns: 1fr; gap: 12px; padding-left: 72px; }
   .plush-field-guide-head p { align-self: start; }
   .plush-field-spread { grid-template-columns: 1fr 1fr; gap: 24px; padding-left: 72px; }
@@ -2754,6 +2826,11 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .plush-dossier h1 { font-size: clamp(3.65rem, 18vw, 5.5rem); line-height: 0.96; }
   .plush-dossier-deck { font-size: 1.04rem; line-height: 1.66; }
   .plush-dossier-art { right: 8px; bottom: 10px; width: 52%; opacity: 0.28; }
+  .plush-photo-drawer { gap: 16px; padding: 20px 0 22px; }
+  .plush-photo-drawer h2 { max-width: 14ch; font-size: clamp(1.55rem, 7vw, 2.2rem); }
+  .plush-photo-strip { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+  .plush-photo-thumb { flex: 0 0 152px; min-height: 104px; }
+  .plush-photo-thumb img { min-height: 104px; }
   .plush-field-guide { min-height: 0; }
   .plush-field-guide::before { right: -140px; top: -92px; width: 460px; height: 380px; opacity: 0.38; }
   .plush-field-guide::after { display: none; }
