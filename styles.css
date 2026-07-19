@@ -1593,6 +1593,128 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   background: var(--ink);
   color: var(--paper);
 }
+.plush-dossier {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 42px;
+  align-items: start;
+  padding: 22px 0 54px;
+}
+.plush-dossier-main {
+  position: relative;
+  min-height: 520px;
+  padding: 34px 38px;
+  border: 1px solid rgba(47,75,82,0.12);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, rgba(247,242,234,0.96), rgba(247,242,234,0.8) 58%, rgba(247,242,234,0.36)),
+    url("./img/plush-peak-session-bg.png") right center / 56% auto no-repeat;
+  overflow: hidden;
+}
+.plush-dossier-kicker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  max-width: 620px;
+}
+.plush-dossier-kicker span {
+  border: 1px solid rgba(47,75,82,0.14);
+  border-radius: 999px;
+  background: rgba(255,255,255,0.62);
+  padding: 6px 11px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.plush-dossier h1 {
+  position: relative;
+  z-index: 1;
+  max-width: 8ch;
+  margin-top: 30px;
+  font-size: clamp(4rem, 10vw, 8.4rem);
+  line-height: 0.86;
+}
+.plush-dossier-deck {
+  position: relative;
+  z-index: 1;
+  max-width: 570px;
+  margin-top: 28px;
+  font-family: var(--serif);
+  font-size: clamp(1.25rem, 2vw, 1.72rem);
+  line-height: 1.48;
+  color: var(--mid);
+}
+.plush-dossier-art {
+  position: absolute;
+  right: 30px;
+  bottom: 26px;
+  width: min(35%, 260px);
+  opacity: 0.72;
+}
+.plush-dossier-art img {
+  width: 100%;
+  height: auto;
+}
+.plush-dossier-buy {
+  position: sticky;
+  top: 96px;
+  margin-top: 0;
+}
+.plush-dossier-notes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  border-top: 1px solid rgba(47,75,82,0.14);
+  border-left: 1px solid rgba(47,75,82,0.14);
+}
+.plush-dossier-notes article {
+  min-height: 310px;
+  padding: 24px;
+  border-right: 1px solid rgba(47,75,82,0.14);
+  border-bottom: 1px solid rgba(47,75,82,0.14);
+  background: rgba(255,255,255,0.42);
+}
+.plush-dossier-notes span {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.plush-dossier-notes h2 {
+  font-size: clamp(1.28rem, 2vw, 1.72rem);
+}
+.plush-dossier-notes p {
+  margin-top: 14px;
+  color: var(--mid);
+  font-size: 0.84rem;
+  line-height: 1.72;
+}
+.plush-dossier-deep-dive {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: end;
+  margin-top: 42px;
+  padding: 34px 0 4px;
+  border-top: 1px solid rgba(47,75,82,0.14);
+}
+.plush-dossier-deep-dive h2 {
+  max-width: 11ch;
+  margin-top: 8px;
+  font-size: clamp(2rem, 3.5vw, 3.2rem);
+}
+.plush-dossier-deep-dive p {
+  max-width: 660px;
+  margin-top: 14px;
+  color: var(--mid);
+  font-size: 0.94rem;
+  line-height: 1.8;
+}
 .is-plush-peak-session {
   background:
     var(--paper);
@@ -2275,6 +2397,10 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .pdp-grid { grid-template-columns: 1fr; gap: 24px; } .pdp-media { position: static; }
   .is-plush-peak-session .pdp-grid { grid-template-columns: 1fr; min-height: auto; }
   .plush-clean-hero { grid-template-columns: 0.82fr 1fr; gap: 24px; }
+  .plush-dossier { grid-template-columns: 1fr; gap: 22px; }
+  .plush-dossier-main { min-height: 460px; }
+  .plush-dossier-buy { position: static; }
+  .plush-dossier-notes { grid-template-columns: repeat(2, 1fr); }
   .plush-clean-art { min-height: 420px; }
   .plush-buy { grid-column: 1 / -1; }
   .plush-size-row { grid-template-columns: repeat(3, 1fr); }
@@ -2371,6 +2497,20 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .pdp { padding: 12px 16px 80px; } .pdp-similar { grid-template-columns: 1fr 1fr; }
   .is-plush-peak-session .pdp { padding-top: 24px; }
   .plush-clean-hero { grid-template-columns: 1fr; gap: 18px; padding-top: 8px; padding-bottom: 38px; }
+  .plush-dossier { gap: 18px; padding-top: 8px; padding-bottom: 38px; }
+  .plush-dossier-main {
+    min-height: 500px;
+    padding: 24px;
+    background:
+      linear-gradient(180deg, rgba(247,242,234,0.96), rgba(247,242,234,0.7)),
+      url("./img/plush-peak-session-bg.png") center bottom / auto 72% no-repeat;
+  }
+  .plush-dossier h1 { font-size: clamp(4rem, 22vw, 6rem); }
+  .plush-dossier-deck { font-size: 1.12rem; }
+  .plush-dossier-art { right: 18px; bottom: 18px; width: 42%; opacity: 0.56; }
+  .plush-dossier-notes { grid-template-columns: 1fr; }
+  .plush-dossier-notes article { min-height: auto; padding: 22px; }
+  .plush-dossier-deep-dive { grid-template-columns: 1fr; align-items: start; gap: 22px; }
   .plush-clean-art { min-height: 320px; }
   .plush-clean-copy h1 { font-size: clamp(3rem, 18vw, 5rem); }
   .plush-deck { font-size: 1.12rem; }
