@@ -87,6 +87,10 @@
         imgEl.classList.add('pdp-story-art', 'pdp-story-art--plush-peak');
         document.getElementById('pdpTypeIcon').textContent = 'Plush Peak';
       }
+      if (tea.name === 'Golden Osmanthus') {
+        imgEl.classList.add('pdp-story-art', 'pdp-story-art--golden-osmanthus');
+        document.getElementById('pdpTypeIcon').textContent = 'Golden Osmanthus';
+      }
 
       // Info
       const badge = document.getElementById('pdpTypeBadge');

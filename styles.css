@@ -970,6 +970,7 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
   color: rgba(31,41,39,0.48);
 }
 .card-mark--plush-peak { --story-art: url("./img/plush-peak-story-art.png"); }
+.card-mark--golden-osmanthus { --story-art: url("./img/golden-osmanthus-story-art.png"); }
 .card:hover .card-mark::after {
   transform: rotate(26deg) scale(1.04);
 }
@@ -1313,6 +1314,9 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 }
 .pdp-image-placeholder.pdp-story-art--plush-peak {
   --pdp-story-art: url("./img/plush-peak-story-art.png");
+}
+.pdp-image-placeholder.pdp-story-art--golden-osmanthus {
+  --pdp-story-art: url("./img/golden-osmanthus-story-art.png");
 }
 .pdp-type-badge { display: inline-block; font-size: 0.62rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; margin-bottom: 10px; }
 .pdp-title { font-family: var(--serif) !important; font-size: clamp(2rem, 3.5vw, 2.8rem) !important; font-weight: 400 !important; margin: 0 !important; padding: 0 !important; }
