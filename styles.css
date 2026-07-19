@@ -898,6 +898,44 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 .card { background: var(--white); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; cursor: pointer; display: flex; flex-direction: column; transition: all 0.4s var(--ease); }
 .card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.06); border-color: transparent; }
 .card.is-hidden { display: none; }
+.card--story-art {
+  position: relative;
+  min-height: 385px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,255,255,0.94) 52%, rgba(255,255,255,0.98)),
+    var(--card-story-art) center 22px / 78% auto no-repeat,
+    var(--mark-bg, #e5ebe7);
+}
+.card--story-art::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(135deg, rgba(255,255,255,0.24), transparent 42%),
+    repeating-linear-gradient(90deg, rgba(31,41,39,0.025) 0 1px, transparent 1px 18px);
+  pointer-events: none;
+}
+.card--story-art:hover {
+  background-size: auto, 82% auto, auto;
+}
+.card--story-art > * {
+  position: relative;
+  z-index: 1;
+}
+.card--story-art .card-mark--story {
+  display: none;
+}
+.card--story-art .card-head {
+  padding-top: 148px;
+}
+.card--plush-peak-art {
+  --card-story-art: url("./img/plush-peak-story-art.png");
+  --mark-bg: #dfe9de;
+}
+.card--golden-osmanthus-art {
+  --card-story-art: url("./img/golden-osmanthus-story-art.png");
+  --mark-bg: #e8e3d5;
+}
 .card-img { width: 100%; height: 200px; overflow: hidden; }
 .card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease); }
 .card:hover .card-img img { transform: scale(1.04); }
