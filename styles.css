@@ -1607,9 +1607,9 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   border: 1px solid rgba(47,75,82,0.12);
   border-radius: 8px;
   background:
-    radial-gradient(circle at 74% 48%, rgba(247,242,234,0.04) 0 22%, rgba(247,242,234,0.82) 52%, rgba(247,242,234,0.98) 78%),
-    linear-gradient(90deg, rgba(247,242,234,0.99), rgba(247,242,234,0.86) 50%, rgba(247,242,234,0.4)),
-    url("./img/plush-peak-session-bg.png") right center / auto 106% no-repeat;
+    radial-gradient(circle at 52% 45%, rgba(247,242,234,0.14) 0 24%, rgba(247,242,234,0.74) 52%, rgba(247,242,234,0.98) 82%),
+    linear-gradient(90deg, rgba(247,242,234,0.98), rgba(247,242,234,0.72) 58%, rgba(247,242,234,0.94)),
+    url("./img/plush-peak-session-bg.png") center / auto 112% no-repeat;
   overflow: hidden;
 }
 .plush-dossier-main::before {
@@ -1660,10 +1660,11 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 }
 .plush-dossier-art {
   position: absolute;
-  right: 42px;
-  bottom: 34px;
-  width: min(30%, 230px);
-  opacity: 0.64;
+  right: 18px;
+  bottom: 12px;
+  width: min(34%, 280px);
+  opacity: 0.42;
+  filter: saturate(0.62);
 }
 .plush-dossier-art img {
   width: 100%;
@@ -1682,9 +1683,9 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   border: 1px solid rgba(138,106,56,0.22);
   border-radius: 4px;
   background:
-    linear-gradient(90deg, rgba(138,106,56,0.18) 0 1px, transparent 1px calc(100% - 1px), rgba(138,106,56,0.18) calc(100% - 1px)),
-    radial-gradient(circle at 86% 20%, rgba(135,151,102,0.18), transparent 28%),
-    radial-gradient(circle at 16% 78%, rgba(138,106,56,0.11), transparent 24%),
+    radial-gradient(circle at 82% 18%, rgba(135,151,102,0.2), transparent 30%),
+    radial-gradient(circle at 16% 78%, rgba(138,106,56,0.14), transparent 26%),
+    linear-gradient(90deg, rgba(138,106,56,0.16) 0 1px, transparent 1px calc(100% - 1px), rgba(138,106,56,0.16) calc(100% - 1px)),
     linear-gradient(180deg, rgba(255,252,244,0.96), rgba(246,240,226,0.95));
   box-shadow: inset 0 0 0 1px rgba(255,255,255,0.5);
   overflow: hidden;
@@ -1692,11 +1693,15 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .plush-field-guide::before {
   content: '';
   position: absolute;
-  inset: 0;
+  right: -74px;
+  top: -84px;
+  width: min(52vw, 620px);
+  height: 520px;
   background:
-    linear-gradient(90deg, rgba(138,106,56,0.05) 0 1px, transparent 1px 100%),
-    linear-gradient(rgba(138,106,56,0.04) 0 1px, transparent 1px 100%);
-  background-size: 28px 28px;
+    radial-gradient(circle, rgba(119,124,96,0.42), rgba(119,124,96,0.22) 44%, transparent 72%),
+    url("./img/plush-peak-story-art.png") center / 78% auto no-repeat;
+  filter: saturate(0.55);
+  opacity: 0.56;
   pointer-events: none;
 }
 .plush-field-guide::after {
@@ -1746,16 +1751,31 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .plush-field-spread::before {
   content: '';
   position: absolute;
-  right: 36px;
-  top: -34px;
-  width: min(42%, 360px);
-  height: 360px;
-  background: url("./img/plush-peak-story-art.png") center / contain no-repeat;
-  opacity: 0.13;
+  left: -70px;
+  bottom: -78px;
+  width: min(54%, 520px);
+  height: 430px;
+  background:
+    radial-gradient(circle at 42% 48%, rgba(90,96,82,0.28), rgba(90,96,82,0.13) 46%, transparent 72%),
+    url("./img/plush-peak-session-bg.png") left bottom / 110% auto no-repeat;
+  filter: saturate(0.38) contrast(0.92);
+  opacity: 0.42;
+  pointer-events: none;
+}
+.plush-field-spread::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(138,106,56,0.045) 0 1px, transparent 1px 100%),
+    linear-gradient(rgba(138,106,56,0.035) 0 1px, transparent 1px 100%);
+  background-size: 28px 28px;
+  opacity: 0.6;
   pointer-events: none;
 }
 .plush-field-note {
   position: relative;
+  z-index: 1;
   border-top: 1px solid rgba(138,106,56,0.4);
   padding-top: 14px;
 }
@@ -2631,19 +2651,20 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
     min-height: 500px;
     padding: 24px;
     background:
-      linear-gradient(180deg, rgba(247,242,234,0.96), rgba(247,242,234,0.7)),
-      url("./img/plush-peak-session-bg.png") center bottom / auto 72% no-repeat;
+      linear-gradient(180deg, rgba(247,242,234,0.98), rgba(247,242,234,0.72)),
+      url("./img/plush-peak-session-bg.png") center bottom / auto 78% no-repeat;
   }
   .plush-dossier h1 { font-size: clamp(4rem, 22vw, 6rem); }
   .plush-dossier-deck { font-size: 1.12rem; }
-  .plush-dossier-art { right: 18px; bottom: 18px; width: 42%; opacity: 0.56; }
+  .plush-dossier-art { right: 8px; bottom: 10px; width: 52%; opacity: 0.28; }
   .plush-field-guide { min-height: 0; }
+  .plush-field-guide::before { right: -140px; top: -92px; width: 460px; height: 380px; opacity: 0.38; }
   .plush-field-guide::after { display: none; }
   .plush-field-guide-head { padding: 26px 22px 20px; }
   .plush-field-guide-head h2 { font-size: clamp(2.2rem, 11vw, 3.4rem); }
   .plush-field-guide-head p { font-size: 1.02rem; }
   .plush-field-spread { grid-template-columns: 1fr; padding: 26px 22px 30px; }
-  .plush-field-spread::before { width: 78%; height: 300px; right: -24px; top: -18px; }
+  .plush-field-spread::before { left: -96px; bottom: -76px; top: auto; width: 420px; height: 320px; opacity: 0.26; }
   .plush-field-note--wide { grid-row: auto; }
   .plush-dossier-notes { grid-template-columns: 1fr; }
   .plush-dossier-notes article { min-height: auto; padding: 22px; }
