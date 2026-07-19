@@ -1386,7 +1386,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 }
 .is-plush-peak-session .pdp-grid {
   display: block;
-  min-height: 760px;
+  min-height: 700px;
 }
 .is-plush-peak-session .pdp-media {
   display: none;
@@ -1397,25 +1397,26 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .is-plush-peak-session .pdp-info {
   position: relative;
   z-index: 1;
-  max-width: 920px;
-  margin-left: auto;
+  max-width: 1120px;
+  margin: 0 auto;
 }
 .is-plush-peak-session .pdp-info-scroll {
   display: grid;
-  grid-template-columns: 1.12fr 0.88fr;
-  gap: 14px;
+  grid-template-columns: minmax(0, 1.35fr) 340px;
+  gap: 16px 22px;
+  align-items: start;
   padding: 0;
   background: transparent;
   box-shadow: none;
 }
 .is-plush-peak-session .pdp-info-scroll > * {
-  padding: 18px;
-  border: 1px solid rgba(47,75,82,0.12);
-  border-radius: 12px;
-  background: rgba(255,255,255,0.72);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  box-shadow: 0 18px 60px rgba(31,41,39,0.07);
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
 }
 .is-plush-peak-session .pdp-type-badge,
 .is-plush-peak-session .pdp-title,
@@ -1431,7 +1432,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 }
 .is-plush-peak-session .pdp-type-badge {
   width: fit-content;
-  margin: 18px 18px 0;
+  margin: 0;
   padding: 5px 12px;
   border-radius: 999px;
   background: rgba(255,255,255,0.72) !important;
@@ -1440,24 +1441,32 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .is-plush-peak-session .pdp-title,
 .is-plush-peak-session .pdp-region,
 .is-plush-peak-session .pdp-taste-family {
-  margin-left: 18px !important;
-  margin-right: 18px;
+  margin-left: 0 !important;
+  margin-right: 0;
 }
 .is-plush-peak-session .pdp-price {
   grid-column: 2;
-  grid-row: 1 / span 4;
+  grid-row: 1 / span 3;
   align-self: start;
   margin-top: 0;
   display: block;
-  border-color: rgba(47,75,82,0.12);
+  padding: 24px;
+  border: 1px solid rgba(47,75,82,0.14);
+  border-radius: 14px 14px 0 0;
+  background: rgba(31,41,39,0.9);
+  color: var(--paper);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
 }
 .is-plush-peak-session .pdp-price-amount {
   display: block;
-  font-size: 2rem;
+  color: var(--paper);
+  font-size: 2.2rem;
 }
 .is-plush-peak-session .pdp-price-note {
   display: block;
   margin-top: 4px;
+  color: rgba(247,242,234,0.54);
 }
 .is-plush-peak-session .pdp-details,
 .is-plush-peak-session .pdp-section,
@@ -1465,7 +1474,43 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   margin-top: 0;
 }
 .is-plush-peak-session .pdp-details {
-  grid-column: 1 / -1;
+  grid-column: 1;
+  width: min(100%, 620px);
+  padding: 16px;
+  border: 1px solid rgba(47,75,82,0.12);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.66);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.is-plush-peak-session .pdp-section:has(#pdpFlavors),
+.is-plush-peak-session .pdp-section:has(#pdpMoods) {
+  grid-column: 1;
+  width: min(100%, 620px);
+  padding: 16px;
+  border-left: 2px solid rgba(138,106,56,0.28);
+  background: rgba(255,255,255,0.42);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+.is-plush-peak-session .pdp-section:has(.pdp-sizes),
+.is-plush-peak-session .pdp-section:has(.pdp-qty),
+.is-plush-peak-session .pdp-add,
+.is-plush-peak-session .pdp-trust {
+  grid-column: 2;
+  padding: 18px 24px;
+  border-left: 1px solid rgba(47,75,82,0.14);
+  border-right: 1px solid rgba(47,75,82,0.14);
+  background: rgba(255,255,255,0.78);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+.is-plush-peak-session .pdp-section:has(.pdp-sizes) {
+  border-top: 0;
+}
+.is-plush-peak-session .pdp-trust {
+  border-bottom: 1px solid rgba(47,75,82,0.14);
+  border-radius: 0 0 14px 14px;
 }
 .is-plush-peak-session .pdp-section h3,
 .is-plush-peak-session .pdp-trust-item strong {
@@ -1475,11 +1520,18 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   align-self: stretch;
   margin-top: 0;
   box-shadow: none;
+  border-radius: 0;
 }
 .is-plush-peak-session #pdpVideoSection,
 .is-plush-peak-session .pdp-section:has(.pdp-similar) {
-  background: rgba(31,41,39,0.9);
+  grid-column: 1;
+  width: min(100%, 620px);
+  padding: 18px;
+  border-radius: 12px;
+  background: rgba(31,41,39,0.86);
   color: var(--paper);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 .is-plush-peak-session #pdpVideoSection h3,
 .is-plush-peak-session .pdp-section:has(.pdp-similar) h3 {
@@ -1495,8 +1547,9 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 }
 .is-plush-peak-session .pdp-title {
   max-width: 8ch;
-  font-size: clamp(2.8rem, 6vw, 5.4rem) !important;
+  font-size: clamp(3.4rem, 8vw, 7rem) !important;
   line-height: 0.92 !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
 }
 .is-plush-peak-session .pdp-region {
   margin-top: 12px;
@@ -1683,6 +1736,19 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
     linear-gradient(135deg, rgba(31,41,39,0.92), rgba(47,75,82,0.82)),
     url("./img/plush-peak-session-bg.png") center 72% / cover;
   color: var(--paper);
+}
+.session-card--blog {
+  grid-column: span 1;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.78), rgba(255,255,255,0.92)),
+    url("./img/plush-peak-story-art.png") right 20px top 20px / 42% auto no-repeat;
+}
+.session-card--blog a {
+  display: inline-flex;
+  margin-top: 18px;
+  color: var(--red);
+  font-size: 0.78rem;
+  font-weight: 700;
 }
 .session-kicker {
   display: block;
@@ -1975,8 +2041,21 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .is-plush-peak-session .pdp-grid { grid-template-columns: 1fr; min-height: auto; }
   .is-plush-peak-session .pdp-info { max-width: 100%; margin: 0; }
   .is-plush-peak-session .pdp-info-scroll { grid-template-columns: 1fr 1fr; }
+  .is-plush-peak-session .pdp-type-badge,
+  .is-plush-peak-session .pdp-title,
+  .is-plush-peak-session .pdp-region,
+  .is-plush-peak-session .pdp-taste-family,
+  .is-plush-peak-session .pdp-details,
+  .is-plush-peak-session .pdp-section:has(#pdpFlavors),
+  .is-plush-peak-session .pdp-section:has(#pdpMoods),
+  .is-plush-peak-session #pdpVideoSection,
+  .is-plush-peak-session .pdp-section:has(.pdp-similar) { grid-column: 1 / -1; width: 100%; }
   .is-plush-peak-session .pdp-media { min-height: 0; }
-  .is-plush-peak-session .pdp-price { grid-column: auto; grid-row: auto; }
+  .is-plush-peak-session .pdp-price,
+  .is-plush-peak-session .pdp-section:has(.pdp-sizes),
+  .is-plush-peak-session .pdp-section:has(.pdp-qty),
+  .is-plush-peak-session .pdp-add,
+  .is-plush-peak-session .pdp-trust { grid-column: auto; grid-row: auto; }
   .tea-session-grid { grid-template-columns: repeat(2, 1fr); }
   .session-card--large, .session-card--wide { grid-column: span 2; }
   .travel-proof-grid { grid-template-columns: 1fr; }
@@ -2054,16 +2133,22 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .is-plush-peak-session .pdp { padding-top: 24px; }
   .is-plush-peak-session .pdp-info-scroll { grid-template-columns: 1fr; }
   .is-plush-peak-session .pdp-info-scroll > * { padding: 16px; }
+  .is-plush-peak-session .pdp-info-scroll > .pdp-type-badge,
+  .is-plush-peak-session .pdp-info-scroll > .pdp-title,
+  .is-plush-peak-session .pdp-info-scroll > .pdp-region,
+  .is-plush-peak-session .pdp-info-scroll > .pdp-taste-family { padding: 0; }
   .is-plush-peak-session .pdp-type-badge { margin: 16px 16px 0; }
   .is-plush-peak-session .pdp-title,
   .is-plush-peak-session .pdp-region,
   .is-plush-peak-session .pdp-taste-family { margin-left: 16px !important; margin-right: 16px; }
+  .is-plush-peak-session .pdp-price { border-radius: 14px 14px 0 0; }
+  .is-plush-peak-session .pdp-add { border-radius: 0; }
   .is-plush-peak-session .pdp-title { max-width: 8ch; }
   .tea-session { margin-top: 26px; padding-top: 42px; }
   .tea-session-intro { text-align: left; }
   .tea-session-intro p { font-size: 1rem; }
   .tea-session-grid { grid-template-columns: 1fr; }
-  .session-card, .session-card--large, .session-card--wide { grid-column: auto; min-height: auto; padding: 22px; }
+  .session-card, .session-card--large, .session-card--wide, .session-card--blog { grid-column: auto; min-height: auto; padding: 22px; }
   .session-actions { flex-direction: column; }
   .session-actions a { justify-content: center; }
   .travel-hero { min-height: 560px; padding: 116px 16px 44px; }
