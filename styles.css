@@ -1139,6 +1139,21 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 
 /* ═══ FILTER ═══ */
 .filter-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 36px; }
+.collection-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+.collection-toolbar .filter-row {
+  margin-bottom: 0;
+}
+.btn-small {
+  min-height: 39px;
+  padding: 9px 18px;
+  font-size: 0.75rem;
+}
 .filter { font-family: var(--font); font-size: 0.75rem; font-weight: 600; padding: 9px 20px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--white); color: var(--muted); cursor: pointer; transition: all 0.25s var(--ease); }
 .filter:hover { border-color: var(--ink); color: var(--ink); }
 .filter.is-on { background: var(--ink); color: var(--paper); border-color: var(--ink); }
@@ -2169,6 +2184,8 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .finder-sidebar { position: static; padding: 16px; }
   .ftag { display: inline-block; width: auto; padding: 4px 10px; font-size: 0.72rem; }
   .finder-grid { grid-template-columns: 1fr !important; }
+  .collection-toolbar { align-items: stretch; flex-direction: column; gap: 12px; }
+  .collection-toolbar .btn-small { justify-content: center; }
   .filter-row { justify-content: flex-start; overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
   .filter { flex-shrink: 0; }
 }

@@ -40,6 +40,7 @@
       <p class="hero-sub">Twelve single-source teas chosen to show why Sophie's costs more: pesticide-free farming, direct sourcing, no flavorings, and leaves good enough to stand on their own.</p>
       <div class="hero-btns hero-btns--center">
         <a href="#collection" class="btn btn-dark">Shop Featured Teas</a>
+        <a href="#all-teas" class="btn btn-ghost">View All Teas</a>
         <a href="brewing.html" class="btn btn-ghost">Learn Big Cup Brewing</a>
       </div>
     </section>
@@ -92,12 +93,15 @@
 
     <!-- ══ FEATURED TEAS COLLECTION ══ -->
     <section class="collection" id="collection">
-      <div class="filter-row reveal">
-        <button class="filter is-on" data-f="all">All</button>
-        <button class="filter" data-f="wulong">Wulong</button>
-        <button class="filter" data-f="green">Green</button>
-        <button class="filter" data-f="white">White</button>
-        <button class="filter" data-f="red">Red</button>
+      <div class="collection-toolbar reveal">
+        <div class="filter-row">
+          <button class="filter is-on" data-f="all">All</button>
+          <button class="filter" data-f="wulong">Wulong</button>
+          <button class="filter" data-f="green">Green</button>
+          <button class="filter" data-f="white">White</button>
+          <button class="filter" data-f="red">Red</button>
+        </div>
+        <a href="#all-teas" class="btn btn-ghost btn-small">View All Teas</a>
       </div>
 
       <div class="grid">
@@ -224,7 +228,7 @@
     </section>
 
     <!-- ══ FULL COLLECTION ══ -->
-    <section class="browse">
+    <section class="browse" id="all-teas">
       <div class="browse-head reveal">
         <span class="label">The Full Collection</span>
         <h2>Beyond the featured teas.</h2>
