@@ -1388,16 +1388,36 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   display: none;
 }
 .is-plush-peak-session .pdp-grid,
-.is-plush-peak-session .tea-session {
+.is-plush-peak-session .tea-session,
+.is-golden-osmanthus-session .pdp-grid,
+.is-golden-osmanthus-session .tea-session {
   display: none;
 }
-.is-plush-peak-session .plush-clean {
+.is-plush-peak-session .plush-clean,
+.is-golden-osmanthus-session .plush-clean {
   display: block;
   position: relative;
   max-width: 1180px;
   margin: 0 auto;
 }
-.is-plush-peak-session .plush-clean::before {
+.is-plush-peak-session {
+  --editorial-session-bg: url("./img/plush-peak-session-bg-transparent.png");
+  --editorial-story-art: url("./img/plush-peak-story-art-transparent.png");
+  --editorial-accent: var(--red);
+  --editorial-wash-a: rgba(193,169,120,0.12);
+  --editorial-wash-b: rgba(95,112,92,0.12);
+  --editorial-art-opacity: 0.46;
+}
+.is-golden-osmanthus-session {
+  --editorial-session-bg: url("./img/golden-osmanthus-session-bg-transparent.png");
+  --editorial-story-art: url("./img/golden-osmanthus-story-art-transparent.png");
+  --editorial-accent: #b68423;
+  --editorial-wash-a: rgba(217,168,65,0.18);
+  --editorial-wash-b: rgba(133,107,55,0.12);
+  --editorial-art-opacity: 0.5;
+}
+.is-plush-peak-session .plush-clean::before,
+.is-golden-osmanthus-session .plush-clean::before {
   content: '';
   position: absolute;
   z-index: 0;
@@ -1409,13 +1429,14 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   background:
     linear-gradient(90deg, rgba(244,246,243,0.9), rgba(244,246,243,0.14) 26%, rgba(244,246,243,0.2) 74%, rgba(244,246,243,0.92)),
     linear-gradient(180deg, rgba(244,246,243,0.72), rgba(244,246,243,0.08) 22%, rgba(244,246,243,0.18) 68%, rgba(244,246,243,0.98)),
-    url("./img/plush-peak-session-bg-transparent.png") center top / auto 100% no-repeat;
+    var(--editorial-session-bg) center top / auto 100% no-repeat;
   opacity: 0.88;
   -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 0 34%, rgba(0,0,0,0.62) 56%, transparent 92%);
   mask-image: radial-gradient(ellipse at 50% 40%, #000 0 34%, rgba(0,0,0,0.62) 56%, transparent 92%);
   pointer-events: none;
 }
-.is-plush-peak-session .plush-clean::after {
+.is-plush-peak-session .plush-clean::after,
+.is-golden-osmanthus-session .plush-clean::after {
   content: '';
   position: absolute;
   z-index: 0;
@@ -1423,9 +1444,9 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   top: 470px;
   width: min(68vw, 820px);
   height: 760px;
-  background: url("./img/plush-peak-story-art-transparent.png") center / 82% auto no-repeat;
+  background: var(--editorial-story-art) center / 82% auto no-repeat;
   filter: saturate(0.52) blur(0.2px);
-  opacity: 0.46;
+  opacity: var(--editorial-art-opacity, 0.46);
   -webkit-mask-image: radial-gradient(ellipse at 52% 48%, #000 0 30%, rgba(0,0,0,0.56) 56%, transparent 90%);
   mask-image: radial-gradient(ellipse at 52% 48%, #000 0 30%, rgba(0,0,0,0.56) 56%, transparent 90%);
   pointer-events: none;
@@ -1841,7 +1862,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   top: -156px;
   width: min(70vw, 830px);
   height: 720px;
-  background: url("./img/plush-peak-story-art-transparent.png") center / 84% auto no-repeat;
+  background: var(--editorial-story-art) center / 84% auto no-repeat;
   filter: saturate(0.55) blur(0.2px);
   opacity: 0.34;
   -webkit-mask-image: radial-gradient(ellipse at 52% 48%, #000 0 28%, rgba(0,0,0,0.56) 54%, transparent 88%);
@@ -1902,7 +1923,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   bottom: -138px;
   width: min(72%, 720px);
   height: 560px;
-  background: url("./img/plush-peak-session-bg-transparent.png") left bottom / 120% auto no-repeat;
+  background: var(--editorial-session-bg) left bottom / 120% auto no-repeat;
   filter: saturate(0.38) contrast(0.92);
   opacity: 0.32;
   -webkit-mask-image: radial-gradient(ellipse at 38% 60%, #000 0 28%, rgba(0,0,0,0.52) 54%, transparent 88%);
@@ -1932,7 +1953,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .plush-field-note span {
   display: block;
   margin-bottom: 8px;
-  color: var(--red);
+  color: var(--editorial-accent, var(--red));
   font-family: var(--serif);
   font-size: 1.12rem;
   font-style: italic;
@@ -2017,24 +2038,28 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   line-height: 1.8;
   text-wrap: pretty;
 }
-.is-plush-peak-session {
+.is-plush-peak-session,
+.is-golden-osmanthus-session {
   background:
-    radial-gradient(circle at 12% 20%, rgba(193,169,120,0.12), transparent 26%),
-    radial-gradient(circle at 88% 56%, rgba(95,112,92,0.12), transparent 30%),
+    radial-gradient(circle at 12% 20%, var(--editorial-wash-a), transparent 26%),
+    radial-gradient(circle at 88% 56%, var(--editorial-wash-b), transparent 30%),
     var(--paper);
 }
-.is-plush-peak-session .breadcrumbs {
+.is-plush-peak-session .breadcrumbs,
+.is-golden-osmanthus-session .breadcrumbs {
   position: relative;
   z-index: 1;
 }
-.is-plush-peak-session .pdp {
+.is-plush-peak-session .pdp,
+.is-golden-osmanthus-session .pdp {
   position: relative;
   max-width: none;
   padding-top: 24px;
   padding-bottom: 64px;
   overflow: hidden;
 }
-.is-plush-peak-session .pdp::before {
+.is-plush-peak-session .pdp::before,
+.is-golden-osmanthus-session .pdp::before {
   content: '';
   position: absolute;
   left: 50%;
@@ -2046,7 +2071,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   background:
     linear-gradient(90deg, rgba(244,246,243,0.96) 0 8%, rgba(244,246,243,0.34) 24%, rgba(244,246,243,0.42) 74%, rgba(244,246,243,0.98) 100%),
     linear-gradient(180deg, rgba(244,246,243,0.74), rgba(244,246,243,0.14) 18%, rgba(244,246,243,0.26) 66%, rgba(244,246,243,1)),
-    url("./img/plush-peak-session-bg-transparent.png") center top / auto 100% no-repeat;
+    var(--editorial-session-bg) center top / auto 100% no-repeat;
   opacity: 0.82;
   -webkit-mask-image:
     linear-gradient(90deg, transparent 0, rgba(0,0,0,0.7) 10%, #000 22%, #000 78%, rgba(0,0,0,0.68) 90%, transparent 100%),
@@ -2058,7 +2083,8 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   mask-composite: intersect;
   pointer-events: none;
 }
-.is-plush-peak-session .pdp::after {
+.is-plush-peak-session .pdp::after,
+.is-golden-osmanthus-session .pdp::after {
   content: '';
   position: absolute;
   right: max(-220px, calc((100vw - 1180px) / 2 - 280px));
@@ -2066,9 +2092,9 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   z-index: 0;
   width: min(68vw, 880px);
   height: 860px;
-  background: url("./img/plush-peak-story-art-transparent.png") center / 82% auto no-repeat;
+  background: var(--editorial-story-art) center / 82% auto no-repeat;
   filter: saturate(0.52) blur(0.25px);
-  opacity: 0.46;
+  opacity: var(--editorial-art-opacity, 0.46);
   -webkit-mask-image: radial-gradient(ellipse at 50% 48%, #000 0 28%, rgba(0,0,0,0.54) 56%, transparent 90%);
   mask-image: radial-gradient(ellipse at 50% 48%, #000 0 28%, rgba(0,0,0,0.54) 56%, transparent 90%);
   pointer-events: none;

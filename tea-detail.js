@@ -61,6 +61,118 @@
     'Black Peony': 'peony'
   };
 
+  const editorialPages = {
+    'Plush Peak': {
+      themeClass: 'is-plush-peak-session',
+      type: 'Green Tea',
+      originTag: 'Central Fujian',
+      altitude: '4,500 ft',
+      title: 'Plush Peak',
+      deck: 'A bright organic green tea with spring meadow, rain-wet grass, juicy sweetness, and a soft toasted finish. The point is not drama. The point is clarity.',
+      guideTitle: 'Read the leaf before you brew it.',
+      guideIntro: 'These notes give the quick version of what matters: how the tea tastes, how it is made, why the region matters, and how to brew it without flattening the cup.',
+      tasteTitle: 'Spring meadow, rain-wet grass, gentle toast.',
+      tasteBody: 'The cup opens green and clean, then moves toward juicy sweetness and a quiet toasted-hay note. It is approachable without being plain, and its best quality is how clearly it shows what careful green tea can taste like.',
+      brewTitle: '175°F. Four minutes. Pour beside the leaf.',
+      brewBody: 'Warm the cup first. Let the water cool slightly after boiling. Pour along the side of the cup instead of directly onto the leaves. The goal is brightness without bitterness.',
+      processTitle: 'Picked by hand, then heated, rolled, and dried.',
+      processBody: 'Plush Peak is a green tea, so the leaf is handled to preserve freshness and prevent full oxidation. The careful drying keeps moisture low enough for clean storage and a stable cup.',
+      originTitle: 'Central Fujian, high elevation, organic cultivation.',
+      originBody: 'Plush Peak comes from a USDA-certified organic green tea operation in central Fujian. Other plants are intentionally left between rows of tea bushes, part of an agricultural environment that supports a cleaner, more expressive leaf.',
+      contextLabel: 'Body',
+      contextTitle: 'Cooling, clear, and best treated as cultural context.',
+      contextBody: 'Traditional Chinese tea culture often frames green tea as cooling, especially in warmer weather. That belongs here as tea-culture context and lived experience, not as a medical promise.',
+      valueLabel: 'Value Note',
+      valueTitle: 'Accessible does not mean lesser.',
+      valueBody: 'The favorable price reflects the way this tea entered Sophie’s collection, not a compromise in quality. It is a clear entry point into a rarely emphasized Fujian green tea category.',
+      photoTitle: 'The actual dry leaf.',
+      photoBody: 'A practical reference point after the field notes. Click the image to open the larger product photo and inspect the leaf more closely.',
+      photoSrc: './img/plush-peak-live-tea.png',
+      photoAlt: 'Plush Peak dry tea leaves',
+      hiddenArt: './img/plush-peak-story-art-transparent.png',
+      deepTitle: 'The full field note belongs here.',
+      deepBody: 'Use this space for the longer blog: Fujian green tea history, why this region exports so much tea, the Japanese matcha connection, brewing mistakes, and what to notice as the cup changes.'
+    },
+    'Golden Osmanthus': {
+      themeClass: 'is-golden-osmanthus-session',
+      type: 'Wulong Tea',
+      originTag: 'Anxi, Fujian',
+      altitude: 'Osmanthus scent',
+      title: 'Golden Osmanthus',
+      deck: 'A honeyed Fujian wulong with golden floral lift, sweet potato warmth, and a soft corn-sweet finish. It should feel fragrant without becoming perfume.',
+      guideTitle: 'Let the fragrance arrive before the sweetness.',
+      guideIntro: 'Golden Osmanthus is built around aroma first: flower, honey, warm starch, and a rounded wulong body. These notes keep the cup grounded so the floral character stays elegant.',
+      tasteTitle: 'Honey, osmanthus blossom, sweet potato, soft corn.',
+      tasteBody: 'The first impression is floral and golden, but the center of the cup is warmer than that: honey sweetness, sweet potato, and a popcorn-like grain note that keeps the aroma from floating away.',
+      brewTitle: '200°F. Two minutes. Give the rolled leaf room.',
+      brewBody: 'Use hotter water than a green tea and let the rolled wulong open. A two-minute first steep keeps the fragrance intact while giving the body enough time to round out.',
+      processTitle: 'Rolled wulong, made to hold aroma.',
+      processBody: 'The tightly rolled leaf slowly releases fragrance as it opens. That unfolding is part of the session: aroma first, then sweetness, then a warmer body as the cup settles.',
+      originTitle: 'Anxi, Fujian, a wulong region with deep craft memory.',
+      originBody: 'The page should treat Anxi as a real place, not just a romantic backdrop. It is one of Fujian’s important wulong regions, and the sourcing story should be filled in further once the transcript notes are reviewed.',
+      contextLabel: 'Fragrance',
+      contextTitle: 'Osmanthus reads as golden, floral, and quietly sweet.',
+      contextBody: 'In Chinese tea culture, floral fragrance is not decoration. It is part of how a tea announces itself. Here, the osmanthus cue gives the cup a luminous top note while the wulong keeps it grounded.',
+      valueLabel: 'Value Note',
+      valueTitle: 'The luxury is in restraint.',
+      valueBody: 'This tea should not be sold as loud flavoring. The premium feeling comes from balance: fragrance that is clear, sweetness that is warm, and a cup that changes without needing explanation.',
+      photoTitle: 'The actual rolled leaf.',
+      photoBody: 'A practical reference point after the field notes. Click the image to open the larger product photo and inspect the rolled wulong leaf more closely.',
+      photoSrc: './img/golden-osmanthus.jpg',
+      photoAlt: 'Golden Osmanthus dry rolled tea leaves',
+      hiddenArt: './img/golden-osmanthus-story-art-transparent.png',
+      deepTitle: 'The full osmanthus field note belongs here.',
+      deepBody: 'Use this space for the longer blog: Anxi wulong, osmanthus fragrance, how rolled leaves open in the cup, brewing with hotter water, and how to notice honey, sweet potato, and corn sweetness.'
+    }
+  };
+
+  function setText(id, value) {
+    const el = document.getElementById(id);
+    if (el && value !== undefined) el.textContent = value;
+  }
+
+  function applyEditorialPage(tea, page) {
+    document.body.classList.add('is-plush-peak-session');
+    if (page.themeClass) document.body.classList.add(page.themeClass);
+    setText('editorialType', page.type);
+    setText('editorialOriginTag', page.originTag);
+    setText('editorialAltitude', page.altitude);
+    setText('editorialTitle', page.title);
+    setText('editorialDeck', page.deck);
+    setText('editorialGuideTitle', page.guideTitle);
+    setText('editorialGuideIntro', page.guideIntro);
+    setText('editorialTasteTitle', page.tasteTitle);
+    setText('editorialTasteBody', page.tasteBody);
+    setText('editorialBrewTitle', page.brewTitle);
+    setText('editorialBrewBody', page.brewBody);
+    setText('editorialProcessTitle', page.processTitle);
+    setText('editorialProcessBody', page.processBody);
+    setText('editorialOriginTitle', page.originTitle);
+    setText('editorialOriginBody', page.originBody);
+    setText('editorialContextLabel', page.contextLabel);
+    setText('editorialContextTitle', page.contextTitle);
+    setText('editorialContextBody', page.contextBody);
+    setText('editorialValueLabel', page.valueLabel);
+    setText('editorialValueTitle', page.valueTitle);
+    setText('editorialValueBody', page.valueBody);
+    setText('editorialPhotoTitle', page.photoTitle);
+    setText('editorialPhotoBody', page.photoBody);
+    setText('editorialDeepTitle', page.deepTitle);
+    setText('editorialDeepBody', page.deepBody);
+
+    const hiddenArt = document.getElementById('editorialHiddenArt');
+    if (hiddenArt) hiddenArt.src = page.hiddenArt;
+    const photoLink = document.getElementById('editorialPhotoLink');
+    const photoImage = document.getElementById('editorialPhotoImage');
+    if (photoLink) photoLink.href = page.photoSrc;
+    if (photoImage) {
+      photoImage.src = page.photoSrc;
+      photoImage.alt = page.photoAlt;
+    }
+    const videoLink = document.getElementById('editorialVideoLink');
+    if (videoLink && videoMap[tea.name]) videoLink.href = videoMap[tea.name];
+  }
+
   fetch('./teas.json')
     .then(r => r.json())
     .then(teas => {
@@ -83,8 +195,10 @@
       imgEl.style.setProperty('--pdp-mark-line', mark.line);
       document.getElementById('pdpTypeIcon').textContent = visualNameMap[tea.name] || tea.name;
       document.getElementById('pdpTypeIcon').style.color = color;
+      if (editorialPages[tea.name]) {
+        applyEditorialPage(tea, editorialPages[tea.name]);
+      }
       if (tea.name === 'Plush Peak') {
-        document.body.classList.add('is-plush-peak-session');
         imgEl.classList.add('pdp-story-art', 'pdp-story-art--plush-peak');
         document.getElementById('pdpTypeIcon').textContent = 'Plush Peak';
         document.getElementById('pdpTaste').textContent = 'A Fujian green tea session on renewal, altitude, and gentle toast.';
