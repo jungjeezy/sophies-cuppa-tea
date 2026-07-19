@@ -1892,7 +1892,7 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   z-index: 1;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 28px 56px;
+  gap: 22px 52px;
   padding: 20px 46px 50px 86px;
 }
 .plush-field-spread::before {
@@ -1927,7 +1927,6 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   padding-top: 14px;
 }
 .plush-field-note--wide {
-  grid-row: span 2;
   padding-right: 22px;
 }
 .plush-field-note span {
