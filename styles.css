@@ -483,14 +483,18 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 .hero--label-system::after {
   content: '';
   position: absolute;
-  right: -8vw;
-  top: 96px;
-  width: 18vw;
+  right: 0;
+  top: 72px;
+  width: min(46vw, 620px);
   min-width: 180px;
-  height: 70%;
-  background: #d6b446;
-  opacity: 0.08;
+  height: calc(100% - 72px);
+  background:
+    linear-gradient(90deg, rgba(238,242,239,0.98), rgba(238,242,239,0.56) 38%, rgba(238,242,239,0.72)),
+    linear-gradient(180deg, rgba(47,75,82,0.08), rgba(47,75,82,0.22)),
+    url("./img/hero-founders.jpg") center / cover;
+  opacity: 0.26;
   border-radius: 999px 0 0 999px;
+  filter: saturate(0.72);
   pointer-events: none;
 }
 .hero--label-system .hero-content {
@@ -567,7 +571,9 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
   min-height: 250px;
   position: relative;
   overflow: hidden;
-  background: #c7d7cf;
+  background:
+    linear-gradient(135deg, rgba(199,215,207,0.72), rgba(238,229,213,0.88)),
+    url("./img/hero-tea.jpg") center / cover;
 }
 .family-art::before {
   content: '';
@@ -707,10 +713,25 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 
 /* ═══ BRAND THESIS ═══ */
 .brand-thesis {
+  position: relative;
+  overflow: hidden;
   padding: 92px 48px;
   background: var(--paper);
 }
+.brand-thesis::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(244,246,243,0.96) 0%, rgba(244,246,243,0.84) 48%, rgba(244,246,243,0.98) 100%),
+    url("./img/hero-cake.jpg") right center / 52% auto no-repeat;
+  opacity: 0.5;
+  filter: saturate(0.72) contrast(0.94);
+  pointer-events: none;
+}
 .brand-thesis-grid {
+  position: relative;
+  z-index: 1;
   max-width: 1080px;
   margin: 0 auto;
   display: grid;
@@ -778,11 +799,19 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
   overflow: hidden;
   border-radius: 6px;
   background: var(--paper-warm);
+  background-size: cover;
+  background-position: center;
+}
+.practice-photo--pouring {
+  background-image:
+    linear-gradient(180deg, rgba(17,25,23,0.02), rgba(17,25,23,0.16)),
+    url("./img/pouring-tea.jpg");
 }
 .practice-photo img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0;
 }
 .practice-photo--large img { object-position: center 46%; }
 .practice-photo figcaption {
@@ -941,8 +970,23 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 .section-cta { text-align: center; margin-top: 36px; }
 
 /* ═══ MEMBERSHIP BAND ═══ */
-.membership-band { padding: 94px 48px; background: var(--ink); color: var(--paper); }
-.membership-band-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.membership-band {
+  position: relative;
+  overflow: hidden;
+  padding: 94px 48px;
+  background:
+    linear-gradient(90deg, rgba(17,25,23,0.94), rgba(31,41,39,0.84)),
+    url("./img/hero-tea.jpg") center 42% / cover;
+  color: var(--paper);
+}
+.membership-band::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0;
+  height: 8px;
+  background: linear-gradient(90deg, #7f935f, #d6b446, #b43e32, #0f7d69);
+}
+.membership-band-inner { position: relative; z-index: 1; max-width: 760px; margin: 0 auto; text-align: center; }
 .membership-band h2 { color: var(--paper); font-size: clamp(2rem, 3.5vw, 3rem); margin-top: 8px; }
 .membership-band p { max-width: 620px; margin: 16px auto 0; color: rgba(247,242,234,0.62); line-height: 1.8; }
 .membership-band .hero-btns { justify-content: center; }
@@ -995,6 +1039,24 @@ h3 { font-family: var(--serif); font-weight: 400; line-height: 1.15; color: var(
 /* ═══ PAGE HERO ═══ */
 .page-hero { padding: 88px 48px 40px; max-width: 1200px; margin: 0 auto; text-align: center; }
 .page-hero--compact { padding-top: 20px; }
+.page-hero--shop {
+  position: relative;
+  overflow: hidden;
+  max-width: none;
+  padding: 78px 48px 76px;
+}
+.page-hero--shop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(244,246,243,0.88), rgba(244,246,243,0.97)),
+    url("./img/pouring-tea.jpg") center 54% / cover;
+  opacity: 0.42;
+  filter: saturate(0.72);
+  pointer-events: none;
+}
+.page-hero--shop > * { position: relative; z-index: 1; }
 .page-hero h1 { font-size: clamp(2.2rem, 4.5vw, 3.6rem); max-width: 16ch; margin: 0 auto; }
 .page-hero .hero-sub { max-width: 520px; margin: 14px auto 0; color: var(--mid); font-size: 0.92rem; line-height: 1.8; }
 
