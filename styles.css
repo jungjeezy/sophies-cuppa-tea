@@ -1284,6 +1284,74 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 
 /* ═══ PDP ═══ */
 .pdp { padding: 20px 48px 80px; max-width: 1200px; margin: 0 auto; }
+.is-plush-peak-session {
+  background:
+    linear-gradient(180deg, rgba(244,246,243,0.9), rgba(244,246,243,0.98) 44%, rgba(231,236,232,0.96)),
+    url("./img/plush-peak-session-bg.png") center 74px / min(1180px, 108vw) auto no-repeat,
+    var(--paper);
+}
+.is-plush-peak-session .breadcrumbs {
+  position: relative;
+  z-index: 1;
+}
+.is-plush-peak-session .pdp {
+  position: relative;
+  max-width: 1140px;
+  padding-top: 42px;
+}
+.is-plush-peak-session .pdp-grid {
+  grid-template-columns: 0.74fr 1fr;
+  gap: 34px;
+  min-height: 720px;
+  align-items: center;
+}
+.is-plush-peak-session .pdp-media {
+  position: relative;
+  top: auto;
+  align-self: stretch;
+  min-height: 560px;
+  border-radius: 18px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.4), rgba(244,246,243,0.86)),
+    url("./img/plush-peak-story-art.png") center 34% / 92% auto no-repeat;
+  border: 1px solid rgba(47,75,82,0.08);
+}
+.is-plush-peak-session .pdp-image {
+  display: none;
+}
+.is-plush-peak-session .pdp-info {
+  position: relative;
+  z-index: 1;
+}
+.is-plush-peak-session .pdp-info-scroll {
+  padding: 34px;
+  border-radius: 16px;
+  border: 1px solid rgba(47,75,82,0.1);
+  background: rgba(255,255,255,0.76);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 24px 80px rgba(31,41,39,0.08);
+}
+.is-plush-peak-session .pdp-title {
+  max-width: 9ch;
+  font-size: clamp(2.8rem, 6vw, 5.4rem) !important;
+  line-height: 0.92 !important;
+}
+.is-plush-peak-session .pdp-region {
+  margin-top: 12px;
+  font-family: var(--serif);
+  font-size: 1rem;
+  color: var(--wulong);
+}
+.is-plush-peak-session .pdp-taste-family {
+  max-width: 520px;
+  margin-top: 14px;
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--ink);
+}
 .pdp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
 .pdp-media { position: sticky; top: 80px; }
 .pdp-image { border-radius: 14px; overflow: hidden; }
@@ -1402,6 +1470,102 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
 .sticky-buy-info strong { font-family: var(--serif); font-size: 1rem; }
 .sticky-buy-info span { font-size: 0.72rem; color: var(--muted); display: block; }
 
+/* ═══ TEA SESSION ═══ */
+.tea-session {
+  display: none;
+  position: relative;
+  z-index: 1;
+  margin-top: 48px;
+  padding: 74px 0 0;
+  border-top: 1px solid rgba(47,75,82,0.12);
+}
+.is-plush-peak-session .tea-session {
+  display: block;
+}
+.tea-session-intro {
+  max-width: 760px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+.tea-session-intro h2 {
+  margin-top: 8px;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+}
+.tea-session-intro p {
+  max-width: 620px;
+  margin: 16px auto 0;
+  font-family: var(--serif);
+  font-size: 1.18rem;
+  line-height: 1.55;
+  color: var(--mid);
+}
+.tea-session-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+.session-card {
+  min-height: 245px;
+  padding: 26px;
+  border: 1px solid rgba(47,75,82,0.11);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.68);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+.session-card--large {
+  grid-column: span 2;
+}
+.session-card--wide {
+  grid-column: span 2;
+  background:
+    linear-gradient(135deg, rgba(31,41,39,0.92), rgba(47,75,82,0.82)),
+    url("./img/plush-peak-session-bg.png") center 72% / cover;
+  color: var(--paper);
+}
+.session-kicker {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+.session-card--wide .session-kicker {
+  color: var(--gold);
+}
+.session-card h3 {
+  font-size: clamp(1.25rem, 2vw, 1.72rem);
+}
+.session-card--wide h3 {
+  color: var(--paper);
+}
+.session-card p {
+  margin-top: 12px;
+  font-size: 0.86rem;
+  line-height: 1.78;
+  color: var(--mid);
+}
+.session-card--wide p {
+  color: rgba(247,242,234,0.7);
+}
+.session-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.session-actions a {
+  display: inline-flex;
+  padding: 10px 16px;
+  border: 1px solid rgba(247,242,234,0.2);
+  border-radius: 999px;
+  color: var(--paper);
+  font-size: 0.76rem;
+  font-weight: 700;
+}
+
 /* ═══ FINDER ═══ */
 .finder { display: grid; grid-template-columns: 220px 1fr; gap: 36px; padding: 0 48px 80px; max-width: 1280px; margin: 0 auto; }
 .finder-sidebar { position: sticky; top: 80px; align-self: start; background: var(--white); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
@@ -1479,6 +1643,10 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .values-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-top { grid-template-columns: 1fr; gap: 36px; }
   .pdp-grid { grid-template-columns: 1fr; gap: 24px; } .pdp-media { position: static; }
+  .is-plush-peak-session .pdp-grid { grid-template-columns: 1fr; min-height: auto; }
+  .is-plush-peak-session .pdp-media { min-height: 360px; }
+  .tea-session-grid { grid-template-columns: repeat(2, 1fr); }
+  .session-card--large, .session-card--wide { grid-column: span 2; }
   .finder { grid-template-columns: 180px 1fr; gap: 20px; }
   .finder-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .learn-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1541,6 +1709,18 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .page-hero { padding: 72px 16px 28px; } .page-hero h1 { font-size: clamp(2rem, 8vw, 2.6rem); }
   .footer { padding: 36px 16px 16px; } .footer-cols { grid-template-columns: 1fr; gap: 16px; }
   .pdp { padding: 12px 16px 80px; } .pdp-similar { grid-template-columns: 1fr 1fr; }
+  .is-plush-peak-session { background-size: 980px auto; background-position: center 54px; }
+  .is-plush-peak-session .pdp { padding-top: 24px; }
+  .is-plush-peak-session .pdp-media { min-height: 280px; background-size: 82% auto; }
+  .is-plush-peak-session .pdp-info-scroll { padding: 24px; }
+  .is-plush-peak-session .pdp-title { max-width: 8ch; }
+  .tea-session { margin-top: 26px; padding-top: 42px; }
+  .tea-session-intro { text-align: left; }
+  .tea-session-intro p { font-size: 1rem; }
+  .tea-session-grid { grid-template-columns: 1fr; }
+  .session-card, .session-card--large, .session-card--wide { grid-column: auto; min-height: auto; padding: 22px; }
+  .session-actions { flex-direction: column; }
+  .session-actions a { justify-content: center; }
   .sticky-buy-inner { padding: 0 16px; }
   .finder { grid-template-columns: 1fr; padding: 0 16px 40px; }
   .finder-sidebar { position: static; padding: 16px; }

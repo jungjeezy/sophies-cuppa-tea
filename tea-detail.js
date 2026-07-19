@@ -84,8 +84,16 @@
       document.getElementById('pdpTypeIcon').textContent = visualNameMap[tea.name] || tea.name;
       document.getElementById('pdpTypeIcon').style.color = color;
       if (tea.name === 'Plush Peak') {
+        document.body.classList.add('is-plush-peak-session');
         imgEl.classList.add('pdp-story-art', 'pdp-story-art--plush-peak');
         document.getElementById('pdpTypeIcon').textContent = 'Plush Peak';
+        document.getElementById('pdpTaste').textContent = 'A Fujian green tea session on renewal, altitude, and gentle toast.';
+        document.getElementById('pdpTasteDetail').textContent = 'Spring meadow, rain-wet grass, gentle toast';
+        document.querySelector('.pdp-price-note').textContent = 'per ounce · USDA certified organic';
+        document.querySelector('.pdp-trust').innerHTML =
+          '<div class="pdp-trust-item"><strong>USDA Certified Organic</strong><p>Grown in central Fujian, with other plants intentionally left between rows to support flavor.</p></div>' +
+          '<div class="pdp-trust-item"><strong>Farm Relationship</strong><p>John describes visiting the area, seeing the certified farms, and getting to know the farmers behind this tea.</p></div>' +
+          '<div class="pdp-trust-item"><strong>Not Lesser, Just Accessible</strong><p>The favorable price comes from Sophie’s sourcing arrangement, not from lower quality.</p></div>';
       }
       if (tea.name === 'Golden Osmanthus') {
         imgEl.classList.add('pdp-story-art', 'pdp-story-art--golden-osmanthus');
