@@ -112,6 +112,10 @@
       document.getElementById('pdpTemp').textContent = tea.temp ? tea.temp + '°F' : '—';
       document.getElementById('pdpSteep').textContent = tea.steep || '—';
       document.getElementById('pdpTasteDetail').textContent = tea.taste;
+      if (tea.name === 'Plush Peak') {
+        document.getElementById('pdpTaste').textContent = 'A Fujian green tea session on renewal, altitude, and gentle toast.';
+        document.getElementById('pdpTasteDetail').textContent = 'Spring meadow, rain-wet grass, gentle toast';
+      }
 
       // Flavors
       const flavorsEl = document.getElementById('pdpFlavors');
