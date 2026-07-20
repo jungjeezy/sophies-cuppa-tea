@@ -399,5 +399,133 @@ window.SOPHIES_BLOG_POSTS = [
       'That is why tastings matter for the broader site. A product page can help someone buy. A tasting can help someone understand.',
       'If you are new, come curious. If you already love tea, come ready to notice more.'
     ]
+  },
+  {
+    number: 'A01',
+    slug: 'archive-store-closed-april-4-19',
+    category: 'From The Archive',
+    title: 'Store Closed April 4 - 19',
+    dek: 'A live-site archive note about travel to tea farms in Hawaii and Taiwan and the temporary shop closure around that sourcing trip.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/store-closed-april-4-19',
+    secondaryLabel: 'Back to Blog',
+    secondaryHref: 'learn.html',
+    body: [
+      'This archived post announced a temporary shop closure while the team traveled to visit tea farms in Hawaii and Taiwan.',
+      'It belongs in the new blog archive because travel and sourcing are part of the Sophie’s story. Even a practical closure notice helps show that the shop’s knowledge is connected to field visits, relationships, and continuing movement through tea places.',
+      'When this is ported into Shopify, keep it as an archive item rather than a current announcement so customers do not confuse it with present-day store hours.'
+    ]
+  },
+  {
+    number: 'A02',
+    slug: 'archive-oxidation-makes-tea-black',
+    category: 'From The Archive',
+    title: 'Oxidation Makes Tea Black',
+    dek: 'A foundational tea-education post explaining how oxidation changes tea’s color, aroma, flavor, texture, and bitterness.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/oxidation-makes-tea-black',
+    secondaryLabel: 'Read Wulong Guide',
+    secondaryHref: 'blog.html?post=what-is-wulong-tea',
+    body: [
+      'This archived education post explains oxidation as one of the central transformations in tea. Oxidation changes more than color; it affects aroma, bitterness, body, and the range of flavors that become possible.',
+      'It should stay in the new site because oxidation is one of the easiest bridges from beginner curiosity to deeper tea knowledge. Green, white, red, and wulong teas become easier to understand once customers know that processing changes the finished cup.',
+      'A future rewrite could connect this post directly to Start Here teas: Plush Peak for unoxidized green tea, Golden Osmanthus for lightly oxidized wulong, and red teas for deeper oxidation.'
+    ]
+  },
+  {
+    number: 'A03',
+    slug: 'archive-customer-tasting-note',
+    category: 'From The Archive',
+    title: 'How To Write An Excellent Customer Tasting Note For Sophie’s',
+    dek: 'A practical archive post about helping customers describe what they notice in a tea so other drinkers can learn from it.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/how-to-write-an-excellent-customer-tasting-note-for-sophies',
+    secondaryLabel: 'Read Tasting Guide',
+    secondaryHref: 'blog.html?post=how-to-taste-tea',
+    body: [
+      'This archived post gave customers guidance for writing tasting notes that other customers would actually want to read.',
+      'It fits the new site because Sophie’s is not only selling tea; it is teaching people how to notice. A good tasting note helps a customer move from “I like it” to a more useful description of aroma, mouthfeel, finish, sweetness, roast, minerality, or comfort.',
+      'This post can eventually be folded into the new tasting-guide system and linked from product reviews, the Blog tab, and individual tea pages.'
+    ]
+  },
+  {
+    number: 'A04',
+    slug: 'archive-current-chinese-tea-market',
+    category: 'From The Archive',
+    title: 'Current Chinese Tea Market',
+    dek: 'A founder-led archive post about uncertainty, growth, pandemic-era market changes, and the practical reality of sourcing tea.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/current-chinese-tea-market',
+    secondaryLabel: 'Travel Page',
+    secondaryHref: 'travel.html',
+    body: [
+      'This archived post reflects on the Chinese tea market during a period of disruption and uncertainty.',
+      'It belongs in the new archive because it shows the business context behind sourcing. Tea is not a static catalog. Availability, pricing, travel, relationships, and market shifts all affect what customers can buy and when.',
+      'A future update could turn this into a stronger sourcing-transparency article: how market conditions affect rare tea, why some teas disappear, and why the most honest catalog is sometimes a changing catalog.'
+    ]
+  },
+  {
+    number: 'A05',
+    slug: 'archive-large-cup-tea-technique',
+    category: 'From The Archive',
+    title: 'Large Cup Tea: Explorations in Technique',
+    dek: 'A key archive post about Sophie’s large cup method, tradition, innovation, and making serious tea easier to practice at home.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/large-cup-tea-explorations-in-technique',
+    secondaryLabel: 'See Brewing Setup',
+    secondaryHref: 'brewing.html',
+    body: [
+      'This is one of the most important archive posts to preserve because it supports Sophie’s brewing philosophy.',
+      'The large cup method gives customers a practical way to drink serious tea without needing a full ceremonial setup. It respects tradition while making attention possible in ordinary American life: a clear cup, good water, enough leaf, and a repeatable process.',
+      'On the new site, this post should connect directly to the Brewing page and any Amazon gear links for the clear cup, strainer, and kettle. It can also become a cornerstone article for search traffic around loose leaf brewing.'
+    ]
+  },
+  {
+    number: 'A06',
+    slug: 'archive-tea-rhythm-in-a-mug',
+    category: 'From The Archive',
+    title: 'Tea Rhythm In a Mug of Tea',
+    dek: 'A reflective archive post about slowing down, reclaiming attention, and using a mug of tea as a daily rhythm.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/tea-rhythm-in-a-mug-of-tea',
+    secondaryLabel: 'See Brewing Setup',
+    secondaryHref: 'brewing.html',
+    body: [
+      'This archived post connects tea to rhythm, attention, and the pace of ordinary life.',
+      'It should stay because it supports one of the strongest brand themes we have been circling: presence. The value of Sophie’s is not only that the tea is rare or clean. It is that the tea gives customers a reason to slow down and notice more.',
+      'A future version could become a customer-facing essay on tea as daily practice, linking into membership for people who want that rhythm guided over time.'
+    ]
+  },
+  {
+    number: 'A07',
+    slug: 'archive-east-meets-west-in-a-mug',
+    category: 'From The Archive',
+    title: 'The Beauty of East Meets West In a Mug of Tea',
+    dek: 'An archive post about bringing Chinese tea practice into an American daily cup without losing depth or cultural specificity.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/the-beauty-of-east-meets-west-in-a-mug-of-tea',
+    secondaryLabel: 'About Sophie’s',
+    secondaryHref: 'about.html',
+    body: [
+      'This archived post belongs because it speaks directly to Sophie’s bridge: traditional Chinese tea knowledge translated into a form that works in modern American life.',
+      'The cultural risk is that “East meets West” can become vague if it is not grounded in specifics. The new site should preserve the idea but make it more precise: Chinese regions, processing methods, brewing choices, and daily American use.',
+      'This can become a strong About or Brewing companion piece once it is edited for clarity and cultural specificity.'
+    ]
+  },
+  {
+    number: 'A08',
+    slug: 'archive-find-loose-leaf-green-tea',
+    category: 'From The Archive',
+    title: 'How To Find A Loose Leaf Green Tea You Like',
+    dek: 'A beginner-friendly archive post about choosing green tea as your taste changes and learning what criteria matter.',
+    ctaLabel: 'Read Original',
+    ctaHref: 'https://www.sophiescuppatea.com/blogs/news/how-to-find-a-loose-leaf-green-tea-you-like',
+    secondaryLabel: 'Start With Plush Peak',
+    secondaryHref: 'tea.html?name=Plush%20Peak',
+    body: [
+      'This archived post helps customers approach loose leaf green tea without treating preference as fixed.',
+      'It belongs in the new site because green tea is a common point of confusion. Many customers think green tea is bitter or generic, but often they need better sourcing, better storage, cooler water, and clearer criteria for what they are tasting.',
+      'This should link directly to Plush Peak and the new “Why Green Tea Tastes Bitter” article, making it part of a larger green tea education path.'
+    ]
   }
 ];
