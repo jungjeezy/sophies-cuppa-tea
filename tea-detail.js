@@ -4,7 +4,11 @@
 
   const params = new URLSearchParams(window.location.search);
   const teaName = params.get('name');
-  if (!teaName) { document.querySelector('.pdp').innerHTML = '<p style="padding:200px 60px;text-align:center">No tea selected. <a href="find.html">Find your tea &rarr;</a></p>'; return; }
+  const pageShell = document.querySelector('.pdp');
+  if (!teaName) {
+    if (pageShell) pageShell.innerHTML = '<p style="padding:200px 60px;text-align:center">No tea selected. <a href="find.html">Find your tea &rarr;</a></p>';
+    return;
+  }
 
   const videoMap = {
     'Golden Osmanthus': 'https://youtu.be/B2vBEp8vV30',
@@ -133,6 +137,23 @@
     if (el && value !== undefined) el.textContent = value;
   }
 
+  function setHTML(selector, value) {
+    const el = document.querySelector(selector);
+    if (el && value !== undefined) el.innerHTML = value;
+  }
+
+  function setElementText(id, value) {
+    const el = document.getElementById(id);
+    if (el && value !== undefined) el.textContent = value;
+    return el;
+  }
+
+  function showTeaError(message) {
+    if (pageShell) {
+      pageShell.innerHTML = '<p style="padding:200px 60px;text-align:center">' + message + ' <a href="shop.html">Return to shop &rarr;</a></p>';
+    }
+  }
+
   function applyEditorialPage(tea, page) {
     document.body.classList.add('is-plush-peak-session');
     if (page.themeClass) document.body.classList.add(page.themeClass);
@@ -181,7 +202,7 @@
     .then(r => r.json())
     .then(teas => {
       const tea = teas.find(t => t.name.toLowerCase() === teaName.toLowerCase());
-      if (!tea) { document.querySelector('.pdp').innerHTML = '<p style="padding:200px 60px;text-align:center">Tea not found. <a href="find.html">Find your tea &rarr;</a></p>'; return; }
+      if (!tea) { showTeaError('Tea not found.'); return; }
 
       const color = typeColors[tea.type] || '#7d766b';
 
@@ -189,74 +210,81 @@
       document.title = tea.name + ' — Sophie\'s Cuppa Tea';
 
       // Breadcrumb
-      document.getElementById('breadcrumbName').textContent = tea.name;
+      setElementText('breadcrumbName', tea.name);
 
       // Symbolic product visual. Story images can be generated later per tea.
       const imgEl = document.querySelector('.pdp-image-placeholder');
       const mark = typeMarks[tea.type] || typeMarks['Wulong'];
-      imgEl.classList.add('pdp-symbol');
-      imgEl.style.setProperty('--pdp-mark-bg', mark.bg);
-      imgEl.style.setProperty('--pdp-mark-line', mark.line);
-      document.getElementById('pdpTypeIcon').textContent = visualNameMap[tea.name] || tea.name;
-      document.getElementById('pdpTypeIcon').style.color = color;
+      if (imgEl) {
+        imgEl.classList.add('pdp-symbol');
+        imgEl.style.setProperty('--pdp-mark-bg', mark.bg);
+        imgEl.style.setProperty('--pdp-mark-line', mark.line);
+      }
+      const typeIcon = setElementText('pdpTypeIcon', visualNameMap[tea.name] || tea.name);
+      if (typeIcon) typeIcon.style.color = color;
       if (editorialPages[tea.name]) {
         applyEditorialPage(tea, editorialPages[tea.name]);
       }
       if (tea.name === 'Plush Peak') {
-        imgEl.classList.add('pdp-story-art', 'pdp-story-art--plush-peak');
-        document.getElementById('pdpTypeIcon').textContent = 'Plush Peak';
-        document.getElementById('pdpTaste').textContent = 'A Fujian green tea session on renewal, altitude, and gentle toast.';
-        document.getElementById('pdpTasteDetail').textContent = 'Spring meadow, rain-wet grass, gentle toast';
-        document.querySelector('.pdp-price-note').textContent = 'per ounce · USDA certified organic';
-        document.querySelector('.pdp-trust').innerHTML =
+        if (imgEl) imgEl.classList.add('pdp-story-art', 'pdp-story-art--plush-peak');
+        setElementText('pdpTypeIcon', 'Plush Peak');
+        setElementText('pdpTaste', 'A Fujian green tea session on renewal, altitude, and gentle toast.');
+        setElementText('pdpTasteDetail', 'Spring meadow, rain-wet grass, gentle toast');
+        const priceNote = document.querySelector('.pdp-price-note');
+        if (priceNote) priceNote.textContent = 'per ounce · USDA certified organic';
+        setHTML('.pdp-trust',
           '<div class="pdp-trust-item"><strong>USDA Certified Organic</strong><p>Grown in central Fujian, with other plants intentionally left between rows to support flavor.</p></div>' +
           '<div class="pdp-trust-item"><strong>Farm Relationship</strong><p>Selected through direct familiarity with the area, certified farms, and farming practices behind this tea.</p></div>' +
-          '<div class="pdp-trust-item"><strong>Not Lesser, Just Accessible</strong><p>The favorable price comes from Sophie’s sourcing arrangement, not from lower quality.</p></div>';
+          '<div class="pdp-trust-item"><strong>Not Lesser, Just Accessible</strong><p>The favorable price comes from Sophie’s sourcing arrangement, not from lower quality.</p></div>');
       }
       if (tea.name === 'Golden Osmanthus') {
-        imgEl.classList.add('pdp-story-art', 'pdp-story-art--golden-osmanthus');
-        document.getElementById('pdpTypeIcon').textContent = 'Golden Osmanthus';
+        if (imgEl) imgEl.classList.add('pdp-story-art', 'pdp-story-art--golden-osmanthus');
+        setElementText('pdpTypeIcon', 'Golden Osmanthus');
       }
 
       // Info
       const badge = document.getElementById('pdpTypeBadge');
-      badge.textContent = tea.type;
-      badge.style.color = color;
-      badge.style.background = color + '14';
+      if (badge) {
+        badge.textContent = tea.type;
+        badge.style.color = color;
+        badge.style.background = color + '14';
+      }
 
-      document.getElementById('pdpTitle').textContent = tea.name;
-      document.getElementById('pdpRegion').textContent = tea.region ? tea.region + ' Province, China' : 'China';
-      document.getElementById('pdpTaste').textContent = tea.taste;
-      document.getElementById('pdpTemp').textContent = tea.temp ? tea.temp + '°F' : '—';
-      document.getElementById('pdpSteep').textContent = tea.steep || '—';
-      document.getElementById('pdpTasteDetail').textContent = tea.taste;
+      setElementText('pdpTitle', tea.name);
+      setElementText('pdpRegion', tea.region ? tea.region + ' Province, China' : 'China');
+      setElementText('pdpTaste', tea.taste);
+      setElementText('pdpTemp', tea.temp ? tea.temp + '°F' : '—');
+      setElementText('pdpSteep', tea.steep || '—');
+      setElementText('pdpTasteDetail', tea.taste);
       if (tea.name === 'Plush Peak') {
-        document.getElementById('pdpTaste').textContent = 'A Fujian green tea session on renewal, altitude, and gentle toast.';
-        document.getElementById('pdpTasteDetail').textContent = 'Spring meadow, rain-wet grass, gentle toast';
+        setElementText('pdpTaste', 'A Fujian green tea session on renewal, altitude, and gentle toast.');
+        setElementText('pdpTasteDetail', 'Spring meadow, rain-wet grass, gentle toast');
       }
 
       // Flavors
       const flavorsEl = document.getElementById('pdpFlavors');
-      flavorsEl.innerHTML = tea.flavors.map(f => '<span class="pdp-flavor-tag">' + f + '</span>').join('');
+      if (flavorsEl) flavorsEl.innerHTML = (tea.flavors || []).map(f => '<span class="pdp-flavor-tag">' + f + '</span>').join('');
 
       // Moods
       const moodsEl = document.getElementById('pdpMoods');
-      moodsEl.innerHTML = tea.moods.map(m => '<span class="pdp-mood-tag">' + m + '</span>').join('');
+      if (moodsEl) moodsEl.innerHTML = (tea.moods || []).map(m => '<span class="pdp-mood-tag">' + m + '</span>').join('');
 
       // Video
       const videoUrl = videoMap[tea.name];
       if (videoUrl) {
-        document.getElementById('pdpVideoSection').style.display = 'block';
-        document.getElementById('pdpVideoLink').href = videoUrl;
+        const videoSection = document.getElementById('pdpVideoSection');
+        const videoLink = document.getElementById('pdpVideoLink');
+        if (videoSection) videoSection.style.display = 'block';
+        if (videoLink) videoLink.href = videoUrl;
       }
 
       // Sticky bar
-      document.getElementById('stickyName').textContent = tea.name;
+      setElementText('stickyName', tea.name);
 
       // Similar teas (same taste family, different tea)
       const similar = teas.filter(t => t.taste === tea.taste && t.name !== tea.name).slice(0, 4);
       const simEl = document.getElementById('pdpSimilar');
-      simEl.innerHTML = similar.map(s =>
+      if (simEl) simEl.innerHTML = similar.map(s =>
         '<a href="tea.html?name=' + encodeURIComponent(s.name) + '" class="pdp-similar-card">' +
         '<span class="pdp-similar-type" style="color:' + (typeColors[s.type] || '#7d766b') + '">' + s.type + '</span>' +
         '<strong>' + s.name + '</strong>' +
@@ -267,21 +295,24 @@
       // Show sticky bar on scroll past add button
       const addBtn = document.getElementById('pdpAdd');
       const stickyBar = document.getElementById('stickyBuy');
-      if (addBtn && stickyBar) {
+      if (addBtn && stickyBar && 'IntersectionObserver' in window) {
         const obs = new IntersectionObserver(([e]) => {
           stickyBar.classList.toggle('is-visible', !e.isIntersecting);
         }, { threshold: 0 });
         obs.observe(addBtn);
       }
-    });
+    })
+    .catch(() => showTeaError('The tea details could not load.'));
 
   // Quantity controls
   let qty = 1;
   const qtyNum = document.getElementById('qtyNum');
-  document.getElementById('qtyMinus').addEventListener('click', () => {
+  const qtyMinus = document.getElementById('qtyMinus');
+  const qtyPlus = document.getElementById('qtyPlus');
+  if (qtyMinus) qtyMinus.addEventListener('click', () => {
     if (qty > 1) { qty--; qtyNum.textContent = qty; }
   });
-  document.getElementById('qtyPlus').addEventListener('click', () => {
+  if (qtyPlus) qtyPlus.addEventListener('click', () => {
     if (qty < 10) { qty++; qtyNum.textContent = qty; }
   });
 
@@ -301,8 +332,10 @@
     btn.style.background = '#4a7c4e';
     setTimeout(() => { btn.textContent = originalText; btn.style.background = ''; }, 1500);
   }
-  document.getElementById('pdpAdd').addEventListener('click', addToCart);
-  document.getElementById('stickyAdd').addEventListener('click', addToCart);
+  const pdpAdd = document.getElementById('pdpAdd');
+  const stickyAdd = document.getElementById('stickyAdd');
+  if (pdpAdd) pdpAdd.addEventListener('click', addToCart);
+  if (stickyAdd) stickyAdd.addEventListener('click', addToCart);
   document.querySelectorAll('.plush-add').forEach(btn => {
     btn.addEventListener('click', addToCart);
   });
