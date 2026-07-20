@@ -1276,13 +1276,6 @@ a.home-spread-note:hover {
 .page-hero .hero-sub { max-width: 520px; margin: 14px auto 0; color: var(--mid); font-size: 0.92rem; line-height: 1.8; }
 
 /* ═══ SHOP INTENT ═══ */
-.shop-intent { padding: 12px 48px 50px; }
-.shop-intent-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.shop-intent-card { display: block; padding: 24px; min-height: 170px; border: 1px solid var(--line); border-radius: 14px; background: var(--white); transition: all 0.3s var(--ease); }
-.shop-intent-card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.05); border-color: transparent; }
-.shop-intent-card span { display: block; font-family: var(--serif); font-size: 1.45rem; color: var(--line); margin-bottom: 14px; }
-.shop-intent-card h3 { font-size: 1.12rem; }
-.shop-intent-card p { margin-top: 8px; color: var(--mid); font-size: 0.8rem; line-height: 1.65; }
 
 /* ═══ FILTER ═══ */
 .filter-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 36px; }
@@ -3034,7 +3027,6 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .practice-photos-grid { grid-template-columns: 1.25fr 0.75fr; }
   .thesis-points { grid-template-columns: 1fr; }
   .thesis-points div { min-height: auto; }
-  .shop-intent-grid { grid-template-columns: 1fr; }
   .browse-grid { grid-template-columns: repeat(2, 1fr) !important; }
   .blog-post { padding: 54px 28px 72px; }
   .blog-post-grid { grid-template-columns: 1fr; gap: 42px; }
@@ -3158,10 +3150,10 @@ a.pdp-similar-card strong { font-family: var(--serif); font-size: 0.92rem; font-
   .selection-seal strong { font-size: 0.9rem; }
   .selection-seal span, .selection-seal em { font-size: 0.48rem; }
   .hero-metrics { flex-direction: column; gap: 12px; }
-  .about, .types, .collection, .spotlight, .learn, .tastings, .values, .browse, .brewing, .yt-section, .ritual, .purchase-paths, .membership-band, .shop-intent, .brew-intro, .gear, .brew-steps-page, .brewing-shop-cta, .membership-buy, .membership-world, .travel-proof, .travel-map, .travel-gallery, .brand-thesis, .practice-photos { padding-left: 32px; padding-right: 16px; }
+  .about, .types, .collection, .spotlight, .learn, .tastings, .values, .browse, .brewing, .yt-section, .ritual, .purchase-paths, .membership-band, .brew-intro, .gear, .brew-steps-page, .brewing-shop-cta, .membership-buy, .membership-world, .travel-proof, .travel-map, .travel-gallery, .brand-thesis, .practice-photos { padding-left: 32px; padding-right: 16px; }
   .about-grid, .about-stats { grid-template-columns: 1fr; flex-direction: column; gap: 16px; }
   .types-row { flex-direction: column; align-items: stretch; }
-  .grid, .grid--3, .path-grid, .shop-intent-grid, .gear-grid, .brew-intro-grid, .membership-buy-grid { grid-template-columns: 1fr; }
+  .grid, .grid--3, .path-grid, .gear-grid, .brew-intro-grid, .membership-buy-grid { grid-template-columns: 1fr; }
   .membership-world { padding-top: 8px; padding-bottom: 42px; }
   .membership-world-grid { grid-template-columns: 1fr; }
   .membership-world-copy { grid-column: auto; padding: 26px; }
