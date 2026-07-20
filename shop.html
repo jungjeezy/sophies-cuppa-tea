@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop — Sophie's Cuppa Tea</title>
-    <meta name="description" content="Explore twelve featured teas Sophie’s would pour first." />
+    <meta name="description" content="Explore twelve Start Here teas Sophie’s would pour first." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&display=swap" rel="stylesheet" />
@@ -17,10 +17,11 @@
       <div class="nav-center">
         <a href="index.html">Home</a>
         <a href="shop.html" class="is-current">Shop</a>
-        <a href="learn.html">Learn</a>
         <a href="brewing.html">Brewing</a>
         <a href="membership.html">Membership</a>
+        <a href="travel.html">Travel</a>
         <a href="tastings.html">Tastings</a>
+        <a href="learn.html">Blog</a>
         <a href="about.html">About</a>
       </div>
       <a href="membership.html" class="nav-btn">Join Tea Club</a>
@@ -33,33 +34,14 @@
       <span class="breadcrumb-current">Shop</span>
     </div>
 
-    <section class="page-hero page-hero--compact">
-      <span class="label">Featured Teas</span>
+    <section class="page-hero page-hero--compact page-hero--shop">
+      <span class="label">Start Here Teas</span>
       <h1>Start here: twelve teas we would pour first.</h1>
       <p class="hero-sub">Twelve single-source teas chosen to show why Sophie's costs more: pesticide-free farming, direct sourcing, no flavorings, and leaves good enough to stand on their own.</p>
       <div class="hero-btns hero-btns--center">
-        <a href="#collection" class="btn btn-dark">Shop Featured Teas</a>
-        <a href="brewing.html" class="btn btn-ghost">Learn Big Cup Brewing</a>
-      </div>
-    </section>
-
-    <section class="shop-intent">
-      <div class="shop-intent-grid">
-        <a href="#collection" class="shop-intent-card reveal">
-          <span>01</span>
-          <h3>I want an easy first order.</h3>
-          <p>Start with our featured teas and choose by tea type, flavor, or comfort level.</p>
-        </a>
-        <a href="membership.html" class="shop-intent-card reveal">
-          <span>02</span>
-          <h3>I want guided support.</h3>
-          <p>Tea Club turns the catalog into a curated path with human judgment.</p>
-        </a>
-        <a href="find.html" class="shop-intent-card reveal">
-          <span>03</span>
-          <h3>I know what I like.</h3>
-          <p>Use taste and mood filters to narrow the broader catalog.</p>
-        </a>
+        <a href="#collection" class="btn btn-dark">Shop Start Here</a>
+        <a href="#all-teas" class="btn btn-ghost">View All Teas</a>
+        <a href="brewing.html" class="btn btn-ghost">See Big Cup Brewing</a>
       </div>
     </section>
 
@@ -69,7 +51,7 @@
         <a href="#collection" class="browse-card reveal" style="--bc:#4a7c4e">
           <span class="browse-dot"></span>
           <h3>Pesticide-free leaves</h3>
-          <p>Clean farming is the baseline for every featured tea.</p>
+          <p>Clean farming is the baseline for every Start Here tea.</p>
         </a>
         <a href="#collection" class="browse-card reveal" style="--bc:#7a6a55">
           <span class="browse-dot"></span>
@@ -91,17 +73,20 @@
 
     <!-- ══ FEATURED TEAS COLLECTION ══ -->
     <section class="collection" id="collection">
-      <div class="filter-row reveal">
-        <button class="filter is-on" data-f="all">All</button>
-        <button class="filter" data-f="wulong">Wulong</button>
-        <button class="filter" data-f="green">Green</button>
-        <button class="filter" data-f="white">White</button>
-        <button class="filter" data-f="red">Red</button>
+      <div class="collection-toolbar reveal">
+        <div class="filter-row">
+          <button class="filter is-on" data-f="all">All</button>
+          <button class="filter" data-f="wulong">Wulong</button>
+          <button class="filter" data-f="green">Green</button>
+          <button class="filter" data-f="white">White</button>
+          <button class="filter" data-f="red">Red</button>
+        </div>
+        <a href="#all-teas" class="btn btn-ghost btn-small">View All Teas</a>
       </div>
 
       <div class="grid">
-        <article class="card reveal" data-cat="wulong">
-          <div class="card-img"><img src="./img/golden-osmanthus.jpg" alt="Golden Osmanthus" loading="lazy" /></div>
+        <article class="card card--story-art card--golden-osmanthus-art reveal" data-cat="wulong">
+          <div class="card-mark card-mark--wulong card-mark--story card-mark--golden-osmanthus"><span>Golden Osmanthus</span></div>
           <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
           <h3>Golden Osmanthus</h3>
           <p class="origin">Anxi, Fujian</p>
@@ -111,7 +96,7 @@
         </article>
 
         <article class="card reveal" data-cat="wulong">
-          <div class="card-img"><img src="./img/harmony.png" alt="Harmony" loading="lazy" /></div>
+          <div class="card-mark card-mark--wulong"><span>balance</span></div>
           <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
           <h3>Harmony</h3>
           <p class="origin">Anxi, Fujian</p>
@@ -121,7 +106,7 @@
         </article>
 
         <article class="card reveal" data-cat="wulong">
-          <div class="card-img"><img src="./img/iron-goddess-special.jpg" alt="Iron Goddess Special" loading="lazy" /></div>
+          <div class="card-mark card-mark--wulong"><span>goddess</span></div>
           <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
           <h3>Iron Goddess Special</h3>
           <p class="origin">Anxi, Fujian</p>
@@ -131,7 +116,7 @@
         </article>
 
         <article class="card reveal" data-cat="wulong">
-          <div class="card-img"><img src="./img/white-orchid.png" alt="White Orchid" loading="lazy" /></div>
+          <div class="card-mark card-mark--wulong"><span>orchid</span></div>
           <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
           <h3>White Orchid</h3>
           <p class="origin">Southern Fujian</p>
@@ -141,7 +126,7 @@
         </article>
 
         <article class="card reveal" data-cat="red">
-          <div class="card-img"><img src="./img/red-tea.png" alt="Red Border" loading="lazy" /></div>
+          <div class="card-mark card-mark--red"><span>border</span></div>
           <div class="card-head"><span class="tag tag--red">Red Tea</span><span class="temp">175°F</span></div>
           <h3>Red Border</h3>
           <p class="origin">China</p>
@@ -151,7 +136,7 @@
         </article>
 
         <article class="card reveal" data-cat="wulong">
-          <div class="card-img"><img src="./img/black-peony.png" alt="Black Peony" loading="lazy" /></div>
+          <div class="card-mark card-mark--wulong"><span>peony</span></div>
           <div class="card-head"><span class="tag tag--wulong">Wulong</span><span class="temp">200°F</span></div>
           <h3>Black Peony</h3>
           <p class="origin">China</p>
@@ -161,7 +146,7 @@
         </article>
 
         <article class="card reveal" data-cat="wulong">
-          <div class="card-img"><img src="./img/golden-goddess.jpg" alt="Golden Goddess" loading="lazy" /></div>
+          <div class="card-mark card-mark--wulong"><span>goddess</span></div>
           <div class="card-head"><span class="tag tag--wulong">Cliff Tea</span><span class="temp">200°F</span></div>
           <h3>Golden Goddess</h3>
           <p class="origin">Wuyi Mountains, Fujian</p>
@@ -171,7 +156,7 @@
         </article>
 
         <article class="card reveal" data-cat="wulong">
-          <div class="card-img"><img src="./img/golden-resurrection.jpg" alt="Golden Resurrection" loading="lazy" /></div>
+          <div class="card-mark card-mark--wulong"><span>resurrection</span></div>
           <div class="card-head"><span class="tag tag--wulong">Cliff Tea</span><span class="temp">200°F</span></div>
           <h3>Golden Resurrection</h3>
           <p class="origin">Wuyi Mountains, Fujian</p>
@@ -181,7 +166,7 @@
         </article>
 
         <article class="card reveal" data-cat="green">
-          <div class="card-img"><img src="./img/hale-and-hearty.png" alt="Hale and Hearty" loading="lazy" /></div>
+          <div class="card-mark card-mark--green"><span>hale</span></div>
           <div class="card-head"><span class="tag tag--green">Green Tea</span><span class="temp">175°F</span></div>
           <h3>Hale and Hearty</h3>
           <p class="origin">Fujian</p>
@@ -190,8 +175,8 @@
           <div class="card-foot"><span class="level level--begin">Beginner-Friendly</span><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener" class="yt-link">More Tastings &rarr;</a></div>
         </article>
 
-        <article class="card reveal" data-cat="green">
-          <div class="card-img"><img src="./img/plush-peak.png" alt="Plush Peak" loading="lazy" /></div>
+        <article class="card card--story-art card--plush-peak-art reveal" data-cat="green">
+          <div class="card-mark card-mark--green card-mark--story card-mark--plush-peak"><span>Plush Peak</span></div>
           <div class="card-head"><span class="tag tag--green">Green Tea</span><span class="temp">175°F</span></div>
           <h3>Plush Peak</h3>
           <p class="origin">Central Fujian &middot; 4,500 ft</p>
@@ -201,7 +186,7 @@
         </article>
 
         <article class="card reveal" data-cat="green">
-          <div class="card-img"><img src="./img/silver-tip.png" alt="Silver Tip" loading="lazy" /></div>
+          <div class="card-mark card-mark--green"><span>silver tip</span></div>
           <div class="card-head"><span class="tag tag--green">Green Tea</span><span class="temp">175°F</span></div>
           <h3>Silver Tip</h3>
           <p class="origin">China</p>
@@ -211,7 +196,7 @@
         </article>
 
         <article class="card reveal" data-cat="white">
-          <div class="card-img"><img src="./img/white-peony.jpg" alt="White Peony" loading="lazy" /></div>
+          <div class="card-mark card-mark--white"><span>peony</span></div>
           <div class="card-head"><span class="tag tag--white">White Tea</span><span class="temp">175°F</span></div>
           <h3>White Peony</h3>
           <p class="origin">Fuding, Fujian &middot; Aged 7+ years</p>
@@ -223,10 +208,10 @@
     </section>
 
     <!-- ══ FULL COLLECTION ══ -->
-    <section class="browse">
+    <section class="browse" id="all-teas">
       <div class="browse-head reveal">
         <span class="label">The Full Collection</span>
-        <h2>Beyond the featured teas.</h2>
+        <h2>Beyond Start Here.</h2>
         <p>400+ single-source teas, organized by type. Each one sourced directly from the farmer who made it.</p>
         <a href="find.html" class="btn btn-dark" style="margin-top:24px">Find Your Tea by Taste &rarr;</a>
       </div>
@@ -285,7 +270,7 @@
     <!-- ══ SPOTLIGHT ══ -->
     <section class="spotlight">
       <div class="spotlight-card reveal">
-        <div class="spotlight-img"><img src="./img/golden-resurrection.jpg" alt="Golden Resurrection" /></div>
+        <div class="spotlight-mark card-mark card-mark--wulong"><span>resurrection</span></div>
         <div class="spotlight-left">
           <span class="label">Perfect Entry Cliff Tea</span>
           <h2>Golden Resurrection</h2>
@@ -310,8 +295,8 @@
         <div class="footer-brand"><span class="footer-logo">sophie's cuppa tea</span><p class="footer-motto">Tea for a Long Life.</p><p class="footer-loc">Oakland, California</p></div>
         <div class="footer-cols">
           <div class="footer-col"><h4>Shop</h4><a href="shop.html">All Teas</a><a href="shop.html">Green</a><a href="shop.html">Wulong</a><a href="shop.html">Red</a><a href="shop.html">White</a></div>
-          <div class="footer-col"><h4>Learn</h4><a href="learn.html">Tea Types</a><a href="learn.html">How to Brew</a><a href="learn.html">Tasting Guide</a><a href="learn.html">FAQ</a></div>
-          <div class="footer-col"><h4>Community</h4><a href="tastings.html">Tastings</a><a href="tastings.html">Events</a><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener">YouTube</a><a href="about.html">Contact</a></div>
+          <div class="footer-col"><h4>Blog</h4><a href="learn.html">Tea Types</a><a href="brewing.html">How to Brew</a><a href="learn.html">Tasting Guide</a><a href="learn.html">FAQ</a></div>
+          <div class="footer-col"><h4>Community</h4><a href="tastings.html">Tastings</a><a href="travel.html">Sourcing Trips</a><a href="https://www.youtube.com/@sophiescuppatea6726" target="_blank" rel="noopener">YouTube</a><a href="about.html">Contact</a></div>
         </div>
       </div>
       <div class="footer-bottom"><p>&copy; 2025 Sophie's Cuppa Tea. All rights reserved.</p></div>
