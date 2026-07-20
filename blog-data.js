@@ -174,7 +174,7 @@ window.SOPHIES_BLOG_POSTS = [
     slug: 'golden-osmanthus-floral-wulong',
     category: 'Tea Field Notes',
     title: 'Golden Osmanthus: The Floral Doorway Into Wulong',
-    dek: 'A fragrant wulong that shows how floral character can emerge from the leaf itself when varietal, processing, and brewing align.',
+    dek: 'A lightly oxidized Anxi wulong with honey, sweet potato, corn sweetness, caramel warmth, and a floral lift that feels clear rather than perfumed.',
     ctaLabel: 'Shop Golden Osmanthus',
     ctaHref: 'tea.html?name=Golden%20Osmanthus',
     secondaryLabel: 'Watch Tastings',
@@ -184,6 +184,50 @@ window.SOPHIES_BLOG_POSTS = [
       'The name suggests flowers, but the point is not added perfume. The beauty of a tea like this is that floral character can emerge from the leaf itself when the varietal, processing, and brewing align.',
       'For a beginner, Golden Osmanthus offers a clear doorway. It is fragrant enough to be immediately understandable, but still layered enough to reward careful tasting.',
       'This is a good tea for someone who thinks serious tea will be bitter or austere. It shows that clean tea can still be generous.'
+    ],
+    sections: [
+      {
+        heading: 'The Quick Read',
+        paragraphs: [
+          'Golden Osmanthus is a Southern Fujian wulong from Anxi, one of the great wulong regions of China. It sits at the lighter end of the wulong spectrum: bright, floral, sweet, and relatively close to green tea in freshness, but with the rounded body and layered aroma that wulong processing can create.',
+          'The name gives the right cue. Osmanthus is a small golden flower known for a vivid, honeyed fragrance. In the cup, that floral lift is joined by sweet potato warmth, popcorn or corn sweetness, honey, caramel, a slight vegetal thread, and even a quiet seaweed or oceanic undertone. It is pretty, but not flimsy.'
+        ]
+      },
+      {
+        heading: 'Origin And Category',
+        paragraphs: [
+          'Anxi is in southern Fujian, and its wulong tradition is different from the cliff tea tradition of the Wuyi Mountains in northern Fujian. Wuyi cliff teas often lean darker, more roasted, more mineral, and more physically dense. Golden Osmanthus is doing something else: it is showing the fragrant, sweet, lifted side of wulong.',
+          'That contrast matters for customers. If someone hears “wulong” and imagines only roasted, dark, mineral tea, Golden Osmanthus gives them another map. Wulong is not one flavor. It is a category shaped by oxidation, cultivar, region, rolling, roasting, and the judgment of the maker.'
+        ]
+      },
+      {
+        heading: 'Processing',
+        paragraphs: [
+          'Golden Osmanthus is lightly oxidized, roughly in the 10 to 12 percent range according to the local notes. That means most of the leaf’s fresh character remains intact, while a small degree of oxidation opens the door to aroma, body, and sweetness. It is not green tea, but it remembers green tea more than a heavily oxidized cliff tea would.',
+          'The processing window is short and intense: roughly 10 steps completed over about 24 to 30 hours, followed by rest before market. That compressed timeline asks for precision. If the leaf is pushed too far, the fresh floral quality can become muddied. If it is not pushed enough, it may stay thin and green.'
+        ]
+      },
+      {
+        heading: 'How To Brew It',
+        paragraphs: [
+          'Use 200F water. If brewing in clay, begin around two minutes. If brewing in ceramic, give it closer to three minutes because ceramic loses heat faster. That vessel difference is part of the lesson: the same tea can extract differently depending on the material holding the heat.',
+          'Give the rolled leaf room to open. This tea starts with fragrance, but the cup becomes more interesting as the leaves unfold. Smell before you sip, then look for the movement from flower to honey, from honey to sweet potato, from sweet potato to a warmer grain note.'
+        ]
+      },
+      {
+        heading: 'What To Notice',
+        paragraphs: [
+          'The most obvious note is floral, but the deeper pleasure is balance. Golden Osmanthus should not feel like perfume sprayed onto tea. The floral quality should be integrated with sweetness, warmth, and body. If the first impression is golden flower, the second impression may be baked sweet potato, caramel, or soft corn.',
+          'A tea like this is useful for beginners because it is immediately legible. You do not have to invent tasting notes to enjoy it. But it is also useful for serious drinkers because it creates a baseline for comparison: this is what light Southern Fujian wulong can do when it is clean, fragrant, and properly brewed.'
+        ]
+      },
+      {
+        heading: 'Why It Belongs In Start Here',
+        paragraphs: [
+          'Golden Osmanthus teaches one of the most important ideas in tea: aromatic does not have to mean flavored. The tea can feel floral because of the leaf, the cultivar, the processing, and the brew. That single realization helps customers understand why Sophie’s talks about tea differently from a standard flavored-tea catalog.',
+          'Start here if you want a wulong that feels generous, golden, and easy to approach, but still serious enough to teach you something about oxidation, vessel choice, and fragrance.'
+        ]
+      }
     ]
   },
   {
@@ -191,7 +235,7 @@ window.SOPHIES_BLOG_POSTS = [
     slug: 'golden-resurrection-beginners-cliff-tea',
     category: 'Tea Field Notes',
     title: 'Golden Resurrection: A Beginner’s Cliff Tea',
-    dek: 'A useful entry into cliff tea: floral, rounded, warm, and deep without asking the drinker to already know the whole language.',
+    dek: 'A Wuyi cliff tea from the edge of the Zhengyan area, built around floral minerality, juicy density, mellow roast, and a grounding finish.',
     ctaLabel: 'Shop Golden Resurrection',
     ctaHref: 'shop.html',
     secondaryLabel: 'Cliff Tea Guide',
@@ -201,6 +245,50 @@ window.SOPHIES_BLOG_POSTS = [
       'Cliff tea can sound like an expert-only world: Wuyi mountains, rock character, roast, minerality, long finish, changing steeps. Golden Resurrection gives beginners a way in because it carries those ideas without becoming closed off.',
       'The cup can feel floral, rounded, dense, and warm, with a finish that invites another sip. That matters because a good first cliff tea should teach the language through pleasure.',
       'If you want to understand why Sophie’s talks about depth, body, and aftertaste, this is one of the teas to try slowly.'
+    ],
+    sections: [
+      {
+        heading: 'The Quick Read',
+        paragraphs: [
+          'Golden Resurrection is a Wuyi cliff tea, or yancha, from Fujian Province. It is positioned as an entry into cliff tea because it carries the core ideas of the category without becoming forbidding: minerality, roast, floral lift, body, and a finish that keeps changing after the sip.',
+          'The cup is described as floral up front, then mineral and juicy, with a thick, coating mouthfeel and a mellow roast that appears more clearly deeper into the cup. The aroma of the heated leaves can suggest butter, caramel, and chocolate before the liquor moves into a cleaner, brighter structure.'
+        ]
+      },
+      {
+        heading: 'The Place',
+        paragraphs: [
+          'Golden Resurrection comes from the Wuyi Mountains, near the border of the inner mountain, or Zhengyan, area. That detail matters because in Wuyi tea, place is not decorative. The mountain, the rock, the slope, the microclimate, and the farmer’s processing all shape what the tea can become.',
+          'The local notes make an important distinction: tea from the true inner mountain area can command dramatically higher prices than tea from surrounding areas, even when the cultivar name is similar. In Wuyi, the name of the plant matters less than the source location and the skill of the processing.'
+        ]
+      },
+      {
+        heading: 'Processing',
+        paragraphs: [
+          'Cliff tea is labor-intensive. The notes for Golden Resurrection describe picking three to four leaves in the right ratio, sunlight withering, cooling, “making the green” through shaking or rubbing, wok firing, cooling, re-firing, water roasting, final roasting, and leaf-by-leaf sorting.',
+          'The “making the green” stage can take eight to twelve hours, with rounds of movement and rest. During those rests, moisture redistributes inside the leaf. That sounds technical, but the customer-facing point is simple: this is not a casual product. The flavor depends on repeated judgment calls.'
+        ]
+      },
+      {
+        heading: 'How To Brew It',
+        paragraphs: [
+          'Use 200F water and a covered vessel. Six grams is the working amount in the local notes, with a first steep around three minutes in a Yixing clay pot or slightly longer in ceramic. This is not a tea to underheat. Cliff tea expects enough heat to open the roast, minerality, and body.',
+          'Because this tea is dense and layered, do not judge it from the first sip alone. Notice the early floral note, then the mineral juiciness, then the roast that appears farther back on the tongue. The cup may become more physically present as it cools and as you continue drinking.'
+        ]
+      },
+      {
+        heading: 'What To Notice',
+        paragraphs: [
+          'The key word is approachable, not simple. Golden Resurrection can be a beginner’s cliff tea because it is pleasurable first: mellow, coating, floral, juicy, and warm. It teaches the category through sensation rather than vocabulary.',
+          'Look for the way minerality and floral character combine. Minerality does not have to taste like licking a rock. Here, it can create juiciness and structure. The roast should not swallow the tea; it should deepen it.'
+        ]
+      },
+      {
+        heading: 'Why It Belongs In Start Here',
+        paragraphs: [
+          'Sophie’s needs a cliff tea that can introduce the category without losing people. Golden Resurrection does that job. It gives customers a first experience of Wuyi depth while still feeling generous and understandable.',
+          'This is the tea to recommend when someone is ready to move past obvious floral sweetness and start learning body, roast, minerality, and finish.'
+        ]
+      }
     ]
   },
   {
@@ -208,7 +296,7 @@ window.SOPHIES_BLOG_POSTS = [
     slug: 'plush-peak-organic-green-tea',
     category: 'Tea Field Notes',
     title: 'Plush Peak: Green Tea For People Who Think They Hate Green Tea',
-    dek: 'A bright, clean green tea that can change someone’s idea of what green tea is when brewed with care.',
+    dek: 'A USDA-certified organic green tea from high-elevation central Fujian: spring meadow, rain-wet grass, juicy brightness, gentle toast, and a clean cooling finish.',
     ctaLabel: 'Shop Plush Peak',
     ctaHref: 'tea.html?name=Plush%20Peak',
     secondaryLabel: 'Fix Bitter Green Tea',
@@ -218,6 +306,64 @@ window.SOPHIES_BLOG_POSTS = [
       'Many people arrive with bad green tea memories: bitterness, flatness, harshness, or a health-food flavor they force themselves to drink. A carefully sourced green tea brewed correctly can be different: bright, grassy, juicy, gently toasted, and clean without becoming sharp.',
       'The key is not only the tea. It is also the method. Water that is too hot can make even good green tea taste unpleasant. With cooler water and a little patience, Plush Peak can show the lively side of green tea.',
       'Start here if you want freshness, clarity, and a daily cup that still feels special.'
+    ],
+    sections: [
+      {
+        heading: 'The Quick Read',
+        paragraphs: [
+          'Plush Peak is a USDA-certified organic green tea from central Fujian Province, grown at roughly 4,500 feet above sea level. It is refreshing, light, bright, grassy, juicy, and clean, with a subtle toasted-hay note that becomes easier to notice as you spend time with the cup.',
+          'This is one of the most useful teas in the Start Here path because it corrects a common mistake: many people do not hate green tea. They hate green tea that has been brewed too hot, stored poorly, or treated as a generic health beverage instead of a fresh leaf with a precise brewing need.'
+        ]
+      },
+      {
+        heading: 'The Place',
+        paragraphs: [
+          'The local notes place Plush Peak in central Fujian, from a large USDA-certified organic operation where the picking is still done by hand. Other plants are intentionally left between rows of tea bushes. That detail matters because it moves the story away from “organic” as a label and toward cultivation as a flavor decision.',
+          'Fujian is better known internationally for white tea, wulong, cliff tea, and red tea, but the province also has a long green tea history. The notes trace Fujian green tea production back to at least 376 A.D., with green tea from parts of Fujian historically sent as tribute during several dynastic periods.'
+        ]
+      },
+      {
+        heading: 'Why Fujian Green Tea Feels Rare Here',
+        paragraphs: [
+          'One of the stranger things about Plush Peak is that Fujian green tea is important in export markets but not widely encountered by many Chinese domestic tea drinkers. The local notes say Fujian produces a meaningful share of China’s green tea and is one of the major provincial exporters, while much of that tea moves to Southeast Asia and Japan rather than staying visible at home.',
+          'That explains why this tea can feel both accessible and uncommon. It is not rare in the tiny-lot collector sense, but it is rare in the sense that many customers in the United States have never had a clean, properly brewed Fujian green tea presented as itself.'
+        ]
+      },
+      {
+        heading: 'Processing',
+        paragraphs: [
+          'Plush Peak is green tea, which means the goal is to preserve freshness by stopping oxidation early. The process in the local notes is direct but precise: pick, heat in a very hot wok to denature the oxidation enzymes, roll for shaping and cell breakdown, then bake or dry until the moisture content is low enough for stable storage.',
+          'The drying stage matters more than most customers realize. Green tea needs low moisture for clean storage. The notes put the target around 3 to 6 percent moisture; too much moisture creates mold risk, while careless storage can flatten the cup.'
+        ]
+      },
+      {
+        heading: 'How To Brew It',
+        paragraphs: [
+          'Use 175F water and steep for about four minutes. Warm the cup first, let the steam dissipate slightly, add the leaves, gently warm them in the cup, and pour the water along the side rather than directly onto the leaf. That side-pour detail helps protect the brightness of the tea.',
+          'If Plush Peak tastes aggressively bitter, something is probably off: water too hot, too much leaf, poor storage, or an over-extracted cup. Properly brewed, the tea should be bright and refreshing, with a smooth swallow and a pleasant drying quality rather than punishment.'
+        ]
+      },
+      {
+        heading: 'What To Notice',
+        paragraphs: [
+          'Start with the dry leaf. The aroma should suggest spring meadow and clean outdoor air, with a gentle toastiness that may not announce itself immediately. After brewing, the wet leaves can move toward rain-wet grass, fresh plant notes, and a brief yeastiness that clears quickly.',
+          'In the mouth, look for grassy brightness, juiciness, delicacy, and a quiet roasted-hay note. The dryness at the front of the mouth is not automatically a flaw. In green tea, pleasant astringency can be part of the structure, and the local notes connect that feeling to polyphenols.'
+        ]
+      },
+      {
+        heading: 'Culture And Health Context',
+        paragraphs: [
+          'In traditional Chinese medicine, green tea is often described as cooling and especially appropriate for hot weather. On the site, that should be presented as cultural context and tasting experience, not as a medical promise.',
+          'The health story should stay careful. Green tea is commonly associated with polyphenols and catechins, and the local notes mention Western associations with heart health. Before publishing, any health language should be reviewed and softened where needed.'
+        ]
+      },
+      {
+        heading: 'Why It Belongs In Start Here',
+        paragraphs: [
+          'Plush Peak is priced as an approachable entry point, but that does not mean it is lesser. The local notes explain that the favorable price came through the sourcing relationship, not through a compromise in quality.',
+          'This is the green tea to hand someone who thinks green tea is always bitter, flat, or joyless. It is clear, clean, refreshing, visually beautiful in a glass cup, and specific enough to teach a beginner what careful green tea can be.'
+        ]
+      }
     ]
   },
   {

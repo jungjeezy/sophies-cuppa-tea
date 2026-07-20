@@ -91,7 +91,8 @@
       photoAlt: 'Plush Peak dry tea leaves',
       hiddenArt: './img/plush-peak-story-art-transparent.png',
       deepTitle: 'The full field note belongs here.',
-      deepBody: 'Use this space for the longer blog: Fujian green tea history, why this region exports so much tea, the Japanese matcha connection, brewing mistakes, and what to notice as the cup changes.'
+      deepBody: 'The longer article carries the context that does not belong in the purchase area: Fujian green tea history, organic cultivation, brewing mistakes, storage, cooling tea culture, and what to notice as the cup changes.',
+      blogHref: 'blog.html?post=plush-peak-organic-green-tea'
     },
     'Golden Osmanthus': {
       themeClass: 'is-golden-osmanthus-session',
@@ -122,7 +123,8 @@
       photoAlt: 'Golden Osmanthus dry rolled tea leaves',
       hiddenArt: './img/golden-osmanthus-story-art-transparent.png',
       deepTitle: 'The full osmanthus field note belongs here.',
-      deepBody: 'Use this space for the longer blog: Anxi wulong, osmanthus fragrance, how rolled leaves open in the cup, brewing with hotter water, and how to notice honey, sweet potato, and corn sweetness.'
+      deepBody: 'The longer article carries the context that does not belong in the purchase area: Anxi wulong, osmanthus fragrance, light oxidation, vessel choice, and how to notice honey, sweet potato, and corn sweetness.',
+      blogHref: 'blog.html?post=golden-osmanthus-floral-wulong'
     }
   };
 
@@ -171,6 +173,8 @@
     }
     const videoLink = document.getElementById('editorialVideoLink');
     if (videoLink && videoMap[tea.name]) videoLink.href = videoMap[tea.name];
+    const blogLink = document.getElementById('editorialBlogLink');
+    if (blogLink && page.blogHref) blogLink.href = page.blogHref;
   }
 
   fetch('./teas.json')

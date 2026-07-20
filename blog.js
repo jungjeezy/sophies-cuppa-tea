@@ -35,7 +35,12 @@
         <h1>${post.title}</h1>
         <p class="blog-dek">${post.dek}</p>
         <div class="blog-body">
-          ${post.body.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+          ${post.sections ? post.sections.map((section) => `
+            <section class="blog-section">
+              <h2>${section.heading}</h2>
+              ${section.paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('')}
+            </section>
+          `).join('') : post.body.map((paragraph) => `<p>${paragraph}</p>`).join('')}
         </div>
         <div class="blog-post-actions">
           <a href="${post.ctaHref}" class="btn btn-dark">${post.ctaLabel}</a>

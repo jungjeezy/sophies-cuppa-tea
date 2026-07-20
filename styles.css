@@ -1426,6 +1426,18 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
   font-size: 0.96rem;
   line-height: 1.85;
 }
+.blog-section {
+  break-inside: avoid;
+  margin-bottom: 30px;
+}
+.blog-section h2 {
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(31,41,39,0.18);
+  color: var(--water-red);
+  font-size: 1.32rem;
+  font-style: italic;
+}
 .blog-post-actions {
   display: flex;
   flex-wrap: wrap;
