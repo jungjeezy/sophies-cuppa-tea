@@ -1545,7 +1545,19 @@ a.browse-card p { font-size: 0.75rem; line-height: 1.55; color: var(--muted); pa
 .brewing-shop-inner .hero-btns { justify-content: center; }
 
 /* ═══ MEMBERSHIP PAGE ═══ */
-.membership-hero { padding-bottom: 54px; }
+.membership-hero {
+  max-width: none;
+  padding: 92px 48px 66px 88px;
+  background:
+    radial-gradient(circle at 18% 24%, rgba(192,144,48,0.18), transparent 26%),
+    radial-gradient(circle at 84% 54%, rgba(74,122,80,0.16), transparent 26%),
+    linear-gradient(180deg, var(--paper), var(--paper-warm));
+  border-bottom: 1px solid rgba(31,41,39,0.12);
+}
+.membership-hero h1,
+.membership-hero .hero-sub {
+  max-width: 760px;
+}
 .membership-world {
   padding: 18px 48px 72px;
   background: var(--paper);
